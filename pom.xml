@@ -74,7 +74,7 @@
     <version.assertj>3.24.2</version.assertj>
 
     <!-- Plugin Versions -->
-    <version.maven-helper-plugin>3.4.0</version.maven-helper-plugin>
+    <version.maven-helper-plugin>3.5.0</version.maven-helper-plugin>
     <version.jacoco>0.8.11</version.jacoco>
     <version.coveralls>4.3.0</version.coveralls>
     <version.surefire>3.2.3</version.surefire>
