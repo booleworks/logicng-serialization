@@ -1,0 +1,18 @@
+# OS X
+.DS_Store
+
+# IntelliJ IDEA files
+.idea/
+.idea_modules/
+*.iml
+
+# vim swap files
+*.swp
+
+# encode files
+target/
+
+# LSP
+.settings
+.classpath
+.project

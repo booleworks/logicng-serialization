@@ -1,0 +1,43 @@
+syntax = "proto3";
+package formulas;
+option java_package = "com.booleworks.logicng.formulas";
+option java_outer_classname = "ProtoBufFormulas";
+
+enum PBComparison {
+  EQ = 0;
+  GT = 1;
+  GE = 2;
+  LT = 3;
+  LE = 4;
+}
+
+message PBPseudoBooleanConstraint {
+  PBComparison comparator = 1;
+  int32 rhs = 2;
+  repeated int32 coefficient = 3;
+  repeated string literal = 4; // including phase with/out `-`
+}
+
+enum PBFormulaType {
+  CONST = 0;
+  LITERAL = 1;
+  NOT = 2;
+  AND = 3;
+  OR = 4;
+  IMPL = 5;
+  EQUIV = 6;
+  PBC = 7;
+  PREDICATE = 8;
+}
+
+message PBFormula {
+  optional PBFormulaType type = 1;
+  optional bool value = 2; // constants
+  optional string variable = 3; // literal (together with value)
+  optional PBPseudoBooleanConstraint pbConstraint = 4; // PBConstraint
+  repeated PBFormula operand = 5; // not = 1, impl/equiv = 2, and/or = n
+}
+
+message PBFormulaList {
+  repeated PBFormula formula = 1;
+}

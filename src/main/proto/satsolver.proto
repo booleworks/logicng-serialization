@@ -1,0 +1,47 @@
+syntax = "proto3";
+package solver;
+import "collections.proto";
+import "solver_datastructures.proto";
+import "solver_commons.proto";
+option java_package = "com.booleworks.logicng.solvers";
+option java_outer_classname = "ProtoBufSatSolver";
+
+enum PBSolverStyle {
+  MINISAT = 0;
+  GLUCOSE = 1;
+  MINICARD = 2;
+}
+
+message PBWrapperState {
+  PBTristate result = 1;
+  collections.PBIntVector validStates = 2;
+  int32 nextStateId = 3;
+  bool lastComputationWithAssumptions = 4;
+  PBSolverStyle solverStyle = 5;
+}
+
+message PBMiniSat2 {
+  PBMiniSatStyleSolver common = 1;
+  collections.PBIntVector unitClauses = 2;
+  PBWrapperState wrapper = 3;
+}
+
+message PBGlucose {
+  PBMiniSatStyleSolver common = 1;
+  PBGlucoseConfig glucoseConfig = 2;
+  PBMsWatcherVectorVector watchesBin = 3;
+  collections.PBIntVector permDiff = 4;
+  collections.PBIntVector lastDecisionLevel = 5;
+  PBLngBoundedLongQueue lbdQueue = 6;
+  PBLngBoundedIntQueue trailQueue = 7;
+  collections.PBBooleanVector assump = 8;
+  int32 myflag = 9;
+  int64 analyzeLBD = 10;
+  int32 analyzeSzWithoutSelectors = 11;
+  int32 nbclausesbeforereduce = 12;
+  int32 conflicts = 13;
+  int32 conflictsRestarts = 14;
+  double sumLBD = 15;
+  int32 curRestart = 16;
+  PBWrapperState wrapper = 17;
+}

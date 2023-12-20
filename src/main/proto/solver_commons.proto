@@ -1,0 +1,107 @@
+syntax = "proto3";
+package solver;
+import "collections.proto";
+import "solver_datastructures.proto";
+option java_package = "com.booleworks.logicng.solvers.sat";
+option java_outer_classname = "ProtoBufSolverCommons";
+
+enum PBClauseMinimization {
+  NONE = 0;
+  BASIC = 1;
+  DEEP = 2;
+}
+
+enum PBCnfMethod {
+  FACTORY_CNF = 0;
+  PG_ON_SOLVER = 1;
+  FULL_PG_ON_SOLVER = 2;
+}
+
+message PBMiniSatConfig {
+  double varDecay = 1;
+  double varInc = 2;
+  PBClauseMinimization clauseMin = 3;
+  int32 restartFirst = 4;
+  double restartInc = 5;
+  double clauseDecay = 6;
+  bool removeSatisfied = 7;
+  double learntsizeFactor = 8;
+  double learntsizeInc = 9;
+  bool incremental = 10;
+  bool initialPhase = 11;
+  bool proofGeneration = 12;
+  PBCnfMethod cnfMethod = 13;
+  bool bbInitialUBCheckForRotatableLiterals = 14;
+  bool bbCheckForComplementModelLiterals = 15;
+  bool bbCheckForRotatableLiterals = 16;
+}
+
+message PBGlucoseConfig {
+  int32 lbLBDMinimizingClause = 1;
+  int32 lbLBDFrozenClause = 2;
+  int32 lbSizeMinimizingClause = 3;
+  int32 firstReduceDB = 4;
+  int32 specialIncReduceDB = 5;
+  int32 incReduceDB = 6;
+  double factorK = 7;
+  double factorR = 8;
+  int32 sizeLBDQueue = 9;
+  int32 sizeTrailQueue = 10;
+  bool reduceOnSize = 11;
+  int32 reduceOnSizeSize = 12;
+  double maxVarDecay = 13;
+}
+
+message PBMiniSatStyleSolver {
+  PBMiniSatConfig config = 1;
+
+  bool ok = 2;
+  int32 qhead = 3;
+  PBMsClauseVector clauses = 4;
+  PBMsClauseVector learnts = 5;
+  PBMsWatcherVectorVector watches = 6;
+  PBMsVariableVector vars = 7;
+  PBLngHeap orderHeap = 8;
+  collections.PBIntVector trail = 9;
+  collections.PBIntVector trailLim = 10;
+  collections.PBBooleanVector model = 11;
+  collections.PBIntVector conflict = 12;
+  collections.PBIntVector assumptions = 13;
+  collections.PBBooleanVector seen = 14;
+  int32 analyzeBtLevel = 15;
+  double claInc = 16;
+  int32 simpDBAssigns = 17;
+  int32 simpDBProps = 18;
+  int32 clausesLiterals = 19;
+  int32 learntsLiterals = 20;
+
+  double varDecay = 21;
+  double varInc = 22;
+  PBClauseMinimization ccminMode = 23;
+  int32 restartFirst = 24;
+  double restartInc = 25;
+  double clauseDecay = 26;
+  bool shouldRemoveSatsisfied = 27;
+  double learntsizeFactor = 28;
+  double learntsizeInc = 29;
+  bool incremental = 30;
+
+  map<string, int32> name2idx = 31;
+
+  collections.PBIntVectorVector pgProof = 32;
+  repeated solver.PBProofInformation pgOriginalClauses = 33;
+
+  collections.PBIntVector backboneCandidates = 34;
+  collections.PBIntVector backboneAssumptions = 35;
+  map<int32, PBTristate> backboneMap = 36;
+  bool computingBackbone = 37;
+
+  collections.PBIntVector selectionOrder = 38;
+  int32 selectionOrderIdx = 39;
+
+  double learntsizeAdjustConfl = 40;
+  int32 learntsizeAdjustCnt = 41;
+  int32 learntsizeAdjustStartConfl = 42;
+  double learntsizeAdjustInc = 43;
+  double maxLearnts = 44;
+}
