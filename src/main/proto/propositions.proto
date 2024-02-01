@@ -4,19 +4,7 @@ import "formulas.proto";
 option java_package = "com.booleworks.logicng.propositions";
 option java_outer_classname = "ProtoBufPropositions";
 
-message PBProposition {
+message PBStandardProposition {
   formulas.PBFormula formula = 1;
-  oneof detail {
-    string description = 2;
-    PBPropositionBackpack backpack = 3;
-  }
-}
-
-message PBPropositionBackpack {
-  int32 propositionType = 1;
-  bytes backpack = 2;
-}
-
-message PBPropositionList {
-  repeated PBProposition proposition = 1;
+  string description = 2;
 }

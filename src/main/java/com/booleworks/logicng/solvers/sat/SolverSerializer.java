@@ -5,9 +5,10 @@ import com.booleworks.logicng.collections.LNGVector;
 import com.booleworks.logicng.collections.ProtoBufCollections;
 import com.booleworks.logicng.datastructures.Tristate;
 import com.booleworks.logicng.formulas.FormulaFactory;
-import com.booleworks.logicng.propositions.PropositionType;
+import com.booleworks.logicng.propositions.Proposition;
 import com.booleworks.logicng.propositions.Propositions;
-import com.booleworks.logicng.propositions.SerializablePropositionBackpack;
+import com.booleworks.logicng.propositions.ProtoBufPropositions;
+import com.booleworks.logicng.propositions.StandardProposition;
 import com.booleworks.logicng.solvers.MiniSat;
 import com.booleworks.logicng.solvers.ProtoBufSatSolver;
 import com.booleworks.logicng.solvers.ProtoBufSatSolver.PBGlucose;
@@ -22,6 +23,7 @@ import com.booleworks.logicng.solvers.datastructures.SolverDatastructures;
 import com.booleworks.logicng.solvers.sat.MiniSatStyleSolver.ProofInformation;
 import com.booleworks.logicng.util.Pair;
 import com.google.protobuf.ByteString;
+import com.google.protobuf.InvalidProtocolBufferException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,15 +40,41 @@ import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
 public class SolverSerializer {
-    private final Map<Integer, Function<ByteString, SerializablePropositionBackpack>> deserializers = new HashMap<>();
+    private final Function<byte[], Proposition> deserializer;
+    private final Function<Proposition, byte[]> serializer;
     private final FormulaFactory f;
 
-    public SolverSerializer(final FormulaFactory f) {
+    private SolverSerializer(final FormulaFactory f, final Function<Proposition, byte[]> serializer,
+                             final Function<byte[], Proposition> deserializer) {
+        this.deserializer = deserializer;
+        this.serializer = serializer;
         this.f = f;
     }
 
-    public void registerDeserializer(final PropositionType propositionType, final Function<ByteString, SerializablePropositionBackpack> deserializer) {
-        deserializers.put(propositionType.ordinal(), deserializer);
+    public static SolverSerializer withoutProofs(final FormulaFactory f) {
+        return new SolverSerializer(f, null, null);
+    }
+
+    public static SolverSerializer withStandardPropositions(final FormulaFactory f) {
+        final Function<Proposition, byte[]> serializer = (final Proposition p) -> {
+            if (!(p instanceof StandardProposition)) {
+                throw new IllegalArgumentException("Can only serialize Standard propositions");
+            }
+            return Propositions.serialize((StandardProposition) p).toByteArray();
+        };
+        final Function<byte[], Proposition> deserializer = (final byte[] bs) -> {
+            try {
+                return Propositions.deserialize(f, ProtoBufPropositions.PBStandardProposition.newBuilder().mergeFrom(bs).build());
+            } catch (final InvalidProtocolBufferException e) {
+                throw new IllegalArgumentException("Can only deserialize Standard propositions");
+            }
+        };
+        return new SolverSerializer(f, serializer, deserializer);
+    }
+
+    public static SolverSerializer withCustomPropositions(final FormulaFactory f, final Function<Proposition, byte[]> serializer,
+                                                          final Function<byte[], Proposition> deserializer) {
+        return new SolverSerializer(f, serializer, deserializer);
     }
 
     public void serializeSolverToFile(final MiniSat miniSat, final Path path, final boolean compress) throws IOException {
@@ -432,16 +460,16 @@ public class SolverSerializer {
                 .build();
     }
 
-    private static PBProofInformation serialize(final ProofInformation pi) {
+    private PBProofInformation serialize(final ProofInformation pi) {
         final var builder = PBProofInformation.newBuilder().setClause(Collections.serialize(pi.clause));
         if (pi.proposition != null) {
-            builder.setProposition(Propositions.serialize(pi.proposition));
+            builder.setProposition(ByteString.copyFrom(serializer.apply(pi.proposition)));
         }
         return builder.build();
     }
 
     private ProofInformation deserialize(final PBProofInformation bin) {
-        final var prop = bin.hasProposition() ? Propositions.deserialize(f, bin.getProposition(), deserializers) : null;
+        final var prop = bin.hasProposition() ? deserializer.apply(bin.getProposition().toByteArray()) : null;
         return new ProofInformation(Collections.deserialize(bin.getClause()), prop);
     }
 }

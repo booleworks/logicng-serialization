@@ -1,7 +1,6 @@
 syntax = "proto3";
 package solver;
 import "collections.proto";
-import "propositions.proto";
 option java_package = "com.booleworks.logicng.solvers.datastructures";
 option java_outer_classname = "ProtoBufSolverDatastructures";
 
@@ -80,5 +79,5 @@ message PBLngBoundedLongQueue {
 
 message PBProofInformation {
   collections.PBIntVector clause = 1;
-  optional propositions.PBProposition proposition = 2;
+  optional bytes proposition = 2;
 }
