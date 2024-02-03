@@ -7,14 +7,13 @@ import static com.booleworks.logicng.formulas.Formulas.deserialize;
 import static com.booleworks.logicng.formulas.Formulas.serialize;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
 import com.booleworks.logicng.RandomTag;
 import com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula;
 import com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList;
 import com.booleworks.logicng.io.parsers.ParserException;
 import com.booleworks.logicng.util.FormulaRandomizer;
 import com.booleworks.logicng.util.FormulaRandomizerConfig;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -22,7 +21,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
@@ -55,7 +53,7 @@ public class FormulasTest {
 
         final var f2 = FormulaFactory.caching();
         final long t1 = System.currentTimeMillis();
-        final PBFormulaList bin = PBFormulaList.newBuilder().addAllFormula(constraints.stream().map(Formulas::serialize).collect(Collectors.toList())).build();
+        final PBFormulaList bin = serialize(constraints);
         final long t2 = System.currentTimeMillis();
         bin.writeTo(Files.newOutputStream(PROTO));
         final long t3 = System.currentTimeMillis();
@@ -67,11 +65,11 @@ public class FormulasTest {
         final var f3 = FormulaFactory.caching();
         final PBFormulaList binList = PBFormulaList.newBuilder().mergeFrom(Files.newInputStream(PROTO)).build();
         final long t5 = System.currentTimeMillis();
-        final List<Formula> deserialized = binList.getFormulaList().stream().map(it -> Formulas.deserialize(f2, it)).collect(Collectors.toList());
+        final List<Formula> deserialized = deserialize(f2, binList);
         final long t6 = System.currentTimeMillis();
         final PBFormulaList zipList = PBFormulaList.newBuilder().mergeFrom(new GZIPInputStream(Files.newInputStream(ZIP))).build();
         final long t7 = System.currentTimeMillis();
-        final List<Formula> deserializedZipped = zipList.getFormulaList().stream().map(it -> Formulas.deserialize(f3, it)).collect(Collectors.toList());
+        final List<Formula> deserializedZipped = deserialize(f3, zipList);
 
         System.out.printf("Read Original:   %d ms%n", t0 - t00);
         System.out.printf("Parse Original:  %d ms%n", t1 - t0);
@@ -96,8 +94,8 @@ public class FormulasTest {
         System.out.printf("Reading with ProtoBuf: %d ms%n", (t5 - t4) + (t6 - t5));
         System.out.printf("Reading with Zipping:  %d ms%n", (t7 - t6) + (t6 - t5));
         System.out.printf("%n");
-        Assertions.assertThat(deserialized).isEqualTo(constraints);
-        Assertions.assertThat(deserializedZipped).isEqualTo(constraints);
+        assertThat(deserialized).isEqualTo(constraints);
+        assertThat(deserializedZipped).isEqualTo(constraints);
 
         Files.deleteIfExists(PROTO);
         Files.deleteIfExists(ZIP);

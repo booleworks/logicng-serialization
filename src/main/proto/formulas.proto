@@ -11,13 +11,6 @@ enum PBComparison {
   LE = 4;
 }
 
-message PBPseudoBooleanConstraint {
-  PBComparison comparator = 1;
-  int32 rhs = 2;
-  repeated int32 coefficient = 3;
-  repeated string literal = 4; // including phase with/out `-`
-}
-
 enum PBFormulaType {
   CONST = 0;
   LITERAL = 1;
@@ -30,14 +23,31 @@ enum PBFormulaType {
   PREDICATE = 8;
 }
 
+message PBFormulaList {
+  repeated int32 id = 1;
+  PBFormulaMapping mapping = 2;
+}
+
 message PBFormula {
+  int32 id = 1;
+  PBFormulaMapping mapping = 2;
+}
+
+message PBFormulaMapping {
+  map<int32, PBInternalFormula> mapping = 1;
+}
+
+message PBInternalFormula {
   optional PBFormulaType type = 1;
   optional bool value = 2; // constants
   optional string variable = 3; // literal (together with value)
-  optional PBPseudoBooleanConstraint pbConstraint = 4; // PBConstraint
-  repeated PBFormula operand = 5; // not = 1, impl/equiv = 2, and/or = n
+  optional PBInternalPseudoBooleanConstraint pbConstraint = 4; // PBConstraint
+  repeated int32 operand = 5; // not = 1, impl/equiv = 2, and/or = n
 }
 
-message PBFormulaList {
-  repeated PBFormula formula = 1;
+message PBInternalPseudoBooleanConstraint {
+  PBComparison comparator = 1;
+  int32 rhs = 2;
+  repeated int32 coefficient = 3;
+  repeated string literal = 4; // including phase with/out `-`
 }
