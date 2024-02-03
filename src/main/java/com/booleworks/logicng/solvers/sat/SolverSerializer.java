@@ -39,6 +39,11 @@ import java.util.function.Function;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
 
+/**
+ * A serializer/deserializer for LogicNG SAT solvers.
+ * @version 3.0.0
+ * @since 2.5.0
+ */
 public class SolverSerializer {
     private final Function<byte[], Proposition> deserializer;
     private final Function<Proposition, byte[]> serializer;
@@ -51,10 +56,21 @@ public class SolverSerializer {
         this.f = f;
     }
 
+    /**
+     * Generates a new solver serializer for a SAT solver which does not serialize proof information.
+     * @param f the formula factory
+     * @return the solver serializer
+     */
     public static SolverSerializer withoutProofs(final FormulaFactory f) {
         return new SolverSerializer(f, null, null);
     }
 
+    /**
+     * Generates a new solver serializer for a SAT solver which does serialize proof information
+     * with only standard propositions.
+     * @param f the formula factory
+     * @return the solver serializer
+     */
     public static SolverSerializer withStandardPropositions(final FormulaFactory f) {
         final Function<Proposition, byte[]> serializer = (final Proposition p) -> {
             if (!(p instanceof StandardProposition)) {
@@ -72,17 +88,42 @@ public class SolverSerializer {
         return new SolverSerializer(f, serializer, deserializer);
     }
 
-    public static SolverSerializer withCustomPropositions(final FormulaFactory f, final Function<Proposition, byte[]> serializer,
-                                                          final Function<byte[], Proposition> deserializer) {
+    /**
+     * Generates a new solver serializer for a SAT solver which does serialize proof information
+     * with custom propositions.  In this case you have to provide your own serializer and deserializer
+     * for your propositions.
+     * @param f            the formula factory
+     * @param serializer   the serializer for the custom propositions
+     * @param deserializer the deserializer for the custom propositions
+     * @return the solver serializer
+     */
+    public static SolverSerializer withCustomPropositions(
+            final FormulaFactory f,
+            final Function<Proposition, byte[]> serializer,
+            final Function<byte[], Proposition> deserializer
+    ) {
         return new SolverSerializer(f, serializer, deserializer);
     }
 
+    /**
+     * Serializes a MiniSat solver to a file.
+     * @param miniSat  the MiniSat solver
+     * @param path     the file path
+     * @param compress a flag whether the file should be compressed (zip)
+     * @throws IOException if there is a problem writing the file
+     */
     public void serializeSolverToFile(final MiniSat miniSat, final Path path, final boolean compress) throws IOException {
         try (final OutputStream outputStream = compress ? new GZIPOutputStream(Files.newOutputStream(path)) : Files.newOutputStream(path)) {
             serializeSolverToStream(miniSat, outputStream);
         }
     }
 
+    /**
+     * Serializes a MiniSat solver to a stream.
+     * @param miniSat the MiniSat solver
+     * @param stream  the stream
+     * @throws IOException if there is a problem writing to the stream
+     */
     public void serializeSolverToStream(final MiniSat miniSat, final OutputStream stream) throws IOException {
         if (miniSat.getStyle() != MiniSat.SolverStyle.GLUCOSE) {
             serializeMiniSat(miniSat).writeTo(stream);
@@ -91,6 +132,11 @@ public class SolverSerializer {
         }
     }
 
+    /**
+     * Serializes a MiniSat solver to a protocol buffer.
+     * @param miniSat the MiniSat solver
+     * @return the protocol buffer
+     */
     public PBMiniSat2 serializeMiniSat(final MiniSat miniSat) {
         if (miniSat.getStyle() == MiniSat.SolverStyle.GLUCOSE) {
             throw new IllegalArgumentException("Cannot serialize a " + miniSat.getStyle() + " solver as MiniSat");
@@ -103,6 +149,11 @@ public class SolverSerializer {
         throw new IllegalArgumentException("Unknown solver type " + miniSat.underlyingSolver());
     }
 
+    /**
+     * Serializes a Glucose solver to a protocol buffer.
+     * @param miniSat the Glucose solver
+     * @return the protocol buffer
+     */
     public PBGlucose serializeGlucose(final MiniSat miniSat) {
         if (miniSat.getStyle() != MiniSat.SolverStyle.GLUCOSE) {
             throw new IllegalArgumentException("Cannot serialize a " + miniSat.getStyle() + " solver as Glucose");
@@ -110,32 +161,68 @@ public class SolverSerializer {
         return serialize((GlucoseSyrup) miniSat.underlyingSolver(), new SolverWrapperState(miniSat));
     }
 
+    /**
+     * Deserializes a MiniSat solver from a file.
+     * @param path     the file path
+     * @param compress a flag whether the file should be compressed (zip)
+     * @return the solver
+     * @throws IOException if there is a problem reading the file
+     */
     public MiniSat deserializeMiniSatFromFile(final Path path, final boolean compress) throws IOException {
         try (final InputStream inputStream = compress ? new GZIPInputStream(Files.newInputStream(path)) : Files.newInputStream(path)) {
             return deserializeMiniSatFromStream(inputStream);
         }
     }
 
+    /**
+     * Deserializes a MiniSat solver from a stream.
+     * @param stream the stream
+     * @return the solver
+     * @throws IOException if there is a problem reading from the stream
+     */
     public MiniSat deserializeMiniSatFromStream(final InputStream stream) throws IOException {
         return deserializeMiniSat(ProtoBufSatSolver.PBMiniSat2.newBuilder().mergeFrom(stream).build());
     }
 
+    /**
+     * Deserializes a MiniSat solver from a protocol buffer.
+     * @param bin the protocol buffer
+     * @return the solver
+     */
     public MiniSat deserializeMiniSat(final ProtoBufSatSolver.PBMiniSat2 bin) {
         final MiniSat miniSat = new MiniSat(f, deserialize(bin));
         SolverWrapperState.setWrapperState(miniSat, bin.getWrapper());
         return miniSat;
     }
 
+    /**
+     * Deserializes a Glucose solver from a file.
+     * @param path     the file path
+     * @param compress a flag whether the file should be compressed (zip)
+     * @return the solver
+     * @throws IOException if there is a problem reading the file
+     */
     public MiniSat deserializeGlucoseFromFile(final Path path, final boolean compress) throws IOException {
         try (final InputStream inputStream = compress ? new GZIPInputStream(Files.newInputStream(path)) : Files.newInputStream(path)) {
             return deserializeGlucoseFromStream(inputStream);
         }
     }
 
+    /**
+     * Deserializes a Glucose solver from a stream.
+     * @param stream the stream
+     * @return the solver
+     * @throws IOException if there is a problem reading from the stream
+     */
     public MiniSat deserializeGlucoseFromStream(final InputStream stream) throws IOException {
         return deserializeGlucose(ProtoBufSatSolver.PBGlucose.newBuilder().mergeFrom(stream).build());
     }
 
+    /**
+     * Deserializes a Glucose solver from a protocol buffer.
+     * @param bin the protocol buffer
+     * @return the solver
+     */
     public MiniSat deserializeGlucose(final ProtoBufSatSolver.PBGlucose bin) {
         final MiniSat miniSat = new MiniSat(f, deserialize(bin));
         SolverWrapperState.setWrapperState(miniSat, bin.getWrapper());
@@ -452,11 +539,11 @@ public class SolverSerializer {
 
     private static ProtoBufSatSolver.PBWrapperState serializeWrapperState(final SolverWrapperState state) {
         return ProtoBufSatSolver.PBWrapperState.newBuilder()
-                .setResult(SolverDatastructures.serialize(state.getResult()))
-                .setValidStates(Collections.serialize(state.getValidStates()))
-                .setNextStateId(state.getNextStateId())
-                .setLastComputationWithAssumptions(state.isLastComputationWithAssumptions())
-                .setSolverStyle(SolverWrapperState.serialize(state.getSolverStyle()))
+                .setResult(SolverDatastructures.serialize(state.result))
+                .setValidStates(Collections.serialize(state.validStates))
+                .setNextStateId(state.nextStateId)
+                .setLastComputationWithAssumptions(state.lastComputationWithAssumptions)
+                .setSolverStyle(SolverWrapperState.serialize(state.solverStyle))
                 .build();
     }
 

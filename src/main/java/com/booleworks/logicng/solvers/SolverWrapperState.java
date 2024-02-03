@@ -3,16 +3,27 @@ package com.booleworks.logicng.solvers;
 import com.booleworks.logicng.collections.Collections;
 import com.booleworks.logicng.collections.LNGIntVector;
 import com.booleworks.logicng.datastructures.Tristate;
+import com.booleworks.logicng.solvers.MiniSat.SolverStyle;
 import com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSolverStyle;
 import com.booleworks.logicng.solvers.datastructures.SolverDatastructures;
 
+/**
+ * A class which captures some information from the {@link MiniSat} wrapper class,
+ * required for serializing and deserializing SAT solvers.
+ * @version 3.0.0
+ * @since 2.5.0
+ */
 public class SolverWrapperState {
-    private final Tristate result;
-    private final LNGIntVector validStates;
-    private final int nextStateId;
-    private final boolean lastComputationWithAssumptions;
-    private final MiniSat.SolverStyle solverStyle;
+    public final Tristate result;
+    public final LNGIntVector validStates;
+    public final int nextStateId;
+    public final boolean lastComputationWithAssumptions;
+    public final SolverStyle solverStyle;
 
+    /**
+     * Constructs a new solver wrapper state.
+     * @param solver the solver
+     */
     public SolverWrapperState(final MiniSat solver) {
         result = solver.result;
         validStates = solver.validStates;
@@ -21,6 +32,11 @@ public class SolverWrapperState {
         solverStyle = solver.style;
     }
 
+    /**
+     * Sets a solver wrapper state to a given solver.
+     * @param miniSat the solver
+     * @param wrapper the wrapper state
+     */
     public static void setWrapperState(final MiniSat miniSat, final ProtoBufSatSolver.PBWrapperState wrapper) {
         miniSat.result = SolverDatastructures.deserialize(wrapper.getResult());
         miniSat.validStates = Collections.deserialize(wrapper.getValidStates());
@@ -29,27 +45,12 @@ public class SolverWrapperState {
         miniSat.style = deserialize(wrapper.getSolverStyle());
     }
 
-    public Tristate getResult() {
-        return result;
-    }
-
-    public LNGIntVector getValidStates() {
-        return validStates;
-    }
-
-    public int getNextStateId() {
-        return nextStateId;
-    }
-
-    public boolean isLastComputationWithAssumptions() {
-        return lastComputationWithAssumptions;
-    }
-
-    public MiniSat.SolverStyle getSolverStyle() {
-        return solverStyle;
-    }
-
-    public static PBSolverStyle serialize(final MiniSat.SolverStyle solverStyle) {
+    /**
+     * Serializes a solver style to a protocol buffer.
+     * @param solverStyle the solver style
+     * @return the protocol buffer
+     */
+    public static PBSolverStyle serialize(final SolverStyle solverStyle) {
         switch (solverStyle) {
             case MINISAT:
                 return PBSolverStyle.MINISAT;
@@ -62,16 +63,21 @@ public class SolverWrapperState {
         }
     }
 
-    private static MiniSat.SolverStyle deserialize(final PBSolverStyle solverStyle) {
-        switch (solverStyle) {
+    /**
+     * Deserializes a solver style from a protocol buffer.
+     * @param bin the protocol buffer
+     * @return the solver style
+     */
+    private static SolverStyle deserialize(final PBSolverStyle bin) {
+        switch (bin) {
             case MINISAT:
-                return MiniSat.SolverStyle.MINISAT;
+                return SolverStyle.MINISAT;
             case GLUCOSE:
-                return MiniSat.SolverStyle.GLUCOSE;
+                return SolverStyle.GLUCOSE;
             case MINICARD:
-                return MiniSat.SolverStyle.MINICARD;
+                return SolverStyle.MINICARD;
             default:
-                throw new IllegalArgumentException("Unknwon solver style " + solverStyle);
+                throw new IllegalArgumentException("Unknwon solver style " + bin);
         }
     }
 }
