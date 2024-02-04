@@ -5,6 +5,6 @@ option java_package = "com.booleworks.logicng.propositions";
 option java_outer_classname = "ProtoBufPropositions";
 
 message PBStandardProposition {
-  formulas.PBFormula formula = 1;
+  formulas.PBFormulas formula = 1;
   string description = 2;
 }

@@ -23,13 +23,8 @@ enum PBFormulaType {
   PREDICATE = 8;
 }
 
-message PBFormulaList {
+message PBFormulas {
   repeated int32 id = 1;
-  PBFormulaMapping mapping = 2;
-}
-
-message PBFormula {
-  int32 id = 1;
   PBFormulaMapping mapping = 2;
 }
 
@@ -47,7 +42,7 @@ message PBInternalFormula {
 
 message PBInternalPseudoBooleanConstraint {
   PBComparison comparator = 1;
-  int32 rhs = 2;
-  repeated int32 coefficient = 3;
+  int64 rhs = 2;
+  repeated int64 coefficient = 3;
   repeated string literal = 4; // including phase with/out `-`
 }

@@ -321,8 +321,8 @@ public final class ProtoBufFormulas {
     // @@protoc_insertion_point(enum_scope:formulas.PBFormulaType)
   }
 
-  public interface PBFormulaListOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:formulas.PBFormulaList)
+  public interface PBFormulasOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:formulas.PBFormulas)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -358,18 +358,18 @@ public final class ProtoBufFormulas {
     com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder();
   }
   /**
-   * Protobuf type {@code formulas.PBFormulaList}
+   * Protobuf type {@code formulas.PBFormulas}
    */
-  public static final class PBFormulaList extends
+  public static final class PBFormulas extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:formulas.PBFormulaList)
-      PBFormulaListOrBuilder {
+      // @@protoc_insertion_point(message_implements:formulas.PBFormulas)
+      PBFormulasOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use PBFormulaList.newBuilder() to construct.
-    private PBFormulaList(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use PBFormulas.newBuilder() to construct.
+    private PBFormulas(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private PBFormulaList() {
+    private PBFormulas() {
       id_ = emptyIntList();
     }
 
@@ -377,20 +377,20 @@ public final class ProtoBufFormulas {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new PBFormulaList();
+      return new PBFormulas();
     }
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaList_descriptor;
+      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaList_fieldAccessorTable
+      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.Builder.class);
+              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
     }
 
     private int bitField0_;
@@ -512,10 +512,10 @@ public final class ProtoBufFormulas {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList)) {
+      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList) obj;
+      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas) obj;
 
       if (!getIdList()
           .equals(other.getIdList())) return false;
@@ -548,44 +548,44 @@ public final class ProtoBufFormulas {
       return hash;
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(byte[] data)
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -593,26 +593,26 @@ public final class ProtoBufFormulas {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseDelimitedFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList parseFrom(
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -625,7 +625,7 @@ public final class ProtoBufFormulas {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -641,26 +641,26 @@ public final class ProtoBufFormulas {
       return builder;
     }
     /**
-     * Protobuf type {@code formulas.PBFormulaList}
+     * Protobuf type {@code formulas.PBFormulas}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:formulas.PBFormulaList)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaListOrBuilder {
+        // @@protoc_insertion_point(builder_implements:formulas.PBFormulas)
+        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaList_descriptor;
+        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaList_fieldAccessorTable
+        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.Builder.class);
+                com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.newBuilder()
+      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -692,17 +692,17 @@ public final class ProtoBufFormulas {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaList_descriptor;
+        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.getDefaultInstance();
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
+        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList result = buildPartial();
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas build() {
+        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -710,14 +710,14 @@ public final class ProtoBufFormulas {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList(this);
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas buildPartial() {
+        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList result) {
+      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           id_.makeImmutable();
@@ -767,16 +767,16 @@ public final class ProtoBufFormulas {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList)other);
+        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas) {
+          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas other) {
+        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance()) return this;
         if (!other.id_.isEmpty()) {
           if (id_.isEmpty()) {
             id_ = other.id_;
@@ -1074,23 +1074,23 @@ public final class ProtoBufFormulas {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:formulas.PBFormulaList)
+      // @@protoc_insertion_point(builder_scope:formulas.PBFormulas)
     }
 
-    // @@protoc_insertion_point(class_scope:formulas.PBFormulaList)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:formulas.PBFormulas)
+    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas();
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList getDefaultInstance() {
+    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<PBFormulaList>
-        PARSER = new com.google.protobuf.AbstractParser<PBFormulaList>() {
+    private static final com.google.protobuf.Parser<PBFormulas>
+        PARSER = new com.google.protobuf.AbstractParser<PBFormulas>() {
       @java.lang.Override
-      public PBFormulaList parsePartialFrom(
+      public PBFormulas parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -1109,701 +1109,17 @@ public final class ProtoBufFormulas {
       }
     };
 
-    public static com.google.protobuf.Parser<PBFormulaList> parser() {
+    public static com.google.protobuf.Parser<PBFormulas> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<PBFormulaList> getParserForType() {
+    public com.google.protobuf.Parser<PBFormulas> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaList getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
-  public interface PBFormulaOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:formulas.PBFormula)
-      com.google.protobuf.MessageOrBuilder {
-
-    /**
-     * <code>int32 id = 1;</code>
-     * @return The id.
-     */
-    int getId();
-
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     * @return Whether the mapping field is set.
-     */
-    boolean hasMapping();
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     * @return The mapping.
-     */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping();
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder();
-  }
-  /**
-   * Protobuf type {@code formulas.PBFormula}
-   */
-  public static final class PBFormula extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:formulas.PBFormula)
-      PBFormulaOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use PBFormula.newBuilder() to construct.
-    private PBFormula(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private PBFormula() {
-    }
-
-    @java.lang.Override
-    @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
-        UnusedPrivateParameter unused) {
-      return new PBFormula();
-    }
-
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormula_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormula_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder.class);
-    }
-
-    private int bitField0_;
-    public static final int ID_FIELD_NUMBER = 1;
-    private int id_ = 0;
-    /**
-     * <code>int32 id = 1;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
-    }
-
-    public static final int MAPPING_FIELD_NUMBER = 2;
-    private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     * @return Whether the mapping field is set.
-     */
-    @java.lang.Override
-    public boolean hasMapping() {
-      return ((bitField0_ & 0x00000001) != 0);
-    }
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     * @return The mapping.
-     */
-    @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
-      return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
-    }
-    /**
-     * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-     */
-    @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
-      return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      if (id_ != 0) {
-        output.writeInt32(1, id_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        output.writeMessage(2, getMapping());
-      }
-      getUnknownFields().writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      if (id_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, id_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getMapping());
-      }
-      size += getUnknownFields().getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula)) {
-        return super.equals(obj);
-      }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula) obj;
-
-      if (getId()
-          != other.getId()) return false;
-      if (hasMapping() != other.hasMapping()) return false;
-      if (hasMapping()) {
-        if (!getMapping()
-            .equals(other.getMapping())) return false;
-      }
-      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
-      return true;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
-      if (hasMapping()) {
-        hash = (37 * hash) + MAPPING_FIELD_NUMBER;
-        hash = (53 * hash) + getMapping().hashCode();
-      }
-      hash = (29 * hash) + getUnknownFields().hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code formulas.PBFormula}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:formulas.PBFormula)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormula_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormula_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder.class);
-      }
-
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getMappingFieldBuilder();
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        bitField0_ = 0;
-        id_ = 0;
-        mapping_ = null;
-        if (mappingBuilder_ != null) {
-          mappingBuilder_.dispose();
-          mappingBuilder_ = null;
-        }
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormula_descriptor;
-      }
-
-      @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula(this);
-        if (bitField0_ != 0) { buildPartial0(result); }
-        onBuilt();
-        return result;
-      }
-
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula result) {
-        int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.id_ = id_;
-        }
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          result.mapping_ = mappingBuilder_ == null
-              ? mapping_
-              : mappingBuilder_.build();
-          to_bitField0_ |= 0x00000001;
-        }
-        result.bitField0_ |= to_bitField0_;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance()) return this;
-        if (other.getId() != 0) {
-          setId(other.getId());
-        }
-        if (other.hasMapping()) {
-          mergeMapping(other.getMapping());
-        }
-        this.mergeUnknownFields(other.getUnknownFields());
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        if (extensionRegistry == null) {
-          throw new java.lang.NullPointerException();
-        }
-        try {
-          boolean done = false;
-          while (!done) {
-            int tag = input.readTag();
-            switch (tag) {
-              case 0:
-                done = true;
-                break;
-              case 8: {
-                id_ = input.readInt32();
-                bitField0_ |= 0x00000001;
-                break;
-              } // case 8
-              case 18: {
-                input.readMessage(
-                    getMappingFieldBuilder().getBuilder(),
-                    extensionRegistry);
-                bitField0_ |= 0x00000002;
-                break;
-              } // case 18
-              default: {
-                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
-                  done = true; // was an endgroup tag
-                }
-                break;
-              } // default:
-            } // switch (tag)
-          } // while (!done)
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.unwrapIOException();
-        } finally {
-          onChanged();
-        } // finally
-        return this;
-      }
-      private int bitField0_;
-
-      private int id_ ;
-      /**
-       * <code>int32 id = 1;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>int32 id = 1;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-
-        id_ = value;
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        bitField0_ = (bitField0_ & ~0x00000001);
-        id_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> mappingBuilder_;
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       * @return Whether the mapping field is set.
-       */
-      public boolean hasMapping() {
-        return ((bitField0_ & 0x00000002) != 0);
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       * @return The mapping.
-       */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
-        if (mappingBuilder_ == null) {
-          return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
-        } else {
-          return mappingBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public Builder setMapping(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping value) {
-        if (mappingBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          mapping_ = value;
-        } else {
-          mappingBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public Builder setMapping(
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder builderForValue) {
-        if (mappingBuilder_ == null) {
-          mapping_ = builderForValue.build();
-        } else {
-          mappingBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public Builder mergeMapping(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping value) {
-        if (mappingBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) != 0) &&
-            mapping_ != null &&
-            mapping_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance()) {
-            getMappingBuilder().mergeFrom(value);
-          } else {
-            mapping_ = value;
-          }
-        } else {
-          mappingBuilder_.mergeFrom(value);
-        }
-        if (mapping_ != null) {
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
-        return this;
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public Builder clearMapping() {
-        bitField0_ = (bitField0_ & ~0x00000002);
-        mapping_ = null;
-        if (mappingBuilder_ != null) {
-          mappingBuilder_.dispose();
-          mappingBuilder_ = null;
-        }
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder getMappingBuilder() {
-        bitField0_ |= 0x00000002;
-        onChanged();
-        return getMappingFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
-        if (mappingBuilder_ != null) {
-          return mappingBuilder_.getMessageOrBuilder();
-        } else {
-          return mapping_ == null ?
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
-        }
-      }
-      /**
-       * <code>.formulas.PBFormulaMapping mapping = 2;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> 
-          getMappingFieldBuilder() {
-        if (mappingBuilder_ == null) {
-          mappingBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder>(
-                  getMapping(),
-                  getParentForChildren(),
-                  isClean());
-          mapping_ = null;
-        }
-        return mappingBuilder_;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFields(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:formulas.PBFormula)
-    }
-
-    // @@protoc_insertion_point(class_scope:formulas.PBFormula)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula();
-    }
-
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<PBFormula>
-        PARSER = new com.google.protobuf.AbstractParser<PBFormula>() {
-      @java.lang.Override
-      public PBFormula parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        Builder builder = newBuilder();
-        try {
-          builder.mergeFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          throw e.setUnfinishedMessage(builder.buildPartial());
-        } catch (com.google.protobuf.UninitializedMessageException e) {
-          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
-        } catch (java.io.IOException e) {
-          throw new com.google.protobuf.InvalidProtocolBufferException(e)
-              .setUnfinishedMessage(builder.buildPartial());
-        }
-        return builder.buildPartial();
-      }
-    };
-
-    public static com.google.protobuf.Parser<PBFormula> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<PBFormula> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getDefaultInstanceForType() {
+    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3969,27 +3285,27 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison getComparator();
 
     /**
-     * <code>int32 rhs = 2;</code>
+     * <code>int64 rhs = 2;</code>
      * @return The rhs.
      */
-    int getRhs();
+    long getRhs();
 
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @return A list containing the coefficient.
      */
-    java.util.List<java.lang.Integer> getCoefficientList();
+    java.util.List<java.lang.Long> getCoefficientList();
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @return The count of coefficient.
      */
     int getCoefficientCount();
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @param index The index of the element to return.
      * @return The coefficient at the given index.
      */
-    int getCoefficient(int index);
+    long getCoefficient(int index);
 
     /**
      * <pre>
@@ -4046,7 +3362,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
     private PBInternalPseudoBooleanConstraint() {
       comparator_ = 0;
-      coefficient_ = emptyIntList();
+      coefficient_ = emptyLongList();
       literal_ =
           com.google.protobuf.LazyStringArrayList.emptyList();
     }
@@ -4090,43 +3406,43 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     public static final int RHS_FIELD_NUMBER = 2;
-    private int rhs_ = 0;
+    private long rhs_ = 0L;
     /**
-     * <code>int32 rhs = 2;</code>
+     * <code>int64 rhs = 2;</code>
      * @return The rhs.
      */
     @java.lang.Override
-    public int getRhs() {
+    public long getRhs() {
       return rhs_;
     }
 
     public static final int COEFFICIENT_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private com.google.protobuf.Internal.IntList coefficient_ =
-        emptyIntList();
+    private com.google.protobuf.Internal.LongList coefficient_ =
+        emptyLongList();
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @return A list containing the coefficient.
      */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
+    public java.util.List<java.lang.Long>
         getCoefficientList() {
       return coefficient_;
     }
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @return The count of coefficient.
      */
     public int getCoefficientCount() {
       return coefficient_.size();
     }
     /**
-     * <code>repeated int32 coefficient = 3;</code>
+     * <code>repeated int64 coefficient = 3;</code>
      * @param index The index of the element to return.
      * @return The coefficient at the given index.
      */
-    public int getCoefficient(int index) {
-      return coefficient_.getInt(index);
+    public long getCoefficient(int index) {
+      return coefficient_.getLong(index);
     }
     private int coefficientMemoizedSerializedSize = -1;
 
@@ -4201,15 +3517,15 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (comparator_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.EQ.getNumber()) {
         output.writeEnum(1, comparator_);
       }
-      if (rhs_ != 0) {
-        output.writeInt32(2, rhs_);
+      if (rhs_ != 0L) {
+        output.writeInt64(2, rhs_);
       }
       if (getCoefficientList().size() > 0) {
         output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(coefficientMemoizedSerializedSize);
       }
       for (int i = 0; i < coefficient_.size(); i++) {
-        output.writeInt32NoTag(coefficient_.getInt(i));
+        output.writeInt64NoTag(coefficient_.getLong(i));
       }
       for (int i = 0; i < literal_.size(); i++) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, literal_.getRaw(i));
@@ -4227,15 +3543,15 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, comparator_);
       }
-      if (rhs_ != 0) {
+      if (rhs_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, rhs_);
+          .computeInt64Size(2, rhs_);
       }
       {
         int dataSize = 0;
         for (int i = 0; i < coefficient_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeInt32SizeNoTag(coefficient_.getInt(i));
+            .computeInt64SizeNoTag(coefficient_.getLong(i));
         }
         size += dataSize;
         if (!getCoefficientList().isEmpty()) {
@@ -4289,7 +3605,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       hash = (37 * hash) + COMPARATOR_FIELD_NUMBER;
       hash = (53 * hash) + comparator_;
       hash = (37 * hash) + RHS_FIELD_NUMBER;
-      hash = (53 * hash) + getRhs();
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getRhs());
       if (getCoefficientCount() > 0) {
         hash = (37 * hash) + COEFFICIENT_FIELD_NUMBER;
         hash = (53 * hash) + getCoefficientList().hashCode();
@@ -4430,8 +3747,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         super.clear();
         bitField0_ = 0;
         comparator_ = 0;
-        rhs_ = 0;
-        coefficient_ = emptyIntList();
+        rhs_ = 0L;
+        coefficient_ = emptyLongList();
         literal_ =
             com.google.protobuf.LazyStringArrayList.emptyList();
         return this;
@@ -4530,7 +3847,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         if (other.comparator_ != 0) {
           setComparatorValue(other.getComparatorValue());
         }
-        if (other.getRhs() != 0) {
+        if (other.getRhs() != 0L) {
           setRhs(other.getRhs());
         }
         if (!other.coefficient_.isEmpty()) {
@@ -4586,14 +3903,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
                 break;
               } // case 8
               case 16: {
-                rhs_ = input.readInt32();
+                rhs_ = input.readInt64();
                 bitField0_ |= 0x00000002;
                 break;
               } // case 16
               case 24: {
-                int v = input.readInt32();
+                long v = input.readInt64();
                 ensureCoefficientIsMutable();
-                coefficient_.addInt(v);
+                coefficient_.addLong(v);
                 break;
               } // case 24
               case 26: {
@@ -4601,7 +3918,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
                 int limit = input.pushLimit(length);
                 ensureCoefficientIsMutable();
                 while (input.getBytesUntilLimit() > 0) {
-                  coefficient_.addInt(input.readInt32());
+                  coefficient_.addLong(input.readInt64());
                 }
                 input.popLimit(limit);
                 break;
@@ -4682,21 +3999,21 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         return this;
       }
 
-      private int rhs_ ;
+      private long rhs_ ;
       /**
-       * <code>int32 rhs = 2;</code>
+       * <code>int64 rhs = 2;</code>
        * @return The rhs.
        */
       @java.lang.Override
-      public int getRhs() {
+      public long getRhs() {
         return rhs_;
       }
       /**
-       * <code>int32 rhs = 2;</code>
+       * <code>int64 rhs = 2;</code>
        * @param value The rhs to set.
        * @return This builder for chaining.
        */
-      public Builder setRhs(int value) {
+      public Builder setRhs(long value) {
 
         rhs_ = value;
         bitField0_ |= 0x00000002;
@@ -4704,17 +4021,17 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         return this;
       }
       /**
-       * <code>int32 rhs = 2;</code>
+       * <code>int64 rhs = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRhs() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        rhs_ = 0;
+        rhs_ = 0L;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList coefficient_ = emptyIntList();
+      private com.google.protobuf.Internal.LongList coefficient_ = emptyLongList();
       private void ensureCoefficientIsMutable() {
         if (!coefficient_.isModifiable()) {
           coefficient_ = makeMutableCopy(coefficient_);
@@ -4722,64 +4039,64 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         bitField0_ |= 0x00000004;
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @return A list containing the coefficient.
        */
-      public java.util.List<java.lang.Integer>
+      public java.util.List<java.lang.Long>
           getCoefficientList() {
         coefficient_.makeImmutable();
         return coefficient_;
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @return The count of coefficient.
        */
       public int getCoefficientCount() {
         return coefficient_.size();
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @param index The index of the element to return.
        * @return The coefficient at the given index.
        */
-      public int getCoefficient(int index) {
-        return coefficient_.getInt(index);
+      public long getCoefficient(int index) {
+        return coefficient_.getLong(index);
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @param index The index to set the value at.
        * @param value The coefficient to set.
        * @return This builder for chaining.
        */
       public Builder setCoefficient(
-          int index, int value) {
+          int index, long value) {
 
         ensureCoefficientIsMutable();
-        coefficient_.setInt(index, value);
+        coefficient_.setLong(index, value);
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @param value The coefficient to add.
        * @return This builder for chaining.
        */
-      public Builder addCoefficient(int value) {
+      public Builder addCoefficient(long value) {
 
         ensureCoefficientIsMutable();
-        coefficient_.addInt(value);
+        coefficient_.addLong(value);
         bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @param values The coefficient to add.
        * @return This builder for chaining.
        */
       public Builder addAllCoefficient(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
+          java.lang.Iterable<? extends java.lang.Long> values) {
         ensureCoefficientIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, coefficient_);
@@ -4788,11 +4105,11 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         return this;
       }
       /**
-       * <code>repeated int32 coefficient = 3;</code>
+       * <code>repeated int64 coefficient = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoefficient() {
-        coefficient_ = emptyIntList();
+        coefficient_ = emptyLongList();
         bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
@@ -5009,15 +4326,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_formulas_PBFormulaList_descriptor;
+    internal_static_formulas_PBFormulas_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_formulas_PBFormulaList_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_formulas_PBFormula_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_formulas_PBFormula_fieldAccessorTable;
+      internal_static_formulas_PBFormulas_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_formulas_PBFormulaMapping_descriptor;
   private static final 
@@ -5047,49 +4359,41 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016formulas.proto\022\010formulas\"H\n\rPBFormulaL" +
-      "ist\022\n\n\002id\030\001 \003(\005\022+\n\007mapping\030\002 \001(\0132\032.formu" +
-      "las.PBFormulaMapping\"D\n\tPBFormula\022\n\n\002id\030" +
-      "\001 \001(\005\022+\n\007mapping\030\002 \001(\0132\032.formulas.PBForm" +
-      "ulaMapping\"\231\001\n\020PBFormulaMapping\0228\n\007mappi" +
-      "ng\030\001 \003(\0132\'.formulas.PBFormulaMapping.Map" +
-      "pingEntry\032K\n\014MappingEntry\022\013\n\003key\030\001 \001(\005\022*" +
-      "\n\005value\030\002 \001(\0132\033.formulas.PBInternalFormu" +
-      "la:\0028\001\"\364\001\n\021PBInternalFormula\022*\n\004type\030\001 \001" +
-      "(\0162\027.formulas.PBFormulaTypeH\000\210\001\001\022\022\n\005valu" +
-      "e\030\002 \001(\010H\001\210\001\001\022\025\n\010variable\030\003 \001(\tH\002\210\001\001\022F\n\014p" +
-      "bConstraint\030\004 \001(\0132+.formulas.PBInternalP" +
-      "seudoBooleanConstraintH\003\210\001\001\022\017\n\007operand\030\005" +
-      " \003(\005B\007\n\005_typeB\010\n\006_valueB\013\n\t_variableB\017\n\r" +
-      "_pbConstraint\"\202\001\n!PBInternalPseudoBoolea" +
-      "nConstraint\022*\n\ncomparator\030\001 \001(\0162\026.formul" +
-      "as.PBComparison\022\013\n\003rhs\030\002 \001(\005\022\023\n\013coeffici" +
-      "ent\030\003 \003(\005\022\017\n\007literal\030\004 \003(\t*6\n\014PBComparis" +
-      "on\022\006\n\002EQ\020\000\022\006\n\002GT\020\001\022\006\n\002GE\020\002\022\006\n\002LT\020\003\022\006\n\002LE" +
-      "\020\004*n\n\rPBFormulaType\022\t\n\005CONST\020\000\022\013\n\007LITERA" +
-      "L\020\001\022\007\n\003NOT\020\002\022\007\n\003AND\020\003\022\006\n\002OR\020\004\022\010\n\004IMPL\020\005\022" +
-      "\t\n\005EQUIV\020\006\022\007\n\003PBC\020\007\022\r\n\tPREDICATE\020\010B3\n\037co" +
-      "m.booleworks.logicng.formulasB\020ProtoBufF" +
-      "ormulasb\006proto3"
+      "\n\016formulas.proto\022\010formulas\"E\n\nPBFormulas" +
+      "\022\n\n\002id\030\001 \003(\005\022+\n\007mapping\030\002 \001(\0132\032.formulas" +
+      ".PBFormulaMapping\"\231\001\n\020PBFormulaMapping\0228" +
+      "\n\007mapping\030\001 \003(\0132\'.formulas.PBFormulaMapp" +
+      "ing.MappingEntry\032K\n\014MappingEntry\022\013\n\003key\030" +
+      "\001 \001(\005\022*\n\005value\030\002 \001(\0132\033.formulas.PBIntern" +
+      "alFormula:\0028\001\"\364\001\n\021PBInternalFormula\022*\n\004t" +
+      "ype\030\001 \001(\0162\027.formulas.PBFormulaTypeH\000\210\001\001\022" +
+      "\022\n\005value\030\002 \001(\010H\001\210\001\001\022\025\n\010variable\030\003 \001(\tH\002\210" +
+      "\001\001\022F\n\014pbConstraint\030\004 \001(\0132+.formulas.PBIn" +
+      "ternalPseudoBooleanConstraintH\003\210\001\001\022\017\n\007op" +
+      "erand\030\005 \003(\005B\007\n\005_typeB\010\n\006_valueB\013\n\t_varia" +
+      "bleB\017\n\r_pbConstraint\"\202\001\n!PBInternalPseud" +
+      "oBooleanConstraint\022*\n\ncomparator\030\001 \001(\0162\026" +
+      ".formulas.PBComparison\022\013\n\003rhs\030\002 \001(\003\022\023\n\013c" +
+      "oefficient\030\003 \003(\003\022\017\n\007literal\030\004 \003(\t*6\n\014PBC" +
+      "omparison\022\006\n\002EQ\020\000\022\006\n\002GT\020\001\022\006\n\002GE\020\002\022\006\n\002LT\020" +
+      "\003\022\006\n\002LE\020\004*n\n\rPBFormulaType\022\t\n\005CONST\020\000\022\013\n" +
+      "\007LITERAL\020\001\022\007\n\003NOT\020\002\022\007\n\003AND\020\003\022\006\n\002OR\020\004\022\010\n\004" +
+      "IMPL\020\005\022\t\n\005EQUIV\020\006\022\007\n\003PBC\020\007\022\r\n\tPREDICATE\020" +
+      "\010B3\n\037com.booleworks.logicng.formulasB\020Pr" +
+      "otoBufFormulasb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_formulas_PBFormulaList_descriptor =
+    internal_static_formulas_PBFormulas_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_formulas_PBFormulaList_fieldAccessorTable = new
+    internal_static_formulas_PBFormulas_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_formulas_PBFormulaList_descriptor,
-        new java.lang.String[] { "Id", "Mapping", });
-    internal_static_formulas_PBFormula_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_formulas_PBFormula_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_formulas_PBFormula_descriptor,
+        internal_static_formulas_PBFormulas_descriptor,
         new java.lang.String[] { "Id", "Mapping", });
     internal_static_formulas_PBFormulaMapping_descriptor =
-      getDescriptor().getMessageTypes().get(2);
+      getDescriptor().getMessageTypes().get(1);
     internal_static_formulas_PBFormulaMapping_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_formulas_PBFormulaMapping_descriptor,
@@ -5101,13 +4405,13 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         internal_static_formulas_PBFormulaMapping_MappingEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     internal_static_formulas_PBInternalFormula_descriptor =
-      getDescriptor().getMessageTypes().get(3);
+      getDescriptor().getMessageTypes().get(2);
     internal_static_formulas_PBInternalFormula_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_formulas_PBInternalFormula_descriptor,
         new java.lang.String[] { "Type", "Value", "Variable", "PbConstraint", "Operand", });
     internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(3);
     internal_static_formulas_PBInternalPseudoBooleanConstraint_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor,

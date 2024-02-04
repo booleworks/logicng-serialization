@@ -20,19 +20,19 @@ public final class ProtoBufPropositions {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      * @return Whether the formula field is set.
      */
     boolean hasFormula();
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      * @return The formula.
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getFormula();
+    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getFormula();
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder getFormulaOrBuilder();
+    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder getFormulaOrBuilder();
 
     /**
      * <code>string description = 2;</code>
@@ -84,9 +84,9 @@ public final class ProtoBufPropositions {
 
     private int bitField0_;
     public static final int FORMULA_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula formula_;
+    private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas formula_;
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      * @return Whether the formula field is set.
      */
     @java.lang.Override
@@ -94,19 +94,19 @@ public final class ProtoBufPropositions {
       return ((bitField0_ & 0x00000001) != 0);
     }
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      * @return The formula.
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getFormula() {
-      return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance() : formula_;
+    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getFormula() {
+      return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance() : formula_;
     }
     /**
-     * <code>.formulas.PBFormula formula = 1;</code>
+     * <code>.formulas.PBFormulas formula = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder getFormulaOrBuilder() {
-      return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance() : formula_;
+    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder getFormulaOrBuilder() {
+      return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance() : formula_;
     }
 
     public static final int DESCRIPTION_FIELD_NUMBER = 2;
@@ -519,31 +519,31 @@ public final class ProtoBufPropositions {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula formula_;
+      private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas formula_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder> formulaBuilder_;
+          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder> formulaBuilder_;
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        * @return Whether the formula field is set.
        */
       public boolean hasFormula() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        * @return The formula.
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula getFormula() {
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getFormula() {
         if (formulaBuilder_ == null) {
-          return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance() : formula_;
+          return formula_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance() : formula_;
         } else {
           return formulaBuilder_.getMessage();
         }
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
-      public Builder setFormula(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula value) {
+      public Builder setFormula(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas value) {
         if (formulaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -557,10 +557,10 @@ public final class ProtoBufPropositions {
         return this;
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
       public Builder setFormula(
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder builderForValue) {
+          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder builderForValue) {
         if (formulaBuilder_ == null) {
           formula_ = builderForValue.build();
         } else {
@@ -571,13 +571,13 @@ public final class ProtoBufPropositions {
         return this;
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
-      public Builder mergeFormula(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula value) {
+      public Builder mergeFormula(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas value) {
         if (formulaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             formula_ != null &&
-            formula_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance()) {
+            formula_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance()) {
             getFormulaBuilder().mergeFrom(value);
           } else {
             formula_ = value;
@@ -592,7 +592,7 @@ public final class ProtoBufPropositions {
         return this;
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
       public Builder clearFormula() {
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -605,33 +605,33 @@ public final class ProtoBufPropositions {
         return this;
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder getFormulaBuilder() {
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder getFormulaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getFormulaFieldBuilder().getBuilder();
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder getFormulaOrBuilder() {
+      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder getFormulaOrBuilder() {
         if (formulaBuilder_ != null) {
           return formulaBuilder_.getMessageOrBuilder();
         } else {
           return formula_ == null ?
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.getDefaultInstance() : formula_;
+              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance() : formula_;
         }
       }
       /**
-       * <code>.formulas.PBFormula formula = 1;</code>
+       * <code>.formulas.PBFormulas formula = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder> 
+          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder> 
           getFormulaFieldBuilder() {
         if (formulaBuilder_ == null) {
           formulaBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormula.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaOrBuilder>(
+              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder>(
                   getFormula(),
                   getParentForChildren(),
                   isClean());
@@ -790,11 +790,11 @@ public final class ProtoBufPropositions {
   static {
     java.lang.String[] descriptorData = {
       "\n\022propositions.proto\022\014propositions\032\016form" +
-      "ulas.proto\"R\n\025PBStandardProposition\022$\n\007f" +
-      "ormula\030\001 \001(\0132\023.formulas.PBFormula\022\023\n\013des" +
-      "cription\030\002 \001(\tB;\n#com.booleworks.logicng" +
-      ".propositionsB\024ProtoBufPropositionsb\006pro" +
-      "to3"
+      "ulas.proto\"S\n\025PBStandardProposition\022%\n\007f" +
+      "ormula\030\001 \001(\0132\024.formulas.PBFormulas\022\023\n\013de" +
+      "scription\030\002 \001(\tB;\n#com.booleworks.logicn" +
+      "g.propositionsB\024ProtoBufPropositionsb\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
