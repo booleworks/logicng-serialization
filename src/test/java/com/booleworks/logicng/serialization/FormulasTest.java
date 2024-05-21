@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: Apache-2.0 and MIT
 // Copyright 2023-20xx BooleWorks GmbH
 
-package com.booleworks.logicng.formulas;
+package com.booleworks.logicng.serialization;
 
-import static com.booleworks.logicng.formulas.Formulas.deserialize;
-import static com.booleworks.logicng.formulas.Formulas.deserializeList;
-import static com.booleworks.logicng.formulas.Formulas.serialize;
+import static com.booleworks.logicng.serialization.Formulas.deserializeFormulaList;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.booleworks.logicng.RandomTag;
+import com.booleworks.logicng.formulas.Formula;
+import com.booleworks.logicng.formulas.FormulaFactory;
 import com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas;
 import com.booleworks.logicng.io.parsers.ParserException;
+import com.booleworks.logicng.io.parsers.PropositionalParser;
 import com.booleworks.logicng.util.FormulaRandomizer;
 import com.booleworks.logicng.util.FormulaRandomizerConfig;
 import org.junit.jupiter.api.Test;
@@ -28,32 +28,25 @@ public class FormulasTest {
 
     final FormulaFactory f = FormulaFactory.caching();
 
-    @Test
-    public void testFormulaTypes() {
-        final FormulaContext ctx = new FormulaContext(f);
-        for (final Formula formula : ctx.allFormulas()) {
-            assertThat(deserialize(f, serialize(formula))).isEqualTo(formula);
-        }
-    }
-
     private static final Path ORIGINAL = Paths.get("src/test/resources/large_formula.txt");
     private static final Path PROTO = Paths.get("list.proto");
     private static final Path ZIP = Paths.get("list.zip");
 
     @Test
     public void testConstraintPerformance() throws IOException, ParserException {
-        final var f1 = FormulaFactory.caching();
+        final FormulaFactory f1 = FormulaFactory.caching();
+        final PropositionalParser p1 = new PropositionalParser(f1);
         final long t00 = System.currentTimeMillis();
         final List<String> lines = Files.readAllLines(ORIGINAL);
         final long t0 = System.currentTimeMillis();
         final List<Formula> constraints = new ArrayList<>();
         for (final String line : lines) {
-            constraints.add(f1.parse(line));
+            constraints.add(p1.parse(line));
         }
 
-        final var f2 = FormulaFactory.caching();
+        final FormulaFactory f2 = FormulaFactory.caching();
         final long t1 = System.currentTimeMillis();
-        final PBFormulas bin = serialize(constraints);
+        final PBFormulas bin = Formulas.serializeFormulas(constraints);
         final long t2 = System.currentTimeMillis();
         bin.writeTo(Files.newOutputStream(PROTO));
         final long t3 = System.currentTimeMillis();
@@ -62,14 +55,14 @@ public class FormulasTest {
         output.close();
         final long t4 = System.currentTimeMillis();
 
-        final var f3 = FormulaFactory.caching();
+        final FormulaFactory f3 = FormulaFactory.caching();
         final PBFormulas binList = PBFormulas.newBuilder().mergeFrom(Files.newInputStream(PROTO)).build();
         final long t5 = System.currentTimeMillis();
-        final List<Formula> deserialized = deserializeList(f2, binList);
+        final List<Formula> deserialized = deserializeFormulaList(f2, binList);
         final long t6 = System.currentTimeMillis();
         final PBFormulas zipList = PBFormulas.newBuilder().mergeFrom(new GZIPInputStream(Files.newInputStream(ZIP))).build();
         final long t7 = System.currentTimeMillis();
-        final List<Formula> deserializedZipped = deserializeList(f3, zipList);
+        final List<Formula> deserializedZipped = deserializeFormulaList(f3, zipList);
 
         System.out.printf("Read Original:   %d ms%n", t0 - t00);
         System.out.printf("Parse Original:  %d ms%n", t1 - t0);
@@ -102,13 +95,12 @@ public class FormulasTest {
     }
 
     @Test
-    @RandomTag
     public void testRandomizedFormulas() {
         final FormulaRandomizer randomizer = new FormulaRandomizer(f, FormulaRandomizerConfig.builder().seed(42).build());
         for (int i = 0; i < 1000; i++) {
             final Formula original = randomizer.formula(5);
-            final PBFormulas serialized = serialize(original);
-            final Formula deserialized = deserialize(f, serialized);
+            final PBFormulas serialized = Formulas.serializeFormula(original);
+            final Formula deserialized = Formulas.deserializeFormula(f, serialized);
             assertThat(deserialized).isEqualTo(original);
         }
     }

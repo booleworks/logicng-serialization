@@ -1,7 +1,6 @@
-package com.booleworks.logicng.knowledgecompilation.dnnf;
+package com.booleworks.logicng.serialization;
 
 import com.booleworks.logicng.formulas.FormulaFactory;
-import com.booleworks.logicng.formulas.Formulas;
 import com.booleworks.logicng.formulas.Variable;
 import com.booleworks.logicng.knowledgecompilation.dnnf.ProtoBufDnnf.PBDnnf;
 import com.booleworks.logicng.knowledgecompilation.dnnf.datastructures.Dnnf;
@@ -22,9 +21,9 @@ public interface Dnnfs {
      * @param dnnf the DNNF
      * @return the protocol buffer
      */
-    static PBDnnf serialize(final Dnnf dnnf) {
+    static PBDnnf serializeDnnf(final Dnnf dnnf) {
         final PBDnnf.Builder builder = PBDnnf.newBuilder();
-        builder.setFormula(Formulas.serialize(dnnf.formula()));
+        builder.setFormula(Formulas.serializeFormula(dnnf.formula()));
         builder.addAllOriginalVariables(dnnf.getOriginalVariables().stream().map(Variable::name).collect(Collectors.toList()));
         return builder.build();
     }
@@ -35,10 +34,10 @@ public interface Dnnfs {
      * @param bin the protocol buffer
      * @return the DNNF
      */
-    static Dnnf deserialize(final FormulaFactory f, final PBDnnf bin) {
+    static Dnnf deserializeDnnf(final FormulaFactory f, final PBDnnf bin) {
         final SortedSet<Variable> vars = bin.getOriginalVariablesList().stream()
                 .map(f::variable)
                 .collect(Collectors.toCollection(TreeSet::new));
-        return new Dnnf(vars, Formulas.deserialize(f, bin.getFormula()));
+        return new Dnnf(vars, Formulas.deserializeFormula(f, bin.getFormula()));
     }
 }

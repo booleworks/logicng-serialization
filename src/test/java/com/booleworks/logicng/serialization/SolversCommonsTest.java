@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: Apache-2.0 and MIT
 // Copyright 2023-20xx BooleWorks GmbH
 
-package com.booleworks.logicng.solvers.sat;
+package com.booleworks.logicng.serialization;
 
-import static com.booleworks.logicng.solvers.sat.SolverSerializer.deserializeStack;
-import static com.booleworks.logicng.solvers.sat.SolverSerializer.serializeStack;
+import static com.booleworks.logicng.serialization.SolverSerializer.deserializeStack;
+import static com.booleworks.logicng.serialization.SolverSerializer.serializeStack;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Test;
 import com.booleworks.logicng.collections.ProtoBufCollections;
+import org.junit.jupiter.api.Test;
 
 import java.util.Random;
 import java.util.Stack;

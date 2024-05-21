@@ -10,12 +10,11 @@ enum PBTristate {
   UNDEF = 2;
 }
 
-message PBMsClause {
+message PBClause {
   collections.PBIntVector data = 1;
-  bool learnt = 2;
+  int32 learntOnState = 2;
   bool isAtMost = 3;
   double activity = 4;
-  int32 szWithoutSelectors = 5;
   bool seen = 6;
   int64 lbd = 7;
   bool canBeDel = 8;
@@ -24,24 +23,24 @@ message PBMsClause {
   int32 id = 11;
 }
 
-message PBMsClauseVector {
-  repeated PBMsClause element = 1;
+message PBClauseVector {
+  repeated PBClause element = 1;
 }
 
-message PBMsWatcher {
+message PBWatcher {
   int32 clause = 1;
   int32 blocker = 2;
 }
 
-message PBMsWatcherVector {
-  repeated PBMsWatcher element = 1;
+message PBWatcherVector {
+  repeated PBWatcher element = 1;
 }
 
-message PBMsWatcherVectorVector {
-  repeated PBMsWatcherVector element = 1;
+message PBWatcherVectorVector {
+  repeated PBWatcherVector element = 1;
 }
 
-message PBMsVariable {
+message PBVariable {
   PBTristate assignment = 1;
   int32 level = 2;
   int32 reason = 3;
@@ -50,16 +49,16 @@ message PBMsVariable {
   bool decision = 6;
 }
 
-message PBMsVariableVector {
-  repeated PBMsVariable element = 1;
+message PBVariableVector {
+  repeated PBVariable element = 1;
 }
 
-message PBLngHeap {
+message PBHeap {
   collections.PBIntVector heap = 1;
   collections.PBIntVector indices = 2;
 }
 
-message PBLngBoundedIntQueue {
+message PBBoundedIntQueue {
   collections.PBIntVector elems = 1;
   int32 first = 2;
   int32 last = 3;
@@ -68,7 +67,7 @@ message PBLngBoundedIntQueue {
   int32 queueSize = 6;
 }
 
-message PBLngBoundedLongQueue {
+message PBBoundedLongQueue {
   collections.PBLongVector elems = 1;
   int32 first = 2;
   int32 last = 3;

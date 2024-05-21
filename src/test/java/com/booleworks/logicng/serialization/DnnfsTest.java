@@ -1,9 +1,10 @@
-package com.booleworks.logicng.knowledgecompilation.dnnf;
+package com.booleworks.logicng.serialization;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.booleworks.logicng.formulas.Formula;
 import com.booleworks.logicng.formulas.FormulaFactory;
+import com.booleworks.logicng.knowledgecompilation.dnnf.DnnfFactory;
 import com.booleworks.logicng.knowledgecompilation.dnnf.datastructures.Dnnf;
 import com.booleworks.logicng.util.FormulaRandomizer;
 import com.booleworks.logicng.util.FormulaRandomizerConfig;
@@ -18,7 +19,7 @@ public class DnnfsTest {
         for (int i = 0; i < 100; i++) {
             final Formula formula = randomizer.formula(4);
             final Dnnf dnnf = new DnnfFactory().compile(f, formula);
-            final Dnnf deserialized = Dnnfs.deserialize(f, Dnnfs.serialize(dnnf));
+            final Dnnf deserialized = Dnnfs.deserializeDnnf(f, Dnnfs.serializeDnnf(dnnf));
             assertThat(deserialized).isEqualTo(dnnf);
         }
     }

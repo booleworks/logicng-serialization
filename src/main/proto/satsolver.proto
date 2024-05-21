@@ -6,42 +6,54 @@ import "solver_commons.proto";
 option java_package = "com.booleworks.logicng.solvers";
 option java_outer_classname = "ProtoBufSatSolver";
 
-enum PBSolverStyle {
-  MINISAT = 0;
-  GLUCOSE = 1;
-  MINICARD = 2;
-}
+message PBSatSolver {
+  PBSatSolverConfig config = 1;
+  bool inSatCall = 2;
 
-message PBWrapperState {
-  PBTristate result = 1;
-  collections.PBIntVector validStates = 2;
-  int32 nextStateId = 3;
-  bool lastComputationWithAssumptions = 4;
-  PBSolverStyle solverStyle = 5;
-}
+  map<string, int32> name2idx = 3;
+  collections.PBIntVector validStates = 4;
+  int32 nextStateId = 5;
 
-message PBMiniSat2 {
-  PBMiniSatStyleSolver common = 1;
-  collections.PBIntVector unitClauses = 2;
-  PBWrapperState wrapper = 3;
-}
-
-message PBGlucose {
-  PBMiniSatStyleSolver common = 1;
-  PBGlucoseConfig glucoseConfig = 2;
-  PBMsWatcherVectorVector watchesBin = 3;
-  collections.PBIntVector permDiff = 4;
-  collections.PBIntVector lastDecisionLevel = 5;
-  PBLngBoundedLongQueue lbdQueue = 6;
-  PBLngBoundedIntQueue trailQueue = 7;
-  collections.PBBooleanVector assump = 8;
-  int32 myflag = 9;
-  int64 analyzeLBD = 10;
-  int32 analyzeSzWithoutSelectors = 11;
-  int32 nbclausesbeforereduce = 12;
-  int32 conflicts = 13;
-  int32 conflictsRestarts = 14;
-  double sumLBD = 15;
-  int32 curRestart = 16;
-  PBWrapperState wrapper = 17;
+  bool ok = 6;
+  int32 qhead = 7;
+  collections.PBIntVector unitClauses = 8;
+  PBClauseVector clauses = 9;
+  PBClauseVector learnts = 10;
+  PBWatcherVectorVector watches = 11;
+  PBVariableVector vars = 12;
+  PBHeap orderHeap = 13;
+  collections.PBIntVector trail = 14;
+  collections.PBIntVector trailLim = 15;
+  collections.PBBooleanVector model = 16;
+  collections.PBIntVector assumptionConflict = 17;
+  collections.PBIntVector assumptions = 18;
+  repeated bytes assumptionPropositions = 19;
+  collections.PBBooleanVector seen = 20;
+  int32 analyzeBtLevel = 21;
+  double claInc = 22;
+  double varInc = 23;
+  double varDecay = 24;
+  int32 clausesLiterals = 25;
+  int32 learntsLiterals = 26;
+  bool canceledByHandler = 27;
+  repeated solver.PBProofInformation pgOriginalClauses = 28;
+  collections.PBIntVectorVector pgProof = 29;
+  bool computingBackbone = 30;
+  collections.PBIntVector backboneCandidates = 31;
+  collections.PBIntVector backboneAssumptions = 32;
+  map<int32, PBTristate> backboneMap = 33;
+  collections.PBIntVector selectionOrder = 34;
+  int32 selectionOrderIdx = 35;
+  PBWatcherVectorVector watchesBin = 36;
+  collections.PBIntVector permDiff = 37;
+  collections.PBIntVector lastDecisionLevel = 38;
+  PBBoundedLongQueue lbdQueue = 39;
+  PBBoundedIntQueue trailQueue = 40;
+  int32 myflag = 41;
+  int64 analyzeLBD = 42;
+  int32 nbClausesBeforeReduce = 43;
+  int32 conflicts = 44;
+  int32 conflictsRestarts = 45;
+  double sumLBD = 46;
+  int32 curRestart = 47;
 }

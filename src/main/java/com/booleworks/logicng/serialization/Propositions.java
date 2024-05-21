@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: Apache-2.0 and MIT
 // Copyright 2023-20xx BooleWorks GmbH
 
-package com.booleworks.logicng.propositions;
+package com.booleworks.logicng.serialization;
 
 import com.booleworks.logicng.formulas.FormulaFactory;
-import com.booleworks.logicng.formulas.Formulas;
 import com.booleworks.logicng.propositions.ProtoBufPropositions.PBStandardProposition;
+import com.booleworks.logicng.propositions.StandardProposition;
 
 /**
  * Serialization methods for LogicNG propositions.
@@ -22,9 +22,9 @@ public interface Propositions {
      * @param prop the proposition
      * @return the protocol buffer
      */
-    static PBStandardProposition serialize(final StandardProposition prop) {
+    static PBStandardProposition serializePropositions(final StandardProposition prop) {
         final PBStandardProposition.Builder builder = PBStandardProposition.newBuilder();
-        builder.setFormula(Formulas.serialize(prop.formula()));
+        builder.setFormula(Formulas.serializeFormula(prop.formula()));
         return builder.setDescription(prop.description()).build();
     }
 
@@ -34,7 +34,7 @@ public interface Propositions {
      * @param bin the protocol buffer
      * @return the proposition
      */
-    static StandardProposition deserialize(final FormulaFactory f, final PBStandardProposition bin) {
-        return new StandardProposition(bin.getDescription(), Formulas.deserialize(f, bin.getFormula()));
+    static StandardProposition deserializePropositions(final FormulaFactory f, final PBStandardProposition bin) {
+        return new StandardProposition(bin.getDescription(), Formulas.deserializeFormula(f, bin.getFormula()));
     }
 }
