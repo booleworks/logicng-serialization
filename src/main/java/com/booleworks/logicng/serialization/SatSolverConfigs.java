@@ -3,9 +3,9 @@
 
 package com.booleworks.logicng.serialization;
 
-import com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization;
-import com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod;
-import com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig;
+import com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization;
+import com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod;
+import com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig;
 import com.booleworks.logicng.solvers.sat.SATSolverConfig;
 import com.booleworks.logicng.solvers.sat.SATSolverConfig.CNFMethod;
 import com.booleworks.logicng.solvers.sat.SATSolverConfig.ClauseMinimization;

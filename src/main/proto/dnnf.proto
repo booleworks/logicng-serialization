@@ -1,7 +1,7 @@
 syntax = "proto3";
 package dnnf;
 import "formulas.proto";
-option java_package = "com.booleworks.logicng.knowledgecompilation.dnnf";
+option java_package = "com.booleworks.logicng.serialization.knowledgecompilation.dnnf";
 option java_outer_classname = "ProtoBufDnnf";
 
 message PBDnnf {

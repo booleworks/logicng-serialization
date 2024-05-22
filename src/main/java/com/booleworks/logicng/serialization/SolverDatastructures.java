@@ -5,19 +5,19 @@ package com.booleworks.logicng.serialization;
 
 import com.booleworks.logicng.collections.LNGIntVector;
 import com.booleworks.logicng.datastructures.Tristate;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable;
+import com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher;
 import com.booleworks.logicng.solvers.datastructures.LNGBoundedIntQueue;
 import com.booleworks.logicng.solvers.datastructures.LNGBoundedLongQueue;
 import com.booleworks.logicng.solvers.datastructures.LNGClause;
 import com.booleworks.logicng.solvers.datastructures.LNGHeap;
 import com.booleworks.logicng.solvers.datastructures.LNGVariable;
 import com.booleworks.logicng.solvers.datastructures.LNGWatcher;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable;
-import com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher;
 import com.booleworks.logicng.solvers.sat.LNGCoreSolver;
 
 import java.util.IdentityHashMap;

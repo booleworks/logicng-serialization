@@ -2,7 +2,7 @@
 // source: solver_commons.proto
 // Protobuf Java Version: 4.26.1
 
-package com.booleworks.logicng.solvers.sat;
+package com.booleworks.logicng.serialization.solvers.sat;
 
 public final class ProtoBufSolverCommons {
   private ProtoBufSolverCommons() {}
@@ -124,7 +124,7 @@ public final class ProtoBufSolverCommons {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.getDescriptor().getEnumTypes().get(0);
+      return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final PBClauseMinimization[] VALUES = values();
@@ -250,7 +250,7 @@ public final class ProtoBufSolverCommons {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.getDescriptor().getEnumTypes().get(1);
+      return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final PBCnfMethod[] VALUES = values();
@@ -301,7 +301,7 @@ public final class ProtoBufSolverCommons {
      * <code>.solver.PBCnfMethod cnfMethod = 3;</code>
      * @return The cnfMethod.
      */
-    com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod();
+    com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod();
 
     /**
      * <code>.solver.PBClauseMinimization clauseMinimization = 4;</code>
@@ -312,7 +312,7 @@ public final class ProtoBufSolverCommons {
      * <code>.solver.PBClauseMinimization clauseMinimization = 4;</code>
      * @return The clauseMinimization.
      */
-    com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization();
+    com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization();
 
     /**
      * <code>bool initialPhase = 5;</code>
@@ -456,15 +456,15 @@ public final class ProtoBufSolverCommons {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
+      return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.class, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder.class);
+              com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.class, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder.class);
     }
 
     public static final int PROOFGENERATION_FIELD_NUMBER = 1;
@@ -502,9 +502,9 @@ public final class ProtoBufSolverCommons {
      * <code>.solver.PBCnfMethod cnfMethod = 3;</code>
      * @return The cnfMethod.
      */
-    @java.lang.Override public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod() {
-      com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod result = com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.forNumber(cnfMethod_);
-      return result == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.UNRECOGNIZED : result;
+    @java.lang.Override public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod() {
+      com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod result = com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.forNumber(cnfMethod_);
+      return result == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.UNRECOGNIZED : result;
     }
 
     public static final int CLAUSEMINIMIZATION_FIELD_NUMBER = 4;
@@ -520,9 +520,9 @@ public final class ProtoBufSolverCommons {
      * <code>.solver.PBClauseMinimization clauseMinimization = 4;</code>
      * @return The clauseMinimization.
      */
-    @java.lang.Override public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization() {
-      com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization result = com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.forNumber(clauseMinimization_);
-      return result == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.UNRECOGNIZED : result;
+    @java.lang.Override public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization() {
+      com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization result = com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.forNumber(clauseMinimization_);
+      return result == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.UNRECOGNIZED : result;
     }
 
     public static final int INITIALPHASE_FIELD_NUMBER = 5;
@@ -754,10 +754,10 @@ public final class ProtoBufSolverCommons {
       if (useAtMostClauses_ != false) {
         output.writeBool(2, useAtMostClauses_);
       }
-      if (cnfMethod_ != com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.FACTORY_CNF.getNumber()) {
+      if (cnfMethod_ != com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.FACTORY_CNF.getNumber()) {
         output.writeEnum(3, cnfMethod_);
       }
-      if (clauseMinimization_ != com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.NONE.getNumber()) {
+      if (clauseMinimization_ != com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.NONE.getNumber()) {
         output.writeEnum(4, clauseMinimization_);
       }
       if (initialPhase_ != false) {
@@ -834,11 +834,11 @@ public final class ProtoBufSolverCommons {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, useAtMostClauses_);
       }
-      if (cnfMethod_ != com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.FACTORY_CNF.getNumber()) {
+      if (cnfMethod_ != com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.FACTORY_CNF.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(3, cnfMethod_);
       }
-      if (clauseMinimization_ != com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.NONE.getNumber()) {
+      if (clauseMinimization_ != com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(4, clauseMinimization_);
       }
@@ -928,10 +928,10 @@ public final class ProtoBufSolverCommons {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig other = (com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig) obj;
+      com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig other = (com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig) obj;
 
       if (getProofGeneration()
           != other.getProofGeneration()) return false;
@@ -1057,44 +1057,44 @@ public final class ProtoBufSolverCommons {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1102,26 +1102,26 @@ public final class ProtoBufSolverCommons {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1134,7 +1134,7 @@ public final class ProtoBufSolverCommons {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1155,21 +1155,21 @@ public final class ProtoBufSolverCommons {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBSatSolverConfig)
-        com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder {
+        com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
+        return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.class, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder.class);
+                com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.class, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.newBuilder()
       private Builder() {
 
       }
@@ -1212,17 +1212,17 @@ public final class ProtoBufSolverCommons {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
+        return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.internal_static_solver_PBSatSolverConfig_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig build() {
-        com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig build() {
+        com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1230,14 +1230,14 @@ public final class ProtoBufSolverCommons {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig buildPartial() {
-        com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result = new com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig(this);
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig buildPartial() {
+        com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result = new com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.proofGeneration_ = proofGeneration_;
@@ -1312,16 +1312,16 @@ public final class ProtoBufSolverCommons {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig) {
-          return mergeFrom((com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig other) {
-        if (other == com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig other) {
+        if (other == com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance()) return this;
         if (other.getProofGeneration() != false) {
           setProofGeneration(other.getProofGeneration());
         }
@@ -1637,16 +1637,16 @@ public final class ProtoBufSolverCommons {
        * @return The cnfMethod.
        */
       @java.lang.Override
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod() {
-        com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod result = com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.forNumber(cnfMethod_);
-        return result == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.UNRECOGNIZED : result;
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod getCnfMethod() {
+        com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod result = com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.forNumber(cnfMethod_);
+        return result == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod.UNRECOGNIZED : result;
       }
       /**
        * <code>.solver.PBCnfMethod cnfMethod = 3;</code>
        * @param value The cnfMethod to set.
        * @return This builder for chaining.
        */
-      public Builder setCnfMethod(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBCnfMethod value) {
+      public Builder setCnfMethod(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBCnfMethod value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -1690,16 +1690,16 @@ public final class ProtoBufSolverCommons {
        * @return The clauseMinimization.
        */
       @java.lang.Override
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization() {
-        com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization result = com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.forNumber(clauseMinimization_);
-        return result == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.UNRECOGNIZED : result;
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization getClauseMinimization() {
+        com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization result = com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.forNumber(clauseMinimization_);
+        return result == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization.UNRECOGNIZED : result;
       }
       /**
        * <code>.solver.PBClauseMinimization clauseMinimization = 4;</code>
        * @param value The clauseMinimization to set.
        * @return This builder for chaining.
        */
-      public Builder setClauseMinimization(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization value) {
+      public Builder setClauseMinimization(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBClauseMinimization value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2331,12 +2331,12 @@ public final class ProtoBufSolverCommons {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBSatSolverConfig)
-    private static final com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig();
     }
 
-    public static com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2372,7 +2372,7 @@ public final class ProtoBufSolverCommons {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2411,8 +2411,9 @@ public final class ProtoBufSolverCommons {
       "useMinimization\022\010\n\004NONE\020\000\022\t\n\005BASIC\020\001\022\010\n\004" +
       "DEEP\020\002*G\n\013PBCnfMethod\022\017\n\013FACTORY_CNF\020\000\022\020" +
       "\n\014PG_ON_SOLVER\020\001\022\025\n\021FULL_PG_ON_SOLVER\020\002B" +
-      ";\n\"com.booleworks.logicng.solvers.satB\025P" +
-      "rotoBufSolverCommonsb\006proto3"
+      "I\n0com.booleworks.logicng.serialization." +
+      "solvers.satB\025ProtoBufSolverCommonsb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

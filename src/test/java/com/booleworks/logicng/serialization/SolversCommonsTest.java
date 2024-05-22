@@ -7,7 +7,7 @@ import static com.booleworks.logicng.serialization.SolverSerializer.deserializeS
 import static com.booleworks.logicng.serialization.SolverSerializer.serializeStack;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.booleworks.logicng.collections.ProtoBufCollections;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;

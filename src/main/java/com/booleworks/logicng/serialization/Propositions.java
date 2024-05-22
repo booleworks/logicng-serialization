@@ -4,8 +4,8 @@
 package com.booleworks.logicng.serialization;
 
 import com.booleworks.logicng.formulas.FormulaFactory;
-import com.booleworks.logicng.propositions.ProtoBufPropositions.PBStandardProposition;
 import com.booleworks.logicng.propositions.StandardProposition;
+import com.booleworks.logicng.serialization.propositions.ProtoBufPropositions.PBStandardProposition;
 
 /**
  * Serialization methods for LogicNG propositions.

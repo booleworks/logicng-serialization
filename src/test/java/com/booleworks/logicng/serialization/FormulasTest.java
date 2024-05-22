@@ -8,9 +8,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import com.booleworks.logicng.formulas.Formula;
 import com.booleworks.logicng.formulas.FormulaFactory;
-import com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas;
 import com.booleworks.logicng.io.parsers.ParserException;
 import com.booleworks.logicng.io.parsers.PropositionalParser;
+import com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas;
 import com.booleworks.logicng.util.FormulaRandomizer;
 import com.booleworks.logicng.util.FormulaRandomizerConfig;
 import org.junit.jupiter.api.Test;

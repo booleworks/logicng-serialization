@@ -2,7 +2,7 @@
 // source: formulas.proto
 // Protobuf Java Version: 4.26.1
 
-package com.booleworks.logicng.formulas;
+package com.booleworks.logicng.serialization.formulas;
 
 public final class ProtoBufFormulas {
   private ProtoBufFormulas() {}
@@ -142,7 +142,7 @@ public final class ProtoBufFormulas {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.getDescriptor().getEnumTypes().get(0);
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final PBComparison[] VALUES = values();
@@ -322,7 +322,7 @@ public final class ProtoBufFormulas {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.getDescriptor().getEnumTypes().get(1);
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.getDescriptor().getEnumTypes().get(1);
     }
 
     private static final PBFormulaType[] VALUES = values();
@@ -378,11 +378,11 @@ public final class ProtoBufFormulas {
      * <code>.formulas.PBFormulaMapping mapping = 2;</code>
      * @return The mapping.
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getMapping();
     /**
      * <code>.formulas.PBFormulaMapping mapping = 2;</code>
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder();
   }
   /**
    * Protobuf type {@code formulas.PBFormulas}
@@ -411,15 +411,15 @@ public final class ProtoBufFormulas {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
     }
 
     private int bitField0_;
@@ -454,7 +454,7 @@ public final class ProtoBufFormulas {
     private int idMemoizedSerializedSize = -1;
 
     public static final int MAPPING_FIELD_NUMBER = 2;
-    private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
+    private com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
     /**
      * <code>.formulas.PBFormulaMapping mapping = 2;</code>
      * @return Whether the mapping field is set.
@@ -468,15 +468,15 @@ public final class ProtoBufFormulas {
      * @return The mapping.
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
-      return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
+      return mapping_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
     }
     /**
      * <code>.formulas.PBFormulaMapping mapping = 2;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
-      return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
+      return mapping_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -541,10 +541,10 @@ public final class ProtoBufFormulas {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas) obj;
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas other = (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas) obj;
 
       if (!getIdList()
           .equals(other.getIdList())) return false;
@@ -577,44 +577,44 @@ public final class ProtoBufFormulas {
       return hash;
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -622,26 +622,26 @@ public final class ProtoBufFormulas {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -654,7 +654,7 @@ public final class ProtoBufFormulas {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -675,21 +675,21 @@ public final class ProtoBufFormulas {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:formulas.PBFormulas)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulasOrBuilder {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulasOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
+                com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -721,17 +721,17 @@ public final class ProtoBufFormulas {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulas_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result = buildPartial();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas build() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -739,14 +739,14 @@ public final class ProtoBufFormulas {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas(this);
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas buildPartial() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas result = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           id_.makeImmutable();
@@ -764,16 +764,16 @@ public final class ProtoBufFormulas {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas)other);
+        if (other instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas) {
+          return mergeFrom((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas other) {
+        if (other == com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas.getDefaultInstance()) return this;
         if (!other.id_.isEmpty()) {
           if (id_.isEmpty()) {
             id_ = other.id_;
@@ -938,9 +938,9 @@ public final class ProtoBufFormulas {
         return this;
       }
 
-      private com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
+      private com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping mapping_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> mappingBuilder_;
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> mappingBuilder_;
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        * @return Whether the mapping field is set.
@@ -952,9 +952,9 @@ public final class ProtoBufFormulas {
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        * @return The mapping.
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getMapping() {
         if (mappingBuilder_ == null) {
-          return mapping_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
+          return mapping_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
         } else {
           return mappingBuilder_.getMessage();
         }
@@ -962,7 +962,7 @@ public final class ProtoBufFormulas {
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
-      public Builder setMapping(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping value) {
+      public Builder setMapping(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping value) {
         if (mappingBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -979,7 +979,7 @@ public final class ProtoBufFormulas {
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
       public Builder setMapping(
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder builderForValue) {
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder builderForValue) {
         if (mappingBuilder_ == null) {
           mapping_ = builderForValue.build();
         } else {
@@ -992,11 +992,11 @@ public final class ProtoBufFormulas {
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
-      public Builder mergeMapping(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping value) {
+      public Builder mergeMapping(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping value) {
         if (mappingBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             mapping_ != null &&
-            mapping_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance()) {
+            mapping_ != com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance()) {
             getMappingBuilder().mergeFrom(value);
           } else {
             mapping_ = value;
@@ -1026,7 +1026,7 @@ public final class ProtoBufFormulas {
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder getMappingBuilder() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder getMappingBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getMappingFieldBuilder().getBuilder();
@@ -1034,23 +1034,23 @@ public final class ProtoBufFormulas {
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder getMappingOrBuilder() {
         if (mappingBuilder_ != null) {
           return mappingBuilder_.getMessageOrBuilder();
         } else {
           return mapping_ == null ?
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance() : mapping_;
         }
       }
       /**
        * <code>.formulas.PBFormulaMapping mapping = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> 
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder> 
           getMappingFieldBuilder() {
         if (mappingBuilder_ == null) {
           mappingBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder>(
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder>(
                   getMapping(),
                   getParentForChildren(),
                   isClean());
@@ -1063,12 +1063,12 @@ public final class ProtoBufFormulas {
     }
 
     // @@protoc_insertion_point(class_scope:formulas.PBFormulas)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas();
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1104,7 +1104,7 @@ public final class ProtoBufFormulas {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulas getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1127,25 +1127,25 @@ public final class ProtoBufFormulas {
      * Use {@link #getMappingMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+    java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
     getMapping();
     /**
      * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
      */
-    java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+    java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
     getMappingMap();
     /**
      * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
      */
     /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
         int key,
         /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue);
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula defaultValue);
     /**
      * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
         int key);
   }
   /**
@@ -1174,7 +1174,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -1192,27 +1192,27 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_fieldAccessorTable
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder.class);
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder.class);
     }
 
     public static final int MAPPING_FIELD_NUMBER = 1;
     private static final class MappingDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
-          java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> defaultEntry =
+          java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> defaultEntry =
               com.google.protobuf.MapEntry
-              .<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>newDefaultInstance(
-                  com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_MappingEntry_descriptor, 
+              .<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>newDefaultInstance(
+                  com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_MappingEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.INT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                  com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance());
+                  com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance());
     }
     @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
-        java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> mapping_;
-    private com.google.protobuf.MapField<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+        java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> mapping_;
+    private com.google.protobuf.MapField<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
     internalGetMapping() {
       if (mapping_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
@@ -1237,14 +1237,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> getMapping() {
+    public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> getMapping() {
       return getMappingMap();
     }
     /**
      * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
      */
     @java.lang.Override
-    public java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> getMappingMap() {
+    public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> getMappingMap() {
       return internalGetMapping().getMap();
     }
     /**
@@ -1252,12 +1252,12 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      */
     @java.lang.Override
     public /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
         int key,
         /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue) {
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula defaultValue) {
 
-      java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> map =
+      java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> map =
           internalGetMapping().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
@@ -1265,10 +1265,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
         int key) {
 
-      java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> map =
+      java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> map =
           internalGetMapping().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
@@ -1305,9 +1305,9 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (size != -1) return size;
 
       size = 0;
-      for (java.util.Map.Entry<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> entry
+      for (java.util.Map.Entry<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> entry
            : internalGetMapping().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+        com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
         mapping__ = MappingDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
@@ -1325,10 +1325,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping) obj;
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping other = (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping) obj;
 
       if (!internalGetMapping().equals(
           other.internalGetMapping())) return false;
@@ -1352,44 +1352,44 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       return hash;
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1397,26 +1397,26 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1429,7 +1429,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1450,10 +1450,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:formulas.PBFormulaMapping)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMappingOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -1481,12 +1481,12 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_fieldAccessorTable
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.Builder.class);
+                com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.newBuilder()
       private Builder() {
 
       }
@@ -1507,17 +1507,17 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBFormulaMapping_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping result = buildPartial();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping build() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1525,14 +1525,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping(this);
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping buildPartial() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping result = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.mapping_ = internalGetMapping().build(MappingDefaultEntryHolder.defaultEntry);
@@ -1541,16 +1541,16 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping)other);
+        if (other instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping) {
+          return mergeFrom((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping other) {
+        if (other == com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping.getDefaultInstance()) return this;
         internalGetMutableMapping().mergeFrom(
             other.internalGetMapping());
         bitField0_ |= 0x00000001;
@@ -1581,7 +1581,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
                 done = true;
                 break;
               case 10: {
-                com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+                com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
                 mapping__ = input.readMessage(
                     MappingDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
                 internalGetMutableMapping().ensureBuilderMap().put(
@@ -1606,30 +1606,30 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       }
       private int bitField0_;
 
-      private static final class MappingConverter implements com.google.protobuf.MapFieldBuilder.Converter<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> {
+      private static final class MappingConverter implements com.google.protobuf.MapFieldBuilder.Converter<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> {
         @java.lang.Override
-        public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula build(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder val) {
-          if (val instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) { return (com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) val; }
-          return ((com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder) val).build();
+        public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula build(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder val) {
+          if (val instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) { return (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) val; }
+          return ((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder) val).build();
         }
 
         @java.lang.Override
-        public com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> defaultEntry() {
+        public com.google.protobuf.MapEntry<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> defaultEntry() {
           return MappingDefaultEntryHolder.defaultEntry;
         }
       };
       private static final MappingConverter mappingConverter = new MappingConverter();
 
       private com.google.protobuf.MapFieldBuilder<
-          java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder> mapping_;
-      private com.google.protobuf.MapFieldBuilder<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder>
+          java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder> mapping_;
+      private com.google.protobuf.MapFieldBuilder<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder>
           internalGetMapping() {
         if (mapping_ == null) {
           return new com.google.protobuf.MapFieldBuilder<>(mappingConverter);
         }
         return mapping_;
       }
-      private com.google.protobuf.MapFieldBuilder<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder>
+      private com.google.protobuf.MapFieldBuilder<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder>
           internalGetMutableMapping() {
         if (mapping_ == null) {
           mapping_ = new com.google.protobuf.MapFieldBuilder<>(mappingConverter);
@@ -1655,14 +1655,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> getMapping() {
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> getMapping() {
         return getMappingMap();
       }
       /**
        * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
        */
       @java.lang.Override
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> getMappingMap() {
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> getMappingMap() {
         return internalGetMapping().getImmutableMap();
       }
       /**
@@ -1670,22 +1670,22 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        */
       @java.lang.Override
       public /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrDefault(
           int key,
           /* nullable */
-com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue) {
+com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula defaultValue) {
 
-        java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> map = internalGetMutableMapping().ensureBuilderMap();
+        java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> map = internalGetMutableMapping().ensureBuilderMap();
         return map.containsKey(key) ? mappingConverter.build(map.get(key)) : defaultValue;
       }
       /**
        * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
        */
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getMappingOrThrow(
           int key) {
 
-        java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> map = internalGetMutableMapping().ensureBuilderMap();
+        java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> map = internalGetMutableMapping().ensureBuilderMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
@@ -1710,7 +1710,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula>
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula>
           getMutableMapping() {
         bitField0_ |= 0x00000001;
         return internalGetMutableMapping().ensureMessageMap();
@@ -1720,7 +1720,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        */
       public Builder putMapping(
           int key,
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula value) {
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula value) {
 
         if (value == null) { throw new NullPointerException("map value"); }
         internalGetMutableMapping().ensureBuilderMap()
@@ -1732,8 +1732,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
        */
       public Builder putAllMapping(
-          java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> values) {
-        for (java.util.Map.Entry<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula> e : values.entrySet()) {
+          java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> values) {
+        for (java.util.Map.Entry<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula> e : values.entrySet()) {
           if (e.getKey() == null || e.getValue() == null) {
             throw new NullPointerException();
           }
@@ -1746,31 +1746,31 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       /**
        * <code>map&lt;int32, .formulas.PBInternalFormula&gt; mapping = 1;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder putMappingBuilderIfAbsent(
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder putMappingBuilderIfAbsent(
           int key) {
-        java.util.Map<java.lang.Integer, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> builderMap = internalGetMutableMapping().ensureBuilderMap();
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder entry = builderMap.get(key);
+        java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder> builderMap = internalGetMutableMapping().ensureBuilderMap();
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder entry = builderMap.get(key);
         if (entry == null) {
-          entry = com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.newBuilder();
+          entry = com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.newBuilder();
           builderMap.put(key, entry);
         }
-        if (entry instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) {
-          entry = ((com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) entry).toBuilder();
+        if (entry instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) {
+          entry = ((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) entry).toBuilder();
           builderMap.put(key, entry);
         }
-        return (com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder) entry;
+        return (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder) entry;
       }
 
       // @@protoc_insertion_point(builder_scope:formulas.PBFormulaMapping)
     }
 
     // @@protoc_insertion_point(class_scope:formulas.PBFormulaMapping)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping();
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1806,7 +1806,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaMapping getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1830,7 +1830,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>optional .formulas.PBFormulaType type = 1;</code>
      * @return The type.
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType getType();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType getType();
 
     /**
      * <pre>
@@ -1897,7 +1897,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
      * @return The pbConstraint.
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint();
     /**
      * <pre>
      * PBConstraint
@@ -1905,7 +1905,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      *
      * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder();
 
     /**
      * <pre>
@@ -1965,15 +1965,15 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_fieldAccessorTable
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder.class);
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder.class);
     }
 
     private int bitField0_;
@@ -1997,9 +1997,9 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>optional .formulas.PBFormulaType type = 1;</code>
      * @return The type.
      */
-    @java.lang.Override public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType getType() {
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType result = com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType.forNumber(type_);
-      return result == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType.UNRECOGNIZED : result;
+    @java.lang.Override public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType getType() {
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType result = com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType.forNumber(type_);
+      return result == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType.UNRECOGNIZED : result;
     }
 
     public static final int VALUE_FIELD_NUMBER = 2;
@@ -2089,7 +2089,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     public static final int PBCONSTRAINT_FIELD_NUMBER = 4;
-    private com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint pbConstraint_;
+    private com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint pbConstraint_;
     /**
      * <pre>
      * PBConstraint
@@ -2111,8 +2111,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * @return The pbConstraint.
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint() {
-      return pbConstraint_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint() {
+      return pbConstraint_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
     }
     /**
      * <pre>
@@ -2122,8 +2122,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder() {
-      return pbConstraint_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder() {
+      return pbConstraint_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
     }
 
     public static final int OPERAND_FIELD_NUMBER = 5;
@@ -2250,10 +2250,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) obj;
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula other = (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) obj;
 
       if (hasType() != other.hasType()) return false;
       if (hasType()) {
@@ -2313,44 +2313,44 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       return hash;
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2358,26 +2358,26 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2390,7 +2390,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2411,21 +2411,21 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:formulas.PBInternalFormula)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormulaOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_fieldAccessorTable
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.Builder.class);
+                com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2460,17 +2460,17 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalFormula_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula result = buildPartial();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula build() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2478,14 +2478,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula(this);
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula buildPartial() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula result = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -2515,16 +2515,16 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula)other);
+        if (other instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula) {
+          return mergeFrom((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula other) {
+        if (other == com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula.getDefaultInstance()) return this;
         if (other.hasType()) {
           setType(other.getType());
         }
@@ -2662,16 +2662,16 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * @return The type.
        */
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType getType() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType result = com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType.forNumber(type_);
-        return result == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType.UNRECOGNIZED : result;
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType getType() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType result = com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType.forNumber(type_);
+        return result == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType.UNRECOGNIZED : result;
       }
       /**
        * <code>optional .formulas.PBFormulaType type = 1;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
-      public Builder setType(com.booleworks.logicng.formulas.ProtoBufFormulas.PBFormulaType value) {
+      public Builder setType(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBFormulaType value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -2850,9 +2850,9 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
         return this;
       }
 
-      private com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint pbConstraint_;
+      private com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint pbConstraint_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder> pbConstraintBuilder_;
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder> pbConstraintBuilder_;
       /**
        * <pre>
        * PBConstraint
@@ -2872,9 +2872,9 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        * @return The pbConstraint.
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getPbConstraint() {
         if (pbConstraintBuilder_ == null) {
-          return pbConstraint_ == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
+          return pbConstraint_ == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
         } else {
           return pbConstraintBuilder_.getMessage();
         }
@@ -2886,7 +2886,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        *
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
-      public Builder setPbConstraint(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint value) {
+      public Builder setPbConstraint(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint value) {
         if (pbConstraintBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -2907,7 +2907,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
       public Builder setPbConstraint(
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder builderForValue) {
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder builderForValue) {
         if (pbConstraintBuilder_ == null) {
           pbConstraint_ = builderForValue.build();
         } else {
@@ -2924,11 +2924,11 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        *
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
-      public Builder mergePbConstraint(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint value) {
+      public Builder mergePbConstraint(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint value) {
         if (pbConstraintBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0) &&
             pbConstraint_ != null &&
-            pbConstraint_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance()) {
+            pbConstraint_ != com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance()) {
             getPbConstraintBuilder().mergeFrom(value);
           } else {
             pbConstraint_ = value;
@@ -2966,7 +2966,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        *
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder getPbConstraintBuilder() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder getPbConstraintBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getPbConstraintFieldBuilder().getBuilder();
@@ -2978,12 +2978,12 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        *
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder() {
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder getPbConstraintOrBuilder() {
         if (pbConstraintBuilder_ != null) {
           return pbConstraintBuilder_.getMessageOrBuilder();
         } else {
           return pbConstraint_ == null ?
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance() : pbConstraint_;
         }
       }
       /**
@@ -2994,11 +2994,11 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * <code>optional .formulas.PBInternalPseudoBooleanConstraint pbConstraint = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder> 
+          com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder> 
           getPbConstraintFieldBuilder() {
         if (pbConstraintBuilder_ == null) {
           pbConstraintBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder>(
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder>(
                   getPbConstraint(),
                   getParentForChildren(),
                   isClean());
@@ -3123,12 +3123,12 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     // @@protoc_insertion_point(class_scope:formulas.PBInternalFormula)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula();
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3164,7 +3164,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalFormula getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3183,7 +3183,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>.formulas.PBComparison comparator = 1;</code>
      * @return The comparator.
      */
-    com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison getComparator();
+    com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison getComparator();
 
     /**
      * <code>int64 rhs = 2;</code>
@@ -3279,15 +3279,15 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_fieldAccessorTable
+      return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder.class);
+              com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder.class);
     }
 
     public static final int COMPARATOR_FIELD_NUMBER = 1;
@@ -3303,9 +3303,9 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
      * <code>.formulas.PBComparison comparator = 1;</code>
      * @return The comparator.
      */
-    @java.lang.Override public com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison getComparator() {
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison result = com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.forNumber(comparator_);
-      return result == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.UNRECOGNIZED : result;
+    @java.lang.Override public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison getComparator() {
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison result = com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.forNumber(comparator_);
+      return result == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.UNRECOGNIZED : result;
     }
 
     public static final int RHS_FIELD_NUMBER = 2;
@@ -3417,7 +3417,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (comparator_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.EQ.getNumber()) {
+      if (comparator_ != com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.EQ.getNumber()) {
         output.writeEnum(1, comparator_);
       }
       if (rhs_ != 0L) {
@@ -3442,7 +3442,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (size != -1) return size;
 
       size = 0;
-      if (comparator_ != com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.EQ.getNumber()) {
+      if (comparator_ != com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.EQ.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, comparator_);
       }
@@ -3482,10 +3482,10 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint other = (com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint) obj;
+      com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint other = (com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint) obj;
 
       if (comparator_ != other.comparator_) return false;
       if (getRhs()
@@ -3523,44 +3523,44 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       return hash;
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3568,26 +3568,26 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3600,7 +3600,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3621,21 +3621,21 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:formulas.PBInternalPseudoBooleanConstraint)
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraintOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_fieldAccessorTable
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.class, com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder.class);
+                com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.class, com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.newBuilder()
       private Builder() {
 
       }
@@ -3660,17 +3660,17 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.internal_static_formulas_PBInternalPseudoBooleanConstraint_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstanceForType() {
-        return com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint build() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result = buildPartial();
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint build() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3678,14 +3678,14 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint buildPartial() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint(this);
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint buildPartial() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.comparator_ = comparator_;
@@ -3705,16 +3705,16 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint) {
-          return mergeFrom((com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint)other);
+        if (other instanceof com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint) {
+          return mergeFrom((com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint other) {
-        if (other == com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint other) {
+        if (other == com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint.getDefaultInstance()) return this;
         if (other.comparator_ != 0) {
           setComparatorValue(other.getComparatorValue());
         }
@@ -3841,16 +3841,16 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
        * @return The comparator.
        */
       @java.lang.Override
-      public com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison getComparator() {
-        com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison result = com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.forNumber(comparator_);
-        return result == null ? com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison.UNRECOGNIZED : result;
+      public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison getComparator() {
+        com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison result = com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.forNumber(comparator_);
+        return result == null ? com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison.UNRECOGNIZED : result;
       }
       /**
        * <code>.formulas.PBComparison comparator = 1;</code>
        * @param value The comparator to set.
        * @return This builder for chaining.
        */
-      public Builder setComparator(com.booleworks.logicng.formulas.ProtoBufFormulas.PBComparison value) {
+      public Builder setComparator(com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBComparison value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -4137,12 +4137,12 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     // @@protoc_insertion_point(class_scope:formulas.PBInternalPseudoBooleanConstraint)
-    private static final com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint();
     }
 
-    public static com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4178,7 +4178,7 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.formulas.ProtoBufFormulas.PBInternalPseudoBooleanConstraint getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4238,8 +4238,8 @@ com.booleworks.logicng.formulas.ProtoBufFormulas.PBInternalFormula defaultValue)
       "\003\022\006\n\002LE\020\004*n\n\rPBFormulaType\022\t\n\005CONST\020\000\022\013\n" +
       "\007LITERAL\020\001\022\007\n\003NOT\020\002\022\007\n\003AND\020\003\022\006\n\002OR\020\004\022\010\n\004" +
       "IMPL\020\005\022\t\n\005EQUIV\020\006\022\007\n\003PBC\020\007\022\r\n\tPREDICATE\020" +
-      "\010B3\n\037com.booleworks.logicng.formulasB\020Pr" +
-      "otoBufFormulasb\006proto3"
+      "\010BA\n-com.booleworks.logicng.serializatio" +
+      "n.formulasB\020ProtoBufFormulasb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

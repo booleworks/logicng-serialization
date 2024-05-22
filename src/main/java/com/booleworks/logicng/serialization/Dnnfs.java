@@ -2,8 +2,8 @@ package com.booleworks.logicng.serialization;
 
 import com.booleworks.logicng.formulas.FormulaFactory;
 import com.booleworks.logicng.formulas.Variable;
-import com.booleworks.logicng.knowledgecompilation.dnnf.ProtoBufDnnf.PBDnnf;
 import com.booleworks.logicng.knowledgecompilation.dnnf.datastructures.Dnnf;
+import com.booleworks.logicng.serialization.knowledgecompilation.dnnf.ProtoBufDnnf.PBDnnf;
 
 import java.util.SortedSet;
 import java.util.TreeSet;

@@ -1,7 +1,7 @@
 syntax = "proto3";
 package propositions;
 import "formulas.proto";
-option java_package = "com.booleworks.logicng.propositions";
+option java_package = "com.booleworks.logicng.serialization.propositions";
 option java_outer_classname = "ProtoBufPropositions";
 
 message PBStandardProposition {

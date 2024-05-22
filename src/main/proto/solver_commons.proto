@@ -1,6 +1,6 @@
 syntax = "proto3";
 package solver;
-option java_package = "com.booleworks.logicng.solvers.sat";
+option java_package = "com.booleworks.logicng.serialization.solvers.sat";
 option java_outer_classname = "ProtoBufSolverCommons";
 
 enum PBClauseMinimization {

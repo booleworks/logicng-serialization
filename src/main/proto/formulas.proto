@@ -1,6 +1,6 @@
 syntax = "proto3";
 package formulas;
-option java_package = "com.booleworks.logicng.formulas";
+option java_package = "com.booleworks.logicng.serialization.formulas";
 option java_outer_classname = "ProtoBufFormulas";
 
 enum PBComparison {

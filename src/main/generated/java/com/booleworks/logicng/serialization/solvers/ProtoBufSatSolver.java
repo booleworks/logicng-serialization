@@ -2,7 +2,7 @@
 // source: satsolver.proto
 // Protobuf Java Version: 4.26.1
 
-package com.booleworks.logicng.solvers;
+package com.booleworks.logicng.serialization.solvers;
 
 public final class ProtoBufSatSolver {
   private ProtoBufSatSolver() {}
@@ -37,11 +37,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBSatSolverConfig config = 1;</code>
      * @return The config.
      */
-    com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig();
+    com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig();
     /**
      * <code>.solver.PBSatSolverConfig config = 1;</code>
      */
-    com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder();
+    com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder();
 
     /**
      * <code>bool inSatCall = 2;</code>
@@ -90,11 +90,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector validStates = 4;</code>
      * @return The validStates.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getValidStates();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getValidStates();
     /**
      * <code>.collections.PBIntVector validStates = 4;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder();
 
     /**
      * <code>int32 nextStateId = 5;</code>
@@ -123,11 +123,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector unitClauses = 8;</code>
      * @return The unitClauses.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getUnitClauses();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getUnitClauses();
     /**
      * <code>.collections.PBIntVector unitClauses = 8;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder();
 
     /**
      * <code>.solver.PBClauseVector clauses = 9;</code>
@@ -138,11 +138,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBClauseVector clauses = 9;</code>
      * @return The clauses.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses();
     /**
      * <code>.solver.PBClauseVector clauses = 9;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder();
 
     /**
      * <code>.solver.PBClauseVector learnts = 10;</code>
@@ -153,11 +153,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBClauseVector learnts = 10;</code>
      * @return The learnts.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts();
     /**
      * <code>.solver.PBClauseVector learnts = 10;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder();
 
     /**
      * <code>.solver.PBWatcherVectorVector watches = 11;</code>
@@ -168,11 +168,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBWatcherVectorVector watches = 11;</code>
      * @return The watches.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches();
     /**
      * <code>.solver.PBWatcherVectorVector watches = 11;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder();
 
     /**
      * <code>.solver.PBVariableVector vars = 12;</code>
@@ -183,11 +183,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBVariableVector vars = 12;</code>
      * @return The vars.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars();
     /**
      * <code>.solver.PBVariableVector vars = 12;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder();
 
     /**
      * <code>.solver.PBHeap orderHeap = 13;</code>
@@ -198,11 +198,11 @@ public final class ProtoBufSatSolver {
      * <code>.solver.PBHeap orderHeap = 13;</code>
      * @return The orderHeap.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap();
     /**
      * <code>.solver.PBHeap orderHeap = 13;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder();
 
     /**
      * <code>.collections.PBIntVector trail = 14;</code>
@@ -213,11 +213,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector trail = 14;</code>
      * @return The trail.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrail();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrail();
     /**
      * <code>.collections.PBIntVector trail = 14;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder();
 
     /**
      * <code>.collections.PBIntVector trailLim = 15;</code>
@@ -228,11 +228,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector trailLim = 15;</code>
      * @return The trailLim.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrailLim();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrailLim();
     /**
      * <code>.collections.PBIntVector trailLim = 15;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder();
 
     /**
      * <code>.collections.PBBooleanVector model = 16;</code>
@@ -243,11 +243,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBBooleanVector model = 16;</code>
      * @return The model.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getModel();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getModel();
     /**
      * <code>.collections.PBBooleanVector model = 16;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder();
 
     /**
      * <code>.collections.PBIntVector assumptionConflict = 17;</code>
@@ -258,11 +258,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector assumptionConflict = 17;</code>
      * @return The assumptionConflict.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptionConflict();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptionConflict();
     /**
      * <code>.collections.PBIntVector assumptionConflict = 17;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder();
 
     /**
      * <code>.collections.PBIntVector assumptions = 18;</code>
@@ -273,11 +273,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector assumptions = 18;</code>
      * @return The assumptions.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptions();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptions();
     /**
      * <code>.collections.PBIntVector assumptions = 18;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder();
 
     /**
      * <code>repeated bytes assumptionPropositions = 19;</code>
@@ -305,11 +305,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBBooleanVector seen = 20;</code>
      * @return The seen.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getSeen();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getSeen();
     /**
      * <code>.collections.PBBooleanVector seen = 20;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder();
 
     /**
      * <code>int32 analyzeBtLevel = 21;</code>
@@ -356,12 +356,12 @@ public final class ProtoBufSatSolver {
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
-    java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> 
+    java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> 
         getPgOriginalClausesList();
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index);
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index);
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
@@ -369,12 +369,12 @@ public final class ProtoBufSatSolver {
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
-    java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
+    java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
         getPgOriginalClausesOrBuilderList();
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
         int index);
 
     /**
@@ -386,11 +386,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVectorVector pgProof = 29;</code>
      * @return The pgProof.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector getPgProof();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector getPgProof();
     /**
      * <code>.collections.PBIntVectorVector pgProof = 29;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder();
 
     /**
      * <code>bool computingBackbone = 30;</code>
@@ -407,11 +407,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector backboneCandidates = 31;</code>
      * @return The backboneCandidates.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneCandidates();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneCandidates();
     /**
      * <code>.collections.PBIntVector backboneCandidates = 31;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder();
 
     /**
      * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
@@ -422,11 +422,11 @@ public final class ProtoBufSatSolver {
      * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
      * @return The backboneAssumptions.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions();
     /**
      * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder();
 
     /**
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
@@ -441,25 +441,25 @@ public final class ProtoBufSatSolver {
      * Use {@link #getBackboneMapMap()} instead.
      */
     @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+    java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
     getBackboneMap();
     /**
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
      */
-    java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+    java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
     getBackboneMapMap();
     /**
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
      */
     /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
         int key,
         /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate         defaultValue);
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate         defaultValue);
     /**
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
         int key);
     /**
      * Use {@link #getBackboneMapValueMap()} instead.
@@ -493,11 +493,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.collections.PBIntVector selectionOrder = 34;</code>
      * @return The selectionOrder.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getSelectionOrder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getSelectionOrder();
     /**
      * <code>.collections.PBIntVector selectionOrder = 34;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder();
 
     /**
      * <code>int32 selectionOrderIdx = 35;</code>
@@ -514,11 +514,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
      * @return The watchesBin.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin();
     /**
      * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder();
 
     /**
      * <code>.collections.PBIntVector permDiff = 37;</code>
@@ -529,11 +529,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.collections.PBIntVector permDiff = 37;</code>
      * @return The permDiff.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getPermDiff();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getPermDiff();
     /**
      * <code>.collections.PBIntVector permDiff = 37;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder();
 
     /**
      * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
@@ -544,11 +544,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
      * @return The lastDecisionLevel.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel();
     /**
      * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder();
 
     /**
      * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
@@ -559,11 +559,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
      * @return The lbdQueue.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue();
     /**
      * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder();
 
     /**
      * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
@@ -574,11 +574,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
      * @return The trailQueue.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue();
     /**
      * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder();
 
     /**
      * <code>int32 myflag = 41;</code>
@@ -650,7 +650,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
+      return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -670,14 +670,14 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.class, com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.Builder.class);
+              com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.class, com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.Builder.class);
     }
 
     private int bitField0_;
     public static final int CONFIG_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig config_;
+    private com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig config_;
     /**
      * <code>.solver.PBSatSolverConfig config = 1;</code>
      * @return Whether the config field is set.
@@ -691,15 +691,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The config.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig() {
-      return config_ == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
+    public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig() {
+      return config_ == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
     }
     /**
      * <code>.solver.PBSatSolverConfig config = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder() {
-      return config_ == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
+    public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder() {
+      return config_ == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
     }
 
     public static final int INSATCALL_FIELD_NUMBER = 2;
@@ -719,7 +719,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
           java.lang.String, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.String, java.lang.Integer>newDefaultInstance(
-                  com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_Name2idxEntry_descriptor, 
+                  com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_Name2idxEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.STRING,
                   "",
                   com.google.protobuf.WireFormat.FieldType.INT32,
@@ -791,7 +791,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int VALIDSTATES_FIELD_NUMBER = 4;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector validStates_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector validStates_;
     /**
      * <code>.collections.PBIntVector validStates = 4;</code>
      * @return Whether the validStates field is set.
@@ -805,15 +805,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The validStates.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getValidStates() {
-      return validStates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getValidStates() {
+      return validStates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
     }
     /**
      * <code>.collections.PBIntVector validStates = 4;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder() {
-      return validStates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder() {
+      return validStates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
     }
 
     public static final int NEXTSTATEID_FIELD_NUMBER = 5;
@@ -850,7 +850,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int UNITCLAUSES_FIELD_NUMBER = 8;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector unitClauses_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector unitClauses_;
     /**
      * <code>.collections.PBIntVector unitClauses = 8;</code>
      * @return Whether the unitClauses field is set.
@@ -864,19 +864,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The unitClauses.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getUnitClauses() {
-      return unitClauses_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getUnitClauses() {
+      return unitClauses_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
     }
     /**
      * <code>.collections.PBIntVector unitClauses = 8;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder() {
-      return unitClauses_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder() {
+      return unitClauses_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
     }
 
     public static final int CLAUSES_FIELD_NUMBER = 9;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector clauses_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector clauses_;
     /**
      * <code>.solver.PBClauseVector clauses = 9;</code>
      * @return Whether the clauses field is set.
@@ -890,19 +890,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The clauses.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses() {
-      return clauses_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses() {
+      return clauses_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
     }
     /**
      * <code>.solver.PBClauseVector clauses = 9;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder() {
-      return clauses_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder() {
+      return clauses_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
     }
 
     public static final int LEARNTS_FIELD_NUMBER = 10;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector learnts_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector learnts_;
     /**
      * <code>.solver.PBClauseVector learnts = 10;</code>
      * @return Whether the learnts field is set.
@@ -916,19 +916,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The learnts.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts() {
-      return learnts_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts() {
+      return learnts_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
     }
     /**
      * <code>.solver.PBClauseVector learnts = 10;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder() {
-      return learnts_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder() {
+      return learnts_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
     }
 
     public static final int WATCHES_FIELD_NUMBER = 11;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watches_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watches_;
     /**
      * <code>.solver.PBWatcherVectorVector watches = 11;</code>
      * @return Whether the watches field is set.
@@ -942,19 +942,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The watches.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches() {
-      return watches_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches() {
+      return watches_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
     }
     /**
      * <code>.solver.PBWatcherVectorVector watches = 11;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder() {
-      return watches_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder() {
+      return watches_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
     }
 
     public static final int VARS_FIELD_NUMBER = 12;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector vars_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector vars_;
     /**
      * <code>.solver.PBVariableVector vars = 12;</code>
      * @return Whether the vars field is set.
@@ -968,19 +968,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The vars.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars() {
-      return vars_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars() {
+      return vars_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
     }
     /**
      * <code>.solver.PBVariableVector vars = 12;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder() {
-      return vars_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder() {
+      return vars_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
     }
 
     public static final int ORDERHEAP_FIELD_NUMBER = 13;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap orderHeap_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap orderHeap_;
     /**
      * <code>.solver.PBHeap orderHeap = 13;</code>
      * @return Whether the orderHeap field is set.
@@ -994,19 +994,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The orderHeap.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap() {
-      return orderHeap_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap() {
+      return orderHeap_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
     }
     /**
      * <code>.solver.PBHeap orderHeap = 13;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder() {
-      return orderHeap_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder() {
+      return orderHeap_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
     }
 
     public static final int TRAIL_FIELD_NUMBER = 14;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector trail_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector trail_;
     /**
      * <code>.collections.PBIntVector trail = 14;</code>
      * @return Whether the trail field is set.
@@ -1020,19 +1020,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The trail.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrail() {
-      return trail_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrail() {
+      return trail_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
     }
     /**
      * <code>.collections.PBIntVector trail = 14;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder() {
-      return trail_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder() {
+      return trail_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
     }
 
     public static final int TRAILLIM_FIELD_NUMBER = 15;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector trailLim_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector trailLim_;
     /**
      * <code>.collections.PBIntVector trailLim = 15;</code>
      * @return Whether the trailLim field is set.
@@ -1046,19 +1046,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The trailLim.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrailLim() {
-      return trailLim_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrailLim() {
+      return trailLim_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
     }
     /**
      * <code>.collections.PBIntVector trailLim = 15;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder() {
-      return trailLim_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder() {
+      return trailLim_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
     }
 
     public static final int MODEL_FIELD_NUMBER = 16;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector model_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector model_;
     /**
      * <code>.collections.PBBooleanVector model = 16;</code>
      * @return Whether the model field is set.
@@ -1072,19 +1072,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The model.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getModel() {
-      return model_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getModel() {
+      return model_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
     }
     /**
      * <code>.collections.PBBooleanVector model = 16;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder() {
-      return model_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder() {
+      return model_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
     }
 
     public static final int ASSUMPTIONCONFLICT_FIELD_NUMBER = 17;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector assumptionConflict_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector assumptionConflict_;
     /**
      * <code>.collections.PBIntVector assumptionConflict = 17;</code>
      * @return Whether the assumptionConflict field is set.
@@ -1098,19 +1098,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The assumptionConflict.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptionConflict() {
-      return assumptionConflict_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptionConflict() {
+      return assumptionConflict_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
     }
     /**
      * <code>.collections.PBIntVector assumptionConflict = 17;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder() {
-      return assumptionConflict_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder() {
+      return assumptionConflict_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
     }
 
     public static final int ASSUMPTIONS_FIELD_NUMBER = 18;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector assumptions_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector assumptions_;
     /**
      * <code>.collections.PBIntVector assumptions = 18;</code>
      * @return Whether the assumptions field is set.
@@ -1124,15 +1124,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The assumptions.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptions() {
-      return assumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptions() {
+      return assumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
     }
     /**
      * <code>.collections.PBIntVector assumptions = 18;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder() {
-      return assumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder() {
+      return assumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
     }
 
     public static final int ASSUMPTIONPROPOSITIONS_FIELD_NUMBER = 19;
@@ -1165,7 +1165,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int SEEN_FIELD_NUMBER = 20;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector seen_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector seen_;
     /**
      * <code>.collections.PBBooleanVector seen = 20;</code>
      * @return Whether the seen field is set.
@@ -1179,15 +1179,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The seen.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getSeen() {
-      return seen_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getSeen() {
+      return seen_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
     }
     /**
      * <code>.collections.PBBooleanVector seen = 20;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder() {
-      return seen_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder() {
+      return seen_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
     }
 
     public static final int ANALYZEBTLEVEL_FIELD_NUMBER = 21;
@@ -1269,19 +1269,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
 
     public static final int PGORIGINALCLAUSES_FIELD_NUMBER = 28;
     @SuppressWarnings("serial")
-    private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> pgOriginalClauses_;
+    private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> pgOriginalClauses_;
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
     @java.lang.Override
-    public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> getPgOriginalClausesList() {
+    public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> getPgOriginalClausesList() {
       return pgOriginalClauses_;
     }
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
+    public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
         getPgOriginalClausesOrBuilderList() {
       return pgOriginalClauses_;
     }
@@ -1296,20 +1296,20 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index) {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index) {
       return pgOriginalClauses_.get(index);
     }
     /**
      * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
         int index) {
       return pgOriginalClauses_.get(index);
     }
 
     public static final int PGPROOF_FIELD_NUMBER = 29;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector pgProof_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector pgProof_;
     /**
      * <code>.collections.PBIntVectorVector pgProof = 29;</code>
      * @return Whether the pgProof field is set.
@@ -1323,15 +1323,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The pgProof.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector getPgProof() {
-      return pgProof_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector getPgProof() {
+      return pgProof_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
     }
     /**
      * <code>.collections.PBIntVectorVector pgProof = 29;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder() {
-      return pgProof_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder() {
+      return pgProof_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
     }
 
     public static final int COMPUTINGBACKBONE_FIELD_NUMBER = 30;
@@ -1346,7 +1346,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int BACKBONECANDIDATES_FIELD_NUMBER = 31;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector backboneCandidates_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector backboneCandidates_;
     /**
      * <code>.collections.PBIntVector backboneCandidates = 31;</code>
      * @return Whether the backboneCandidates field is set.
@@ -1360,19 +1360,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The backboneCandidates.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneCandidates() {
-      return backboneCandidates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneCandidates() {
+      return backboneCandidates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
     }
     /**
      * <code>.collections.PBIntVector backboneCandidates = 31;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder() {
-      return backboneCandidates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder() {
+      return backboneCandidates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
     }
 
     public static final int BACKBONEASSUMPTIONS_FIELD_NUMBER = 32;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector backboneAssumptions_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector backboneAssumptions_;
     /**
      * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
      * @return Whether the backboneAssumptions field is set.
@@ -1386,15 +1386,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The backboneAssumptions.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions() {
-      return backboneAssumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions() {
+      return backboneAssumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
     }
     /**
      * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder() {
-      return backboneAssumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder() {
+      return backboneAssumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
     }
 
     public static final int BACKBONEMAP_FIELD_NUMBER = 33;
@@ -1403,11 +1403,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_BackboneMapEntry_descriptor, 
+                  com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_BackboneMapEntry_descriptor, 
                   com.google.protobuf.WireFormat.FieldType.INT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.ENUM,
-                  com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber());
+                  com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber());
     }
     @SuppressWarnings("serial")
     private com.google.protobuf.MapField<
@@ -1422,15 +1422,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
     private static final
     com.google.protobuf.Internal.MapAdapter.Converter<
-        java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate> backboneMapValueConverter =
+        java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate> backboneMapValueConverter =
             com.google.protobuf.Internal.MapAdapter.newEnumConverter(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.internalGetValueMap(),
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED);
-    private static final java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.internalGetValueMap(),
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED);
+    private static final java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
     internalGetAdaptedBackboneMapMap(
         java.util.Map<java.lang.Integer, java.lang.Integer> map) {
       return new com.google.protobuf.Internal.MapAdapter<
-          java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate, java.lang.Integer>(
+          java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate, java.lang.Integer>(
               map, backboneMapValueConverter);
     }
     public int getBackboneMapCount() {
@@ -1450,7 +1450,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+    public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
     getBackboneMap() {
       return getBackboneMapMap();
     }
@@ -1458,7 +1458,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
      */
     @java.lang.Override
-    public java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+    public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
     getBackboneMapMap() {
       return internalGetAdaptedBackboneMapMap(
           internalGetBackboneMap().getMap());}
@@ -1467,10 +1467,10 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      */
     @java.lang.Override
     public /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
         int key,
         /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate defaultValue) {
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate defaultValue) {
 
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetBackboneMap().getMap();
@@ -1482,7 +1482,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
         int key) {
 
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
@@ -1537,7 +1537,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int SELECTIONORDER_FIELD_NUMBER = 34;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector selectionOrder_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector selectionOrder_;
     /**
      * <code>.collections.PBIntVector selectionOrder = 34;</code>
      * @return Whether the selectionOrder field is set.
@@ -1551,15 +1551,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The selectionOrder.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getSelectionOrder() {
-      return selectionOrder_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getSelectionOrder() {
+      return selectionOrder_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
     }
     /**
      * <code>.collections.PBIntVector selectionOrder = 34;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder() {
-      return selectionOrder_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder() {
+      return selectionOrder_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
     }
 
     public static final int SELECTIONORDERIDX_FIELD_NUMBER = 35;
@@ -1574,7 +1574,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     public static final int WATCHESBIN_FIELD_NUMBER = 36;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watchesBin_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watchesBin_;
     /**
      * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
      * @return Whether the watchesBin field is set.
@@ -1588,19 +1588,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The watchesBin.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin() {
-      return watchesBin_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin() {
+      return watchesBin_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
     }
     /**
      * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder() {
-      return watchesBin_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder() {
+      return watchesBin_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
     }
 
     public static final int PERMDIFF_FIELD_NUMBER = 37;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector permDiff_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector permDiff_;
     /**
      * <code>.collections.PBIntVector permDiff = 37;</code>
      * @return Whether the permDiff field is set.
@@ -1614,19 +1614,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The permDiff.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getPermDiff() {
-      return permDiff_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getPermDiff() {
+      return permDiff_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
     }
     /**
      * <code>.collections.PBIntVector permDiff = 37;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder() {
-      return permDiff_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder() {
+      return permDiff_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
     }
 
     public static final int LASTDECISIONLEVEL_FIELD_NUMBER = 38;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector lastDecisionLevel_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector lastDecisionLevel_;
     /**
      * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
      * @return Whether the lastDecisionLevel field is set.
@@ -1640,19 +1640,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The lastDecisionLevel.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel() {
-      return lastDecisionLevel_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel() {
+      return lastDecisionLevel_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
     }
     /**
      * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder() {
-      return lastDecisionLevel_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder() {
+      return lastDecisionLevel_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
     }
 
     public static final int LBDQUEUE_FIELD_NUMBER = 39;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue lbdQueue_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue lbdQueue_;
     /**
      * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
      * @return Whether the lbdQueue field is set.
@@ -1666,19 +1666,19 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The lbdQueue.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue() {
-      return lbdQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue() {
+      return lbdQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
     }
     /**
      * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder() {
-      return lbdQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder() {
+      return lbdQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
     }
 
     public static final int TRAILQUEUE_FIELD_NUMBER = 40;
-    private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue trailQueue_;
+    private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue trailQueue_;
     /**
      * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
      * @return Whether the trailQueue field is set.
@@ -1692,15 +1692,15 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
      * @return The trailQueue.
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue() {
-      return trailQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue() {
+      return trailQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
     }
     /**
      * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder() {
-      return trailQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder() {
+      return trailQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
     }
 
     public static final int MYFLAG_FIELD_NUMBER = 41;
@@ -2165,10 +2165,10 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver other = (com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver) obj;
+      com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver other = (com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver) obj;
 
       if (hasConfig() != other.hasConfig()) return false;
       if (hasConfig()) {
@@ -2510,44 +2510,44 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2555,26 +2555,26 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2587,7 +2587,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2608,10 +2608,10 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBSatSolver)
-        com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolverOrBuilder {
+        com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolverOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
+        return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
       }
 
       @SuppressWarnings({"rawtypes"})
@@ -2643,12 +2643,12 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.class, com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.Builder.class);
+                com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.class, com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2843,17 +2843,17 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
+        return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.internal_static_solver_PBSatSolver_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver build() {
-        com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver build() {
+        com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2861,8 +2861,8 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver buildPartial() {
-        com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver result = new com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver(this);
+      public com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver buildPartial() {
+        com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver result = new com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         if (bitField1_ != 0) { buildPartial1(result); }
@@ -2870,7 +2870,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver result) {
+      private void buildPartialRepeatedFields(com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver result) {
         if (pgOriginalClausesBuilder_ == null) {
           if (((bitField0_ & 0x08000000) != 0)) {
             pgOriginalClauses_ = java.util.Collections.unmodifiableList(pgOriginalClauses_);
@@ -2882,7 +2882,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         }
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -3034,7 +3034,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         result.bitField0_ |= to_bitField0_;
       }
 
-      private void buildPartial1(com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver result) {
+      private void buildPartial1(com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver result) {
         int from_bitField1_ = bitField1_;
         if (((from_bitField1_ & 0x00000001) != 0)) {
           result.backboneMap_ = internalGetBackboneMap();
@@ -3106,16 +3106,16 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver) {
-          return mergeFrom((com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver other) {
-        if (other == com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver other) {
+        if (other == com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver.getDefaultInstance()) return this;
         if (other.hasConfig()) {
           mergeConfig(other.getConfig());
         }
@@ -3483,9 +3483,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
                 break;
               } // case 216
               case 226: {
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation m =
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation m =
                     input.readMessage(
-                        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.parser(),
+                        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.parser(),
                         extensionRegistry);
                 if (pgOriginalClausesBuilder_ == null) {
                   ensurePgOriginalClausesIsMutable();
@@ -3630,9 +3630,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       private int bitField0_;
       private int bitField1_;
 
-      private com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig config_;
+      private com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig config_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder> configBuilder_;
+          com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder> configBuilder_;
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        * @return Whether the config field is set.
@@ -3644,9 +3644,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        * @return The config.
        */
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig() {
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig getConfig() {
         if (configBuilder_ == null) {
-          return config_ == null ? com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
+          return config_ == null ? com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
         } else {
           return configBuilder_.getMessage();
         }
@@ -3654,7 +3654,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
-      public Builder setConfig(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig value) {
+      public Builder setConfig(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig value) {
         if (configBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3671,7 +3671,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
       public Builder setConfig(
-          com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder builderForValue) {
         if (configBuilder_ == null) {
           config_ = builderForValue.build();
         } else {
@@ -3684,11 +3684,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
-      public Builder mergeConfig(com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig value) {
+      public Builder mergeConfig(com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig value) {
         if (configBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             config_ != null &&
-            config_ != com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance()) {
+            config_ != com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance()) {
             getConfigBuilder().mergeFrom(value);
           } else {
             config_ = value;
@@ -3718,7 +3718,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder getConfigBuilder() {
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder getConfigBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getConfigFieldBuilder().getBuilder();
@@ -3726,23 +3726,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
-      public com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder getConfigOrBuilder() {
         if (configBuilder_ != null) {
           return configBuilder_.getMessageOrBuilder();
         } else {
           return config_ == null ?
-              com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
+              com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.getDefaultInstance() : config_;
         }
       }
       /**
        * <code>.solver.PBSatSolverConfig config = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder> 
           getConfigFieldBuilder() {
         if (configBuilder_ == null) {
           configBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfig.Builder, com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.PBSatSolverConfigOrBuilder>(
                   getConfig(),
                   getParentForChildren(),
                   isClean());
@@ -3908,9 +3908,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector validStates_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector validStates_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> validStatesBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> validStatesBuilder_;
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        * @return Whether the validStates field is set.
@@ -3922,9 +3922,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector validStates = 4;</code>
        * @return The validStates.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getValidStates() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getValidStates() {
         if (validStatesBuilder_ == null) {
-          return validStates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
+          return validStates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
         } else {
           return validStatesBuilder_.getMessage();
         }
@@ -3932,7 +3932,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
-      public Builder setValidStates(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setValidStates(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (validStatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3949,7 +3949,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
       public Builder setValidStates(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (validStatesBuilder_ == null) {
           validStates_ = builderForValue.build();
         } else {
@@ -3962,11 +3962,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
-      public Builder mergeValidStates(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeValidStates(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (validStatesBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0) &&
             validStates_ != null &&
-            validStates_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            validStates_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getValidStatesBuilder().mergeFrom(value);
           } else {
             validStates_ = value;
@@ -3996,7 +3996,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getValidStatesBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getValidStatesBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getValidStatesFieldBuilder().getBuilder();
@@ -4004,23 +4004,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getValidStatesOrBuilder() {
         if (validStatesBuilder_ != null) {
           return validStatesBuilder_.getMessageOrBuilder();
         } else {
           return validStates_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : validStates_;
         }
       }
       /**
        * <code>.collections.PBIntVector validStates = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getValidStatesFieldBuilder() {
         if (validStatesBuilder_ == null) {
           validStatesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getValidStates(),
                   getParentForChildren(),
                   isClean());
@@ -4125,9 +4125,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector unitClauses_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector unitClauses_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> unitClausesBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> unitClausesBuilder_;
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        * @return Whether the unitClauses field is set.
@@ -4139,9 +4139,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        * @return The unitClauses.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getUnitClauses() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getUnitClauses() {
         if (unitClausesBuilder_ == null) {
-          return unitClauses_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
+          return unitClauses_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
         } else {
           return unitClausesBuilder_.getMessage();
         }
@@ -4149,7 +4149,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
-      public Builder setUnitClauses(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setUnitClauses(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (unitClausesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4166,7 +4166,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
       public Builder setUnitClauses(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (unitClausesBuilder_ == null) {
           unitClauses_ = builderForValue.build();
         } else {
@@ -4179,11 +4179,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
-      public Builder mergeUnitClauses(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeUnitClauses(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (unitClausesBuilder_ == null) {
           if (((bitField0_ & 0x00000080) != 0) &&
             unitClauses_ != null &&
-            unitClauses_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            unitClauses_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getUnitClausesBuilder().mergeFrom(value);
           } else {
             unitClauses_ = value;
@@ -4213,7 +4213,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getUnitClausesBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getUnitClausesBuilder() {
         bitField0_ |= 0x00000080;
         onChanged();
         return getUnitClausesFieldBuilder().getBuilder();
@@ -4221,23 +4221,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getUnitClausesOrBuilder() {
         if (unitClausesBuilder_ != null) {
           return unitClausesBuilder_.getMessageOrBuilder();
         } else {
           return unitClauses_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : unitClauses_;
         }
       }
       /**
        * <code>.collections.PBIntVector unitClauses = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getUnitClausesFieldBuilder() {
         if (unitClausesBuilder_ == null) {
           unitClausesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getUnitClauses(),
                   getParentForChildren(),
                   isClean());
@@ -4246,9 +4246,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return unitClausesBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector clauses_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector clauses_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> clausesBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> clausesBuilder_;
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        * @return Whether the clauses field is set.
@@ -4260,9 +4260,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBClauseVector clauses = 9;</code>
        * @return The clauses.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getClauses() {
         if (clausesBuilder_ == null) {
-          return clauses_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
+          return clauses_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
         } else {
           return clausesBuilder_.getMessage();
         }
@@ -4270,7 +4270,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
-      public Builder setClauses(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
+      public Builder setClauses(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
         if (clausesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4287,7 +4287,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
       public Builder setClauses(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder builderForValue) {
         if (clausesBuilder_ == null) {
           clauses_ = builderForValue.build();
         } else {
@@ -4300,11 +4300,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
-      public Builder mergeClauses(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
+      public Builder mergeClauses(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
         if (clausesBuilder_ == null) {
           if (((bitField0_ & 0x00000100) != 0) &&
             clauses_ != null &&
-            clauses_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) {
+            clauses_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) {
             getClausesBuilder().mergeFrom(value);
           } else {
             clauses_ = value;
@@ -4334,7 +4334,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder getClausesBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder getClausesBuilder() {
         bitField0_ |= 0x00000100;
         onChanged();
         return getClausesFieldBuilder().getBuilder();
@@ -4342,23 +4342,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getClausesOrBuilder() {
         if (clausesBuilder_ != null) {
           return clausesBuilder_.getMessageOrBuilder();
         } else {
           return clauses_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : clauses_;
         }
       }
       /**
        * <code>.solver.PBClauseVector clauses = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> 
           getClausesFieldBuilder() {
         if (clausesBuilder_ == null) {
           clausesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder>(
                   getClauses(),
                   getParentForChildren(),
                   isClean());
@@ -4367,9 +4367,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return clausesBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector learnts_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector learnts_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> learntsBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> learntsBuilder_;
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        * @return Whether the learnts field is set.
@@ -4381,9 +4381,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBClauseVector learnts = 10;</code>
        * @return The learnts.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getLearnts() {
         if (learntsBuilder_ == null) {
-          return learnts_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
+          return learnts_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
         } else {
           return learntsBuilder_.getMessage();
         }
@@ -4391,7 +4391,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
-      public Builder setLearnts(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
+      public Builder setLearnts(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
         if (learntsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4408,7 +4408,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
       public Builder setLearnts(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder builderForValue) {
         if (learntsBuilder_ == null) {
           learnts_ = builderForValue.build();
         } else {
@@ -4421,11 +4421,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
-      public Builder mergeLearnts(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
+      public Builder mergeLearnts(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector value) {
         if (learntsBuilder_ == null) {
           if (((bitField0_ & 0x00000200) != 0) &&
             learnts_ != null &&
-            learnts_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) {
+            learnts_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) {
             getLearntsBuilder().mergeFrom(value);
           } else {
             learnts_ = value;
@@ -4455,7 +4455,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder getLearntsBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder getLearntsBuilder() {
         bitField0_ |= 0x00000200;
         onChanged();
         return getLearntsFieldBuilder().getBuilder();
@@ -4463,23 +4463,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder getLearntsOrBuilder() {
         if (learntsBuilder_ != null) {
           return learntsBuilder_.getMessageOrBuilder();
         } else {
           return learnts_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance() : learnts_;
         }
       }
       /**
        * <code>.solver.PBClauseVector learnts = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder> 
           getLearntsFieldBuilder() {
         if (learntsBuilder_ == null) {
           learntsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder>(
                   getLearnts(),
                   getParentForChildren(),
                   isClean());
@@ -4488,9 +4488,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return learntsBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watches_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watches_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> watchesBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> watchesBuilder_;
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        * @return Whether the watches field is set.
@@ -4502,9 +4502,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        * @return The watches.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatches() {
         if (watchesBuilder_ == null) {
-          return watches_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
+          return watches_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
         } else {
           return watchesBuilder_.getMessage();
         }
@@ -4512,7 +4512,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
-      public Builder setWatches(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
+      public Builder setWatches(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
         if (watchesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4529,7 +4529,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
       public Builder setWatches(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder builderForValue) {
         if (watchesBuilder_ == null) {
           watches_ = builderForValue.build();
         } else {
@@ -4542,11 +4542,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
-      public Builder mergeWatches(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
+      public Builder mergeWatches(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
         if (watchesBuilder_ == null) {
           if (((bitField0_ & 0x00000400) != 0) &&
             watches_ != null &&
-            watches_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) {
+            watches_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) {
             getWatchesBuilder().mergeFrom(value);
           } else {
             watches_ = value;
@@ -4576,7 +4576,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder getWatchesBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder getWatchesBuilder() {
         bitField0_ |= 0x00000400;
         onChanged();
         return getWatchesFieldBuilder().getBuilder();
@@ -4584,23 +4584,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesOrBuilder() {
         if (watchesBuilder_ != null) {
           return watchesBuilder_.getMessageOrBuilder();
         } else {
           return watches_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watches_;
         }
       }
       /**
        * <code>.solver.PBWatcherVectorVector watches = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> 
           getWatchesFieldBuilder() {
         if (watchesBuilder_ == null) {
           watchesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder>(
                   getWatches(),
                   getParentForChildren(),
                   isClean());
@@ -4609,9 +4609,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return watchesBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector vars_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector vars_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder> varsBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder> varsBuilder_;
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        * @return Whether the vars field is set.
@@ -4623,9 +4623,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBVariableVector vars = 12;</code>
        * @return The vars.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getVars() {
         if (varsBuilder_ == null) {
-          return vars_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
+          return vars_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
         } else {
           return varsBuilder_.getMessage();
         }
@@ -4633,7 +4633,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
-      public Builder setVars(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector value) {
+      public Builder setVars(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector value) {
         if (varsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4650,7 +4650,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
       public Builder setVars(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder builderForValue) {
         if (varsBuilder_ == null) {
           vars_ = builderForValue.build();
         } else {
@@ -4663,11 +4663,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
-      public Builder mergeVars(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector value) {
+      public Builder mergeVars(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector value) {
         if (varsBuilder_ == null) {
           if (((bitField0_ & 0x00000800) != 0) &&
             vars_ != null &&
-            vars_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance()) {
+            vars_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance()) {
             getVarsBuilder().mergeFrom(value);
           } else {
             vars_ = value;
@@ -4697,7 +4697,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder getVarsBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder getVarsBuilder() {
         bitField0_ |= 0x00000800;
         onChanged();
         return getVarsFieldBuilder().getBuilder();
@@ -4705,23 +4705,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder getVarsOrBuilder() {
         if (varsBuilder_ != null) {
           return varsBuilder_.getMessageOrBuilder();
         } else {
           return vars_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance() : vars_;
         }
       }
       /**
        * <code>.solver.PBVariableVector vars = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder> 
           getVarsFieldBuilder() {
         if (varsBuilder_ == null) {
           varsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder>(
                   getVars(),
                   getParentForChildren(),
                   isClean());
@@ -4730,9 +4730,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return varsBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap orderHeap_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap orderHeap_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder> orderHeapBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder> orderHeapBuilder_;
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        * @return Whether the orderHeap field is set.
@@ -4744,9 +4744,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBHeap orderHeap = 13;</code>
        * @return The orderHeap.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getOrderHeap() {
         if (orderHeapBuilder_ == null) {
-          return orderHeap_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
+          return orderHeap_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
         } else {
           return orderHeapBuilder_.getMessage();
         }
@@ -4754,7 +4754,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
-      public Builder setOrderHeap(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap value) {
+      public Builder setOrderHeap(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap value) {
         if (orderHeapBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4771,7 +4771,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
       public Builder setOrderHeap(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder builderForValue) {
         if (orderHeapBuilder_ == null) {
           orderHeap_ = builderForValue.build();
         } else {
@@ -4784,11 +4784,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
-      public Builder mergeOrderHeap(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap value) {
+      public Builder mergeOrderHeap(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap value) {
         if (orderHeapBuilder_ == null) {
           if (((bitField0_ & 0x00001000) != 0) &&
             orderHeap_ != null &&
-            orderHeap_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance()) {
+            orderHeap_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance()) {
             getOrderHeapBuilder().mergeFrom(value);
           } else {
             orderHeap_ = value;
@@ -4818,7 +4818,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder getOrderHeapBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder getOrderHeapBuilder() {
         bitField0_ |= 0x00001000;
         onChanged();
         return getOrderHeapFieldBuilder().getBuilder();
@@ -4826,23 +4826,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder getOrderHeapOrBuilder() {
         if (orderHeapBuilder_ != null) {
           return orderHeapBuilder_.getMessageOrBuilder();
         } else {
           return orderHeap_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance() : orderHeap_;
         }
       }
       /**
        * <code>.solver.PBHeap orderHeap = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder> 
           getOrderHeapFieldBuilder() {
         if (orderHeapBuilder_ == null) {
           orderHeapBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder>(
                   getOrderHeap(),
                   getParentForChildren(),
                   isClean());
@@ -4851,9 +4851,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return orderHeapBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector trail_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector trail_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> trailBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> trailBuilder_;
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        * @return Whether the trail field is set.
@@ -4865,9 +4865,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector trail = 14;</code>
        * @return The trail.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrail() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrail() {
         if (trailBuilder_ == null) {
-          return trail_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
+          return trail_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
         } else {
           return trailBuilder_.getMessage();
         }
@@ -4875,7 +4875,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        */
-      public Builder setTrail(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setTrail(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (trailBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -4892,7 +4892,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector trail = 14;</code>
        */
       public Builder setTrail(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (trailBuilder_ == null) {
           trail_ = builderForValue.build();
         } else {
@@ -4905,11 +4905,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        */
-      public Builder mergeTrail(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeTrail(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (trailBuilder_ == null) {
           if (((bitField0_ & 0x00002000) != 0) &&
             trail_ != null &&
-            trail_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            trail_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getTrailBuilder().mergeFrom(value);
           } else {
             trail_ = value;
@@ -4939,7 +4939,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getTrailBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getTrailBuilder() {
         bitField0_ |= 0x00002000;
         onChanged();
         return getTrailFieldBuilder().getBuilder();
@@ -4947,23 +4947,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailOrBuilder() {
         if (trailBuilder_ != null) {
           return trailBuilder_.getMessageOrBuilder();
         } else {
           return trail_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trail_;
         }
       }
       /**
        * <code>.collections.PBIntVector trail = 14;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getTrailFieldBuilder() {
         if (trailBuilder_ == null) {
           trailBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getTrail(),
                   getParentForChildren(),
                   isClean());
@@ -4972,9 +4972,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return trailBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector trailLim_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector trailLim_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> trailLimBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> trailLimBuilder_;
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        * @return Whether the trailLim field is set.
@@ -4986,9 +4986,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector trailLim = 15;</code>
        * @return The trailLim.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getTrailLim() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getTrailLim() {
         if (trailLimBuilder_ == null) {
-          return trailLim_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
+          return trailLim_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
         } else {
           return trailLimBuilder_.getMessage();
         }
@@ -4996,7 +4996,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
-      public Builder setTrailLim(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setTrailLim(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (trailLimBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5013,7 +5013,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
       public Builder setTrailLim(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (trailLimBuilder_ == null) {
           trailLim_ = builderForValue.build();
         } else {
@@ -5026,11 +5026,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
-      public Builder mergeTrailLim(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeTrailLim(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (trailLimBuilder_ == null) {
           if (((bitField0_ & 0x00004000) != 0) &&
             trailLim_ != null &&
-            trailLim_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            trailLim_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getTrailLimBuilder().mergeFrom(value);
           } else {
             trailLim_ = value;
@@ -5060,7 +5060,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getTrailLimBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getTrailLimBuilder() {
         bitField0_ |= 0x00004000;
         onChanged();
         return getTrailLimFieldBuilder().getBuilder();
@@ -5068,23 +5068,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getTrailLimOrBuilder() {
         if (trailLimBuilder_ != null) {
           return trailLimBuilder_.getMessageOrBuilder();
         } else {
           return trailLim_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : trailLim_;
         }
       }
       /**
        * <code>.collections.PBIntVector trailLim = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getTrailLimFieldBuilder() {
         if (trailLimBuilder_ == null) {
           trailLimBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getTrailLim(),
                   getParentForChildren(),
                   isClean());
@@ -5093,9 +5093,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return trailLimBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector model_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector model_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> modelBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> modelBuilder_;
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        * @return Whether the model field is set.
@@ -5107,9 +5107,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBBooleanVector model = 16;</code>
        * @return The model.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getModel() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getModel() {
         if (modelBuilder_ == null) {
-          return model_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
+          return model_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
         } else {
           return modelBuilder_.getMessage();
         }
@@ -5117,7 +5117,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
-      public Builder setModel(com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector value) {
+      public Builder setModel(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector value) {
         if (modelBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5134,7 +5134,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
       public Builder setModel(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder builderForValue) {
         if (modelBuilder_ == null) {
           model_ = builderForValue.build();
         } else {
@@ -5147,11 +5147,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
-      public Builder mergeModel(com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector value) {
+      public Builder mergeModel(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector value) {
         if (modelBuilder_ == null) {
           if (((bitField0_ & 0x00008000) != 0) &&
             model_ != null &&
-            model_ != com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance()) {
+            model_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance()) {
             getModelBuilder().mergeFrom(value);
           } else {
             model_ = value;
@@ -5181,7 +5181,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder getModelBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder getModelBuilder() {
         bitField0_ |= 0x00008000;
         onChanged();
         return getModelFieldBuilder().getBuilder();
@@ -5189,23 +5189,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getModelOrBuilder() {
         if (modelBuilder_ != null) {
           return modelBuilder_.getMessageOrBuilder();
         } else {
           return model_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : model_;
         }
       }
       /**
        * <code>.collections.PBBooleanVector model = 16;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> 
           getModelFieldBuilder() {
         if (modelBuilder_ == null) {
           modelBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder>(
                   getModel(),
                   getParentForChildren(),
                   isClean());
@@ -5214,9 +5214,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return modelBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector assumptionConflict_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector assumptionConflict_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> assumptionConflictBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> assumptionConflictBuilder_;
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        * @return Whether the assumptionConflict field is set.
@@ -5228,9 +5228,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        * @return The assumptionConflict.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptionConflict() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptionConflict() {
         if (assumptionConflictBuilder_ == null) {
-          return assumptionConflict_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
+          return assumptionConflict_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
         } else {
           return assumptionConflictBuilder_.getMessage();
         }
@@ -5238,7 +5238,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
-      public Builder setAssumptionConflict(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setAssumptionConflict(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (assumptionConflictBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5255,7 +5255,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
       public Builder setAssumptionConflict(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (assumptionConflictBuilder_ == null) {
           assumptionConflict_ = builderForValue.build();
         } else {
@@ -5268,11 +5268,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
-      public Builder mergeAssumptionConflict(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeAssumptionConflict(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (assumptionConflictBuilder_ == null) {
           if (((bitField0_ & 0x00010000) != 0) &&
             assumptionConflict_ != null &&
-            assumptionConflict_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            assumptionConflict_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getAssumptionConflictBuilder().mergeFrom(value);
           } else {
             assumptionConflict_ = value;
@@ -5302,7 +5302,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getAssumptionConflictBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getAssumptionConflictBuilder() {
         bitField0_ |= 0x00010000;
         onChanged();
         return getAssumptionConflictFieldBuilder().getBuilder();
@@ -5310,23 +5310,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionConflictOrBuilder() {
         if (assumptionConflictBuilder_ != null) {
           return assumptionConflictBuilder_.getMessageOrBuilder();
         } else {
           return assumptionConflict_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptionConflict_;
         }
       }
       /**
        * <code>.collections.PBIntVector assumptionConflict = 17;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getAssumptionConflictFieldBuilder() {
         if (assumptionConflictBuilder_ == null) {
           assumptionConflictBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getAssumptionConflict(),
                   getParentForChildren(),
                   isClean());
@@ -5335,9 +5335,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return assumptionConflictBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector assumptions_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector assumptions_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> assumptionsBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> assumptionsBuilder_;
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        * @return Whether the assumptions field is set.
@@ -5349,9 +5349,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector assumptions = 18;</code>
        * @return The assumptions.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getAssumptions() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getAssumptions() {
         if (assumptionsBuilder_ == null) {
-          return assumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
+          return assumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
         } else {
           return assumptionsBuilder_.getMessage();
         }
@@ -5359,7 +5359,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
-      public Builder setAssumptions(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setAssumptions(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (assumptionsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5376,7 +5376,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
       public Builder setAssumptions(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (assumptionsBuilder_ == null) {
           assumptions_ = builderForValue.build();
         } else {
@@ -5389,11 +5389,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
-      public Builder mergeAssumptions(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeAssumptions(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (assumptionsBuilder_ == null) {
           if (((bitField0_ & 0x00020000) != 0) &&
             assumptions_ != null &&
-            assumptions_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            assumptions_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getAssumptionsBuilder().mergeFrom(value);
           } else {
             assumptions_ = value;
@@ -5423,7 +5423,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getAssumptionsBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getAssumptionsBuilder() {
         bitField0_ |= 0x00020000;
         onChanged();
         return getAssumptionsFieldBuilder().getBuilder();
@@ -5431,23 +5431,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getAssumptionsOrBuilder() {
         if (assumptionsBuilder_ != null) {
           return assumptionsBuilder_.getMessageOrBuilder();
         } else {
           return assumptions_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : assumptions_;
         }
       }
       /**
        * <code>.collections.PBIntVector assumptions = 18;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getAssumptionsFieldBuilder() {
         if (assumptionsBuilder_ == null) {
           assumptionsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getAssumptions(),
                   getParentForChildren(),
                   isClean());
@@ -5540,9 +5540,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector seen_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector seen_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> seenBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> seenBuilder_;
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        * @return Whether the seen field is set.
@@ -5554,9 +5554,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBBooleanVector seen = 20;</code>
        * @return The seen.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector getSeen() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector getSeen() {
         if (seenBuilder_ == null) {
-          return seen_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
+          return seen_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
         } else {
           return seenBuilder_.getMessage();
         }
@@ -5564,7 +5564,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
-      public Builder setSeen(com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector value) {
+      public Builder setSeen(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector value) {
         if (seenBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5581,7 +5581,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
       public Builder setSeen(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder builderForValue) {
         if (seenBuilder_ == null) {
           seen_ = builderForValue.build();
         } else {
@@ -5594,11 +5594,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
-      public Builder mergeSeen(com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector value) {
+      public Builder mergeSeen(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector value) {
         if (seenBuilder_ == null) {
           if (((bitField0_ & 0x00080000) != 0) &&
             seen_ != null &&
-            seen_ != com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance()) {
+            seen_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance()) {
             getSeenBuilder().mergeFrom(value);
           } else {
             seen_ = value;
@@ -5628,7 +5628,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder getSeenBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder getSeenBuilder() {
         bitField0_ |= 0x00080000;
         onChanged();
         return getSeenFieldBuilder().getBuilder();
@@ -5636,23 +5636,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder getSeenOrBuilder() {
         if (seenBuilder_ != null) {
           return seenBuilder_.getMessageOrBuilder();
         } else {
           return seen_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.getDefaultInstance() : seen_;
         }
       }
       /**
        * <code>.collections.PBBooleanVector seen = 20;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder> 
           getSeenFieldBuilder() {
         if (seenBuilder_ == null) {
           seenBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVectorOrBuilder>(
                   getSeen(),
                   getParentForChildren(),
                   isClean());
@@ -5885,22 +5885,22 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> pgOriginalClauses_ =
+      private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> pgOriginalClauses_ =
         java.util.Collections.emptyList();
       private void ensurePgOriginalClausesIsMutable() {
         if (!((bitField0_ & 0x08000000) != 0)) {
-          pgOriginalClauses_ = new java.util.ArrayList<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation>(pgOriginalClauses_);
+          pgOriginalClauses_ = new java.util.ArrayList<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation>(pgOriginalClauses_);
           bitField0_ |= 0x08000000;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> pgOriginalClausesBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> pgOriginalClausesBuilder_;
 
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> getPgOriginalClausesList() {
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> getPgOriginalClausesList() {
         if (pgOriginalClausesBuilder_ == null) {
           return java.util.Collections.unmodifiableList(pgOriginalClauses_);
         } else {
@@ -5920,7 +5920,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index) {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getPgOriginalClauses(int index) {
         if (pgOriginalClausesBuilder_ == null) {
           return pgOriginalClauses_.get(index);
         } else {
@@ -5931,7 +5931,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder setPgOriginalClauses(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
         if (pgOriginalClausesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5948,7 +5948,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder setPgOriginalClauses(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
         if (pgOriginalClausesBuilder_ == null) {
           ensurePgOriginalClausesIsMutable();
           pgOriginalClauses_.set(index, builderForValue.build());
@@ -5961,7 +5961,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public Builder addPgOriginalClauses(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
+      public Builder addPgOriginalClauses(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
         if (pgOriginalClausesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5978,7 +5978,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder addPgOriginalClauses(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation value) {
         if (pgOriginalClausesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5995,7 +5995,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder addPgOriginalClauses(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
         if (pgOriginalClausesBuilder_ == null) {
           ensurePgOriginalClausesIsMutable();
           pgOriginalClauses_.add(builderForValue.build());
@@ -6009,7 +6009,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder addPgOriginalClauses(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder builderForValue) {
         if (pgOriginalClausesBuilder_ == null) {
           ensurePgOriginalClausesIsMutable();
           pgOriginalClauses_.add(index, builderForValue.build());
@@ -6023,7 +6023,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
       public Builder addAllPgOriginalClauses(
-          java.lang.Iterable<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> values) {
+          java.lang.Iterable<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation> values) {
         if (pgOriginalClausesBuilder_ == null) {
           ensurePgOriginalClausesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -6063,14 +6063,14 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder getPgOriginalClausesBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder getPgOriginalClausesBuilder(
           int index) {
         return getPgOriginalClausesFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder getPgOriginalClausesOrBuilder(
           int index) {
         if (pgOriginalClausesBuilder_ == null) {
           return pgOriginalClauses_.get(index);  } else {
@@ -6080,7 +6080,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
+      public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
            getPgOriginalClausesOrBuilderList() {
         if (pgOriginalClausesBuilder_ != null) {
           return pgOriginalClausesBuilder_.getMessageOrBuilderList();
@@ -6091,31 +6091,31 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder addPgOriginalClausesBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder addPgOriginalClausesBuilder() {
         return getPgOriginalClausesFieldBuilder().addBuilder(
-            com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance());
+            com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder addPgOriginalClausesBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder addPgOriginalClausesBuilder(
           int index) {
         return getPgOriginalClausesFieldBuilder().addBuilder(
-            index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance());
+            index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBProofInformation pgOriginalClauses = 28;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder> 
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder> 
            getPgOriginalClausesBuilderList() {
         return getPgOriginalClausesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder> 
           getPgOriginalClausesFieldBuilder() {
         if (pgOriginalClausesBuilder_ == null) {
           pgOriginalClausesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder>(
                   pgOriginalClauses_,
                   ((bitField0_ & 0x08000000) != 0),
                   getParentForChildren(),
@@ -6125,9 +6125,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return pgOriginalClausesBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector pgProof_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector pgProof_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder> pgProofBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder> pgProofBuilder_;
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        * @return Whether the pgProof field is set.
@@ -6139,9 +6139,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        * @return The pgProof.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector getPgProof() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector getPgProof() {
         if (pgProofBuilder_ == null) {
-          return pgProof_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
+          return pgProof_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
         } else {
           return pgProofBuilder_.getMessage();
         }
@@ -6149,7 +6149,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
-      public Builder setPgProof(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector value) {
+      public Builder setPgProof(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector value) {
         if (pgProofBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6166,7 +6166,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
       public Builder setPgProof(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.Builder builderForValue) {
         if (pgProofBuilder_ == null) {
           pgProof_ = builderForValue.build();
         } else {
@@ -6179,11 +6179,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
-      public Builder mergePgProof(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector value) {
+      public Builder mergePgProof(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector value) {
         if (pgProofBuilder_ == null) {
           if (((bitField0_ & 0x10000000) != 0) &&
             pgProof_ != null &&
-            pgProof_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance()) {
+            pgProof_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance()) {
             getPgProofBuilder().mergeFrom(value);
           } else {
             pgProof_ = value;
@@ -6213,7 +6213,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.Builder getPgProofBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.Builder getPgProofBuilder() {
         bitField0_ |= 0x10000000;
         onChanged();
         return getPgProofFieldBuilder().getBuilder();
@@ -6221,23 +6221,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder getPgProofOrBuilder() {
         if (pgProofBuilder_ != null) {
           return pgProofBuilder_.getMessageOrBuilder();
         } else {
           return pgProof_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.getDefaultInstance() : pgProof_;
         }
       }
       /**
        * <code>.collections.PBIntVectorVector pgProof = 29;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder> 
           getPgProofFieldBuilder() {
         if (pgProofBuilder_ == null) {
           pgProofBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVectorOrBuilder>(
                   getPgProof(),
                   getParentForChildren(),
                   isClean());
@@ -6278,9 +6278,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector backboneCandidates_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector backboneCandidates_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> backboneCandidatesBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> backboneCandidatesBuilder_;
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        * @return Whether the backboneCandidates field is set.
@@ -6292,9 +6292,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        * @return The backboneCandidates.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneCandidates() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneCandidates() {
         if (backboneCandidatesBuilder_ == null) {
-          return backboneCandidates_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
+          return backboneCandidates_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
         } else {
           return backboneCandidatesBuilder_.getMessage();
         }
@@ -6302,7 +6302,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
-      public Builder setBackboneCandidates(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setBackboneCandidates(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (backboneCandidatesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6319,7 +6319,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
       public Builder setBackboneCandidates(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (backboneCandidatesBuilder_ == null) {
           backboneCandidates_ = builderForValue.build();
         } else {
@@ -6332,11 +6332,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
-      public Builder mergeBackboneCandidates(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeBackboneCandidates(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (backboneCandidatesBuilder_ == null) {
           if (((bitField0_ & 0x40000000) != 0) &&
             backboneCandidates_ != null &&
-            backboneCandidates_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            backboneCandidates_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getBackboneCandidatesBuilder().mergeFrom(value);
           } else {
             backboneCandidates_ = value;
@@ -6366,7 +6366,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getBackboneCandidatesBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getBackboneCandidatesBuilder() {
         bitField0_ |= 0x40000000;
         onChanged();
         return getBackboneCandidatesFieldBuilder().getBuilder();
@@ -6374,23 +6374,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneCandidatesOrBuilder() {
         if (backboneCandidatesBuilder_ != null) {
           return backboneCandidatesBuilder_.getMessageOrBuilder();
         } else {
           return backboneCandidates_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneCandidates_;
         }
       }
       /**
        * <code>.collections.PBIntVector backboneCandidates = 31;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getBackboneCandidatesFieldBuilder() {
         if (backboneCandidatesBuilder_ == null) {
           backboneCandidatesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getBackboneCandidates(),
                   getParentForChildren(),
                   isClean());
@@ -6399,9 +6399,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return backboneCandidatesBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector backboneAssumptions_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector backboneAssumptions_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> backboneAssumptionsBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> backboneAssumptionsBuilder_;
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        * @return Whether the backboneAssumptions field is set.
@@ -6413,9 +6413,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        * @return The backboneAssumptions.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getBackboneAssumptions() {
         if (backboneAssumptionsBuilder_ == null) {
-          return backboneAssumptions_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
+          return backboneAssumptions_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
         } else {
           return backboneAssumptionsBuilder_.getMessage();
         }
@@ -6423,7 +6423,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
-      public Builder setBackboneAssumptions(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setBackboneAssumptions(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (backboneAssumptionsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6440,7 +6440,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
       public Builder setBackboneAssumptions(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (backboneAssumptionsBuilder_ == null) {
           backboneAssumptions_ = builderForValue.build();
         } else {
@@ -6453,11 +6453,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
-      public Builder mergeBackboneAssumptions(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeBackboneAssumptions(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (backboneAssumptionsBuilder_ == null) {
           if (((bitField0_ & 0x80000000) != 0) &&
             backboneAssumptions_ != null &&
-            backboneAssumptions_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            backboneAssumptions_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getBackboneAssumptionsBuilder().mergeFrom(value);
           } else {
             backboneAssumptions_ = value;
@@ -6487,7 +6487,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getBackboneAssumptionsBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getBackboneAssumptionsBuilder() {
         bitField0_ |= 0x80000000;
         onChanged();
         return getBackboneAssumptionsFieldBuilder().getBuilder();
@@ -6495,23 +6495,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getBackboneAssumptionsOrBuilder() {
         if (backboneAssumptionsBuilder_ != null) {
           return backboneAssumptionsBuilder_.getMessageOrBuilder();
         } else {
           return backboneAssumptions_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : backboneAssumptions_;
         }
       }
       /**
        * <code>.collections.PBIntVector backboneAssumptions = 32;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getBackboneAssumptionsFieldBuilder() {
         if (backboneAssumptionsBuilder_ == null) {
           backboneAssumptionsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getBackboneAssumptions(),
                   getParentForChildren(),
                   isClean());
@@ -6560,7 +6560,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
       getBackboneMap() {
         return getBackboneMapMap();
       }
@@ -6568,7 +6568,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
        */
       @java.lang.Override
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
       getBackboneMapMap() {
         return internalGetAdaptedBackboneMapMap(
             internalGetBackboneMap().getMap());}
@@ -6577,10 +6577,10 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        */
       @java.lang.Override
       public /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrDefault(
           int key,
           /* nullable */
-com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate defaultValue) {
+com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate defaultValue) {
 
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetBackboneMap().getMap();
@@ -6592,7 +6592,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
        */
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getBackboneMapOrThrow(
           int key) {
 
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
@@ -6665,7 +6665,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * Use alternate mutation accessors instead.
        */
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
+      public java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate>
           getMutableBackboneMap() {
         bitField1_ |= 0x00000001;
         return internalGetAdaptedBackboneMapMap(
@@ -6676,7 +6676,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        */
       public Builder putBackboneMap(
           int key,
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate value) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate value) {
 
 
         internalGetMutableBackboneMap().getMutableMap()
@@ -6688,7 +6688,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>map&lt;int32, .solver.PBTristate&gt; backboneMap = 33;</code>
        */
       public Builder putAllBackboneMap(
-          java.util.Map<java.lang.Integer, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate> values) {
+          java.util.Map<java.lang.Integer, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate> values) {
         internalGetAdaptedBackboneMapMap(
             internalGetMutableBackboneMap().getMutableMap())
                 .putAll(values);
@@ -6728,9 +6728,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector selectionOrder_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector selectionOrder_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> selectionOrderBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> selectionOrderBuilder_;
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        * @return Whether the selectionOrder field is set.
@@ -6742,9 +6742,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        * @return The selectionOrder.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getSelectionOrder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getSelectionOrder() {
         if (selectionOrderBuilder_ == null) {
-          return selectionOrder_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
+          return selectionOrder_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
         } else {
           return selectionOrderBuilder_.getMessage();
         }
@@ -6752,7 +6752,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
-      public Builder setSelectionOrder(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setSelectionOrder(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (selectionOrderBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6769,7 +6769,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
       public Builder setSelectionOrder(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (selectionOrderBuilder_ == null) {
           selectionOrder_ = builderForValue.build();
         } else {
@@ -6782,11 +6782,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
-      public Builder mergeSelectionOrder(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeSelectionOrder(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (selectionOrderBuilder_ == null) {
           if (((bitField1_ & 0x00000002) != 0) &&
             selectionOrder_ != null &&
-            selectionOrder_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            selectionOrder_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getSelectionOrderBuilder().mergeFrom(value);
           } else {
             selectionOrder_ = value;
@@ -6816,7 +6816,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getSelectionOrderBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getSelectionOrderBuilder() {
         bitField1_ |= 0x00000002;
         onChanged();
         return getSelectionOrderFieldBuilder().getBuilder();
@@ -6824,23 +6824,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getSelectionOrderOrBuilder() {
         if (selectionOrderBuilder_ != null) {
           return selectionOrderBuilder_.getMessageOrBuilder();
         } else {
           return selectionOrder_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : selectionOrder_;
         }
       }
       /**
        * <code>.collections.PBIntVector selectionOrder = 34;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getSelectionOrderFieldBuilder() {
         if (selectionOrderBuilder_ == null) {
           selectionOrderBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getSelectionOrder(),
                   getParentForChildren(),
                   isClean());
@@ -6881,9 +6881,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return this;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watchesBin_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector watchesBin_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> watchesBinBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> watchesBinBuilder_;
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        * @return Whether the watchesBin field is set.
@@ -6895,9 +6895,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        * @return The watchesBin.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getWatchesBin() {
         if (watchesBinBuilder_ == null) {
-          return watchesBin_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
+          return watchesBin_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
         } else {
           return watchesBinBuilder_.getMessage();
         }
@@ -6905,7 +6905,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
-      public Builder setWatchesBin(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
+      public Builder setWatchesBin(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
         if (watchesBinBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6922,7 +6922,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
       public Builder setWatchesBin(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder builderForValue) {
         if (watchesBinBuilder_ == null) {
           watchesBin_ = builderForValue.build();
         } else {
@@ -6935,11 +6935,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
-      public Builder mergeWatchesBin(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
+      public Builder mergeWatchesBin(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector value) {
         if (watchesBinBuilder_ == null) {
           if (((bitField1_ & 0x00000008) != 0) &&
             watchesBin_ != null &&
-            watchesBin_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) {
+            watchesBin_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) {
             getWatchesBinBuilder().mergeFrom(value);
           } else {
             watchesBin_ = value;
@@ -6969,7 +6969,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder getWatchesBinBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder getWatchesBinBuilder() {
         bitField1_ |= 0x00000008;
         onChanged();
         return getWatchesBinFieldBuilder().getBuilder();
@@ -6977,23 +6977,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder getWatchesBinOrBuilder() {
         if (watchesBinBuilder_ != null) {
           return watchesBinBuilder_.getMessageOrBuilder();
         } else {
           return watchesBin_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance() : watchesBin_;
         }
       }
       /**
        * <code>.solver.PBWatcherVectorVector watchesBin = 36;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder> 
           getWatchesBinFieldBuilder() {
         if (watchesBinBuilder_ == null) {
           watchesBinBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder>(
                   getWatchesBin(),
                   getParentForChildren(),
                   isClean());
@@ -7002,9 +7002,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return watchesBinBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector permDiff_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector permDiff_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> permDiffBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> permDiffBuilder_;
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        * @return Whether the permDiff field is set.
@@ -7016,9 +7016,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector permDiff = 37;</code>
        * @return The permDiff.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getPermDiff() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getPermDiff() {
         if (permDiffBuilder_ == null) {
-          return permDiff_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
+          return permDiff_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
         } else {
           return permDiffBuilder_.getMessage();
         }
@@ -7026,7 +7026,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
-      public Builder setPermDiff(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setPermDiff(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (permDiffBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7043,7 +7043,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
       public Builder setPermDiff(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (permDiffBuilder_ == null) {
           permDiff_ = builderForValue.build();
         } else {
@@ -7056,11 +7056,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
-      public Builder mergePermDiff(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergePermDiff(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (permDiffBuilder_ == null) {
           if (((bitField1_ & 0x00000010) != 0) &&
             permDiff_ != null &&
-            permDiff_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            permDiff_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getPermDiffBuilder().mergeFrom(value);
           } else {
             permDiff_ = value;
@@ -7090,7 +7090,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getPermDiffBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getPermDiffBuilder() {
         bitField1_ |= 0x00000010;
         onChanged();
         return getPermDiffFieldBuilder().getBuilder();
@@ -7098,23 +7098,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getPermDiffOrBuilder() {
         if (permDiffBuilder_ != null) {
           return permDiffBuilder_.getMessageOrBuilder();
         } else {
           return permDiff_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : permDiff_;
         }
       }
       /**
        * <code>.collections.PBIntVector permDiff = 37;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getPermDiffFieldBuilder() {
         if (permDiffBuilder_ == null) {
           permDiffBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getPermDiff(),
                   getParentForChildren(),
                   isClean());
@@ -7123,9 +7123,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return permDiffBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector lastDecisionLevel_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector lastDecisionLevel_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> lastDecisionLevelBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> lastDecisionLevelBuilder_;
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        * @return Whether the lastDecisionLevel field is set.
@@ -7137,9 +7137,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        * @return The lastDecisionLevel.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getLastDecisionLevel() {
         if (lastDecisionLevelBuilder_ == null) {
-          return lastDecisionLevel_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
+          return lastDecisionLevel_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
         } else {
           return lastDecisionLevelBuilder_.getMessage();
         }
@@ -7147,7 +7147,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
-      public Builder setLastDecisionLevel(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setLastDecisionLevel(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (lastDecisionLevelBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7164,7 +7164,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
       public Builder setLastDecisionLevel(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (lastDecisionLevelBuilder_ == null) {
           lastDecisionLevel_ = builderForValue.build();
         } else {
@@ -7177,11 +7177,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
-      public Builder mergeLastDecisionLevel(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeLastDecisionLevel(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (lastDecisionLevelBuilder_ == null) {
           if (((bitField1_ & 0x00000020) != 0) &&
             lastDecisionLevel_ != null &&
-            lastDecisionLevel_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            lastDecisionLevel_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getLastDecisionLevelBuilder().mergeFrom(value);
           } else {
             lastDecisionLevel_ = value;
@@ -7211,7 +7211,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getLastDecisionLevelBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getLastDecisionLevelBuilder() {
         bitField1_ |= 0x00000020;
         onChanged();
         return getLastDecisionLevelFieldBuilder().getBuilder();
@@ -7219,23 +7219,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getLastDecisionLevelOrBuilder() {
         if (lastDecisionLevelBuilder_ != null) {
           return lastDecisionLevelBuilder_.getMessageOrBuilder();
         } else {
           return lastDecisionLevel_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : lastDecisionLevel_;
         }
       }
       /**
        * <code>.collections.PBIntVector lastDecisionLevel = 38;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getLastDecisionLevelFieldBuilder() {
         if (lastDecisionLevelBuilder_ == null) {
           lastDecisionLevelBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getLastDecisionLevel(),
                   getParentForChildren(),
                   isClean());
@@ -7244,9 +7244,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return lastDecisionLevelBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue lbdQueue_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue lbdQueue_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder> lbdQueueBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder> lbdQueueBuilder_;
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        * @return Whether the lbdQueue field is set.
@@ -7258,9 +7258,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        * @return The lbdQueue.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getLbdQueue() {
         if (lbdQueueBuilder_ == null) {
-          return lbdQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
+          return lbdQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
         } else {
           return lbdQueueBuilder_.getMessage();
         }
@@ -7268,7 +7268,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
-      public Builder setLbdQueue(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue value) {
+      public Builder setLbdQueue(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue value) {
         if (lbdQueueBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7285,7 +7285,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
       public Builder setLbdQueue(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder builderForValue) {
         if (lbdQueueBuilder_ == null) {
           lbdQueue_ = builderForValue.build();
         } else {
@@ -7298,11 +7298,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
-      public Builder mergeLbdQueue(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue value) {
+      public Builder mergeLbdQueue(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue value) {
         if (lbdQueueBuilder_ == null) {
           if (((bitField1_ & 0x00000040) != 0) &&
             lbdQueue_ != null &&
-            lbdQueue_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance()) {
+            lbdQueue_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance()) {
             getLbdQueueBuilder().mergeFrom(value);
           } else {
             lbdQueue_ = value;
@@ -7332,7 +7332,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder getLbdQueueBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder getLbdQueueBuilder() {
         bitField1_ |= 0x00000040;
         onChanged();
         return getLbdQueueFieldBuilder().getBuilder();
@@ -7340,23 +7340,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder getLbdQueueOrBuilder() {
         if (lbdQueueBuilder_ != null) {
           return lbdQueueBuilder_.getMessageOrBuilder();
         } else {
           return lbdQueue_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance() : lbdQueue_;
         }
       }
       /**
        * <code>.solver.PBBoundedLongQueue lbdQueue = 39;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder> 
           getLbdQueueFieldBuilder() {
         if (lbdQueueBuilder_ == null) {
           lbdQueueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder>(
                   getLbdQueue(),
                   getParentForChildren(),
                   isClean());
@@ -7365,9 +7365,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         return lbdQueueBuilder_;
       }
 
-      private com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue trailQueue_;
+      private com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue trailQueue_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder> trailQueueBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder> trailQueueBuilder_;
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        * @return Whether the trailQueue field is set.
@@ -7379,9 +7379,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        * @return The trailQueue.
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getTrailQueue() {
         if (trailQueueBuilder_ == null) {
-          return trailQueue_ == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
+          return trailQueue_ == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
         } else {
           return trailQueueBuilder_.getMessage();
         }
@@ -7389,7 +7389,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
-      public Builder setTrailQueue(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue value) {
+      public Builder setTrailQueue(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue value) {
         if (trailQueueBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7406,7 +7406,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
       public Builder setTrailQueue(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder builderForValue) {
         if (trailQueueBuilder_ == null) {
           trailQueue_ = builderForValue.build();
         } else {
@@ -7419,11 +7419,11 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
-      public Builder mergeTrailQueue(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue value) {
+      public Builder mergeTrailQueue(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue value) {
         if (trailQueueBuilder_ == null) {
           if (((bitField1_ & 0x00000080) != 0) &&
             trailQueue_ != null &&
-            trailQueue_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance()) {
+            trailQueue_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance()) {
             getTrailQueueBuilder().mergeFrom(value);
           } else {
             trailQueue_ = value;
@@ -7453,7 +7453,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder getTrailQueueBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder getTrailQueueBuilder() {
         bitField1_ |= 0x00000080;
         onChanged();
         return getTrailQueueFieldBuilder().getBuilder();
@@ -7461,23 +7461,23 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder getTrailQueueOrBuilder() {
         if (trailQueueBuilder_ != null) {
           return trailQueueBuilder_.getMessageOrBuilder();
         } else {
           return trailQueue_ == null ?
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance() : trailQueue_;
         }
       }
       /**
        * <code>.solver.PBBoundedIntQueue trailQueue = 40;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder> 
           getTrailQueueFieldBuilder() {
         if (trailQueueBuilder_ == null) {
           trailQueueBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder>(
                   getTrailQueue(),
                   getParentForChildren(),
                   isClean());
@@ -7714,12 +7714,12 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBSatSolver)
-    private static final com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver();
     }
 
-    public static com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7755,7 +7755,7 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.ProtoBufSatSolver.PBSatSolver getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7832,16 +7832,16 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
       "\005\022\016\n\006sumLBD\030. \001(\001\022\022\n\ncurRestart\030/ \001(\005\032/\n" +
       "\rName2idxEntry\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001" +
       "(\005:\0028\001\032F\n\020BackboneMapEntry\022\013\n\003key\030\001 \001(\005\022" +
-      "!\n\005value\030\002 \001(\0162\022.solver.PBTristate:\0028\001B3" +
-      "\n\036com.booleworks.logicng.solversB\021ProtoB" +
-      "ufSatSolverb\006proto3"
+      "!\n\005value\030\002 \001(\0162\022.solver.PBTristate:\0028\001BA" +
+      "\n,com.booleworks.logicng.serialization.s" +
+      "olversB\021ProtoBufSatSolverb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.booleworks.logicng.collections.ProtoBufCollections.getDescriptor(),
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor(),
-          com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.getDescriptor(),
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.getDescriptor(),
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor(),
+          com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.getDescriptor(),
         });
     internal_static_solver_PBSatSolver_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -7862,9 +7862,9 @@ com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTri
         internal_static_solver_PBSatSolver_BackboneMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
     descriptor.resolveAllFeaturesImmutable();
-    com.booleworks.logicng.collections.ProtoBufCollections.getDescriptor();
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor();
-    com.booleworks.logicng.solvers.sat.ProtoBufSolverCommons.getDescriptor();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.getDescriptor();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor();
+    com.booleworks.logicng.serialization.solvers.sat.ProtoBufSolverCommons.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

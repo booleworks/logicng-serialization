@@ -6,9 +6,9 @@ package com.booleworks.logicng.serialization;
 import com.booleworks.logicng.collections.LNGBooleanVector;
 import com.booleworks.logicng.collections.LNGIntVector;
 import com.booleworks.logicng.collections.LNGLongVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

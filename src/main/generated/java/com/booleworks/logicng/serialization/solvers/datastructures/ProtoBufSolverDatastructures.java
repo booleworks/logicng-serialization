@@ -2,7 +2,7 @@
 // source: solver_datastructures.proto
 // Protobuf Java Version: 4.26.1
 
-package com.booleworks.logicng.solvers.datastructures;
+package com.booleworks.logicng.serialization.solvers.datastructures;
 
 public final class ProtoBufSolverDatastructures {
   private ProtoBufSolverDatastructures() {}
@@ -124,7 +124,7 @@ public final class ProtoBufSolverDatastructures {
     }
     public static final com.google.protobuf.Descriptors.EnumDescriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor().getEnumTypes().get(0);
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.getDescriptor().getEnumTypes().get(0);
     }
 
     private static final PBTristate[] VALUES = values();
@@ -163,11 +163,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBIntVector data = 1;</code>
      * @return The data.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getData();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getData();
     /**
      * <code>.collections.PBIntVector data = 1;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder();
 
     /**
      * <code>int32 learntOnState = 2;</code>
@@ -249,20 +249,20 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder.class);
     }
 
     private int bitField0_;
     public static final int DATA_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector data_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector data_;
     /**
      * <code>.collections.PBIntVector data = 1;</code>
      * @return Whether the data field is set.
@@ -276,15 +276,15 @@ public final class ProtoBufSolverDatastructures {
      * @return The data.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getData() {
-      return data_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getData() {
+      return data_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
     }
     /**
      * <code>.collections.PBIntVector data = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder() {
-      return data_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder() {
+      return data_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
     }
 
     public static final int LEARNTONSTATE_FIELD_NUMBER = 2;
@@ -489,10 +489,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause) obj;
 
       if (hasData() != other.hasData()) return false;
       if (hasData()) {
@@ -562,44 +562,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -607,26 +607,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -639,7 +639,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -660,21 +660,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBClause)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -714,17 +714,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClause_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -732,14 +732,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -780,16 +780,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance()) return this;
         if (other.hasData()) {
           mergeData(other.getData());
         }
@@ -915,9 +915,9 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector data_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector data_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> dataBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> dataBuilder_;
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        * @return Whether the data field is set.
@@ -929,9 +929,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector data = 1;</code>
        * @return The data.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getData() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getData() {
         if (dataBuilder_ == null) {
-          return data_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
+          return data_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
         } else {
           return dataBuilder_.getMessage();
         }
@@ -939,7 +939,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        */
-      public Builder setData(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setData(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (dataBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -956,7 +956,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector data = 1;</code>
        */
       public Builder setData(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (dataBuilder_ == null) {
           data_ = builderForValue.build();
         } else {
@@ -969,11 +969,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        */
-      public Builder mergeData(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeData(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (dataBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             data_ != null &&
-            data_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            data_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getDataBuilder().mergeFrom(value);
           } else {
             data_ = value;
@@ -1003,7 +1003,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getDataBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getDataBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getDataFieldBuilder().getBuilder();
@@ -1011,23 +1011,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getDataOrBuilder() {
         if (dataBuilder_ != null) {
           return dataBuilder_.getMessageOrBuilder();
         } else {
           return data_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : data_;
         }
       }
       /**
        * <code>.collections.PBIntVector data = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getDataFieldBuilder() {
         if (dataBuilder_ == null) {
           dataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getData(),
                   getParentForChildren(),
                   isClean());
@@ -1328,12 +1328,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBClause)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1369,7 +1369,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1382,12 +1382,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
-    java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> 
+    java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> 
         getElementList();
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index);
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index);
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
@@ -1395,12 +1395,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
-    java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
+    java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
         getElementOrBuilderList();
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
         int index);
   }
   /**
@@ -1430,32 +1430,32 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder.class);
     }
 
     public static final int ELEMENT_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> element_;
+    private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> element_;
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> getElementList() {
+    public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> getElementList() {
       return element_;
     }
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
+    public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
         getElementOrBuilderList() {
       return element_;
     }
@@ -1470,14 +1470,14 @@ public final class ProtoBufSolverDatastructures {
      * <code>repeated .solver.PBClause element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index) {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index) {
       return element_.get(index);
     }
     /**
      * <code>repeated .solver.PBClause element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
         int index) {
       return element_.get(index);
     }
@@ -1522,10 +1522,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector) obj;
 
       if (!getElementList()
           .equals(other.getElementList())) return false;
@@ -1549,44 +1549,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1594,26 +1594,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1626,7 +1626,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1647,21 +1647,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBClauseVector)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVectorOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.newBuilder()
       private Builder() {
 
       }
@@ -1688,17 +1688,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBClauseVector_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1706,15 +1706,15 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result) {
+      private void buildPartialRepeatedFields(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result) {
         if (elementBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             element_ = java.util.Collections.unmodifiableList(element_);
@@ -1726,22 +1726,22 @@ public final class ProtoBufSolverDatastructures {
         }
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector result) {
         int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector.getDefaultInstance()) return this;
         if (elementBuilder_ == null) {
           if (!other.element_.isEmpty()) {
             if (element_.isEmpty()) {
@@ -1795,9 +1795,9 @@ public final class ProtoBufSolverDatastructures {
                 done = true;
                 break;
               case 10: {
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause m =
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause m =
                     input.readMessage(
-                        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.parser(),
+                        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.parser(),
                         extensionRegistry);
                 if (elementBuilder_ == null) {
                   ensureElementIsMutable();
@@ -1824,22 +1824,22 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> element_ =
+      private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> element_ =
         java.util.Collections.emptyList();
       private void ensureElementIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          element_ = new java.util.ArrayList<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause>(element_);
+          element_ = new java.util.ArrayList<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause>(element_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> elementBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> elementBuilder_;
 
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> getElementList() {
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> getElementList() {
         if (elementBuilder_ == null) {
           return java.util.Collections.unmodifiableList(element_);
         } else {
@@ -1859,7 +1859,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index) {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause getElement(int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);
         } else {
@@ -1870,7 +1870,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1887,7 +1887,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.set(index, builderForValue.build());
@@ -1900,7 +1900,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public Builder addElement(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
+      public Builder addElement(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1917,7 +1917,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1934,7 +1934,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder addElement(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(builderForValue.build());
@@ -1948,7 +1948,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(index, builderForValue.build());
@@ -1962,7 +1962,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBClause element = 1;</code>
        */
       public Builder addAllElement(
-          java.lang.Iterable<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> values) {
+          java.lang.Iterable<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause> values) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -2002,14 +2002,14 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder getElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder getElementBuilder(
           int index) {
         return getElementFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder getElementOrBuilder(
           int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);  } else {
@@ -2019,7 +2019,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
+      public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
            getElementOrBuilderList() {
         if (elementBuilder_ != null) {
           return elementBuilder_.getMessageOrBuilderList();
@@ -2030,31 +2030,31 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder addElementBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder addElementBuilder() {
         return getElementFieldBuilder().addBuilder(
-            com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance());
+            com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder addElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder addElementBuilder(
           int index) {
         return getElementFieldBuilder().addBuilder(
-            index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance());
+            index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBClause element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder> 
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder> 
            getElementBuilderList() {
         return getElementFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder> 
           getElementFieldBuilder() {
         if (elementBuilder_ == null) {
           elementBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClause.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseOrBuilder>(
                   element_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -2068,12 +2068,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBClauseVector)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2109,7 +2109,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBClauseVector getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2157,15 +2157,15 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder.class);
     }
 
     public static final int CLAUSE_FIELD_NUMBER = 1;
@@ -2237,10 +2237,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher) obj;
 
       if (getClause()
           != other.getClause()) return false;
@@ -2266,44 +2266,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2311,26 +2311,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2343,7 +2343,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2364,21 +2364,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBWatcher)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.newBuilder()
       private Builder() {
 
       }
@@ -2400,17 +2400,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcher_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2418,14 +2418,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.clause_ = clause_;
@@ -2437,16 +2437,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance()) return this;
         if (other.getClause() != 0) {
           setClause(other.getClause());
         }
@@ -2574,12 +2574,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBWatcher)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2615,7 +2615,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2628,12 +2628,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
-    java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> 
+    java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> 
         getElementList();
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index);
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index);
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
@@ -2641,12 +2641,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
-    java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
+    java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
         getElementOrBuilderList();
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
         int index);
   }
   /**
@@ -2676,32 +2676,32 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder.class);
     }
 
     public static final int ELEMENT_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> element_;
+    private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> element_;
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> getElementList() {
+    public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> getElementList() {
       return element_;
     }
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
+    public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
         getElementOrBuilderList() {
       return element_;
     }
@@ -2716,14 +2716,14 @@ public final class ProtoBufSolverDatastructures {
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index) {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index) {
       return element_.get(index);
     }
     /**
      * <code>repeated .solver.PBWatcher element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
         int index) {
       return element_.get(index);
     }
@@ -2768,10 +2768,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector) obj;
 
       if (!getElementList()
           .equals(other.getElementList())) return false;
@@ -2795,44 +2795,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2840,26 +2840,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2872,7 +2872,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -2893,21 +2893,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBWatcherVector)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.newBuilder()
       private Builder() {
 
       }
@@ -2934,17 +2934,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVector_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -2952,15 +2952,15 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result) {
+      private void buildPartialRepeatedFields(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result) {
         if (elementBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             element_ = java.util.Collections.unmodifiableList(element_);
@@ -2972,22 +2972,22 @@ public final class ProtoBufSolverDatastructures {
         }
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector result) {
         int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance()) return this;
         if (elementBuilder_ == null) {
           if (!other.element_.isEmpty()) {
             if (element_.isEmpty()) {
@@ -3041,9 +3041,9 @@ public final class ProtoBufSolverDatastructures {
                 done = true;
                 break;
               case 10: {
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher m =
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher m =
                     input.readMessage(
-                        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.parser(),
+                        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.parser(),
                         extensionRegistry);
                 if (elementBuilder_ == null) {
                   ensureElementIsMutable();
@@ -3070,22 +3070,22 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> element_ =
+      private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> element_ =
         java.util.Collections.emptyList();
       private void ensureElementIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          element_ = new java.util.ArrayList<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher>(element_);
+          element_ = new java.util.ArrayList<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher>(element_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> elementBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> elementBuilder_;
 
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> getElementList() {
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> getElementList() {
         if (elementBuilder_ == null) {
           return java.util.Collections.unmodifiableList(element_);
         } else {
@@ -3105,7 +3105,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index) {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher getElement(int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);
         } else {
@@ -3116,7 +3116,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3133,7 +3133,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.set(index, builderForValue.build());
@@ -3146,7 +3146,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public Builder addElement(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
+      public Builder addElement(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3163,7 +3163,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3180,7 +3180,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder addElement(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(builderForValue.build());
@@ -3194,7 +3194,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(index, builderForValue.build());
@@ -3208,7 +3208,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
       public Builder addAllElement(
-          java.lang.Iterable<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> values) {
+          java.lang.Iterable<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher> values) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3248,14 +3248,14 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder getElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder getElementBuilder(
           int index) {
         return getElementFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder getElementOrBuilder(
           int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);  } else {
@@ -3265,7 +3265,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
+      public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
            getElementOrBuilderList() {
         if (elementBuilder_ != null) {
           return elementBuilder_.getMessageOrBuilderList();
@@ -3276,31 +3276,31 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder addElementBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder addElementBuilder() {
         return getElementFieldBuilder().addBuilder(
-            com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance());
+            com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder addElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder addElementBuilder(
           int index) {
         return getElementFieldBuilder().addBuilder(
-            index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance());
+            index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBWatcher element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder> 
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder> 
            getElementBuilderList() {
         return getElementFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder> 
           getElementFieldBuilder() {
         if (elementBuilder_ == null) {
           elementBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcher.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherOrBuilder>(
                   element_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3314,12 +3314,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBWatcherVector)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3355,7 +3355,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3368,12 +3368,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
-    java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> 
+    java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> 
         getElementList();
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index);
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index);
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
@@ -3381,12 +3381,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
-    java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
+    java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
         getElementOrBuilderList();
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
         int index);
   }
   /**
@@ -3416,32 +3416,32 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder.class);
     }
 
     public static final int ELEMENT_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> element_;
+    private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> element_;
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> getElementList() {
+    public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> getElementList() {
       return element_;
     }
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
+    public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
         getElementOrBuilderList() {
       return element_;
     }
@@ -3456,14 +3456,14 @@ public final class ProtoBufSolverDatastructures {
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index) {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index) {
       return element_.get(index);
     }
     /**
      * <code>repeated .solver.PBWatcherVector element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
         int index) {
       return element_.get(index);
     }
@@ -3508,10 +3508,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector) obj;
 
       if (!getElementList()
           .equals(other.getElementList())) return false;
@@ -3535,44 +3535,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3580,26 +3580,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3612,7 +3612,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -3633,21 +3633,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBWatcherVectorVector)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVectorOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.newBuilder()
       private Builder() {
 
       }
@@ -3674,17 +3674,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBWatcherVectorVector_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -3692,15 +3692,15 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result) {
+      private void buildPartialRepeatedFields(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result) {
         if (elementBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             element_ = java.util.Collections.unmodifiableList(element_);
@@ -3712,22 +3712,22 @@ public final class ProtoBufSolverDatastructures {
         }
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector result) {
         int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector.getDefaultInstance()) return this;
         if (elementBuilder_ == null) {
           if (!other.element_.isEmpty()) {
             if (element_.isEmpty()) {
@@ -3781,9 +3781,9 @@ public final class ProtoBufSolverDatastructures {
                 done = true;
                 break;
               case 10: {
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector m =
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector m =
                     input.readMessage(
-                        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.parser(),
+                        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.parser(),
                         extensionRegistry);
                 if (elementBuilder_ == null) {
                   ensureElementIsMutable();
@@ -3810,22 +3810,22 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> element_ =
+      private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> element_ =
         java.util.Collections.emptyList();
       private void ensureElementIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          element_ = new java.util.ArrayList<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector>(element_);
+          element_ = new java.util.ArrayList<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector>(element_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> elementBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> elementBuilder_;
 
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> getElementList() {
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> getElementList() {
         if (elementBuilder_ == null) {
           return java.util.Collections.unmodifiableList(element_);
         } else {
@@ -3845,7 +3845,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index) {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector getElement(int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);
         } else {
@@ -3856,7 +3856,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3873,7 +3873,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.set(index, builderForValue.build());
@@ -3886,7 +3886,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public Builder addElement(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
+      public Builder addElement(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3903,7 +3903,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3920,7 +3920,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder addElement(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(builderForValue.build());
@@ -3934,7 +3934,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(index, builderForValue.build());
@@ -3948,7 +3948,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
       public Builder addAllElement(
-          java.lang.Iterable<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> values) {
+          java.lang.Iterable<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector> values) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -3988,14 +3988,14 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder getElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder getElementBuilder(
           int index) {
         return getElementFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder getElementOrBuilder(
           int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);  } else {
@@ -4005,7 +4005,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
+      public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
            getElementOrBuilderList() {
         if (elementBuilder_ != null) {
           return elementBuilder_.getMessageOrBuilderList();
@@ -4016,31 +4016,31 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder addElementBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder addElementBuilder() {
         return getElementFieldBuilder().addBuilder(
-            com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance());
+            com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder addElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder addElementBuilder(
           int index) {
         return getElementFieldBuilder().addBuilder(
-            index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance());
+            index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBWatcherVector element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder> 
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder> 
            getElementBuilderList() {
         return getElementFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder> 
           getElementFieldBuilder() {
         if (elementBuilder_ == null) {
           elementBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVector.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorOrBuilder>(
                   element_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4054,12 +4054,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBWatcherVectorVector)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4095,7 +4095,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBWatcherVectorVector getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4114,7 +4114,7 @@ public final class ProtoBufSolverDatastructures {
      * <code>.solver.PBTristate assignment = 1;</code>
      * @return The assignment.
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment();
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment();
 
     /**
      * <code>int32 level = 2;</code>
@@ -4173,15 +4173,15 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder.class);
     }
 
     public static final int ASSIGNMENT_FIELD_NUMBER = 1;
@@ -4197,9 +4197,9 @@ public final class ProtoBufSolverDatastructures {
      * <code>.solver.PBTristate assignment = 1;</code>
      * @return The assignment.
      */
-    @java.lang.Override public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment() {
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate result = com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.forNumber(assignment_);
-      return result == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED : result;
+    @java.lang.Override public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment() {
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate result = com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.forNumber(assignment_);
+      return result == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED : result;
     }
 
     public static final int LEVEL_FIELD_NUMBER = 2;
@@ -4271,7 +4271,7 @@ public final class ProtoBufSolverDatastructures {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (assignment_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber()) {
+      if (assignment_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber()) {
         output.writeEnum(1, assignment_);
       }
       if (level_ != 0) {
@@ -4298,7 +4298,7 @@ public final class ProtoBufSolverDatastructures {
       if (size != -1) return size;
 
       size = 0;
-      if (assignment_ != com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber()) {
+      if (assignment_ != com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.FALSE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, assignment_);
       }
@@ -4332,10 +4332,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable) obj;
 
       if (assignment_ != other.assignment_) return false;
       if (getLevel()
@@ -4380,44 +4380,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4425,26 +4425,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4457,7 +4457,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -4478,21 +4478,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBVariable)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.newBuilder()
       private Builder() {
 
       }
@@ -4518,17 +4518,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariable_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -4536,14 +4536,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.assignment_ = assignment_;
@@ -4567,16 +4567,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance()) return this;
         if (other.assignment_ != 0) {
           setAssignmentValue(other.getAssignmentValue());
         }
@@ -4692,16 +4692,16 @@ public final class ProtoBufSolverDatastructures {
        * @return The assignment.
        */
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate result = com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.forNumber(assignment_);
-        return result == null ? com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED : result;
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate getAssignment() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate result = com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.forNumber(assignment_);
+        return result == null ? com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate.UNRECOGNIZED : result;
       }
       /**
        * <code>.solver.PBTristate assignment = 1;</code>
        * @param value The assignment to set.
        * @return This builder for chaining.
        */
-      public Builder setAssignment(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate value) {
+      public Builder setAssignment(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBTristate value) {
         if (value == null) {
           throw new NullPointerException();
         }
@@ -4885,12 +4885,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBVariable)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4926,7 +4926,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4939,12 +4939,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
-    java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> 
+    java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> 
         getElementList();
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index);
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index);
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
@@ -4952,12 +4952,12 @@ public final class ProtoBufSolverDatastructures {
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
-    java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
+    java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
         getElementOrBuilderList();
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
-    com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
+    com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
         int index);
   }
   /**
@@ -4987,32 +4987,32 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder.class);
     }
 
     public static final int ELEMENT_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> element_;
+    private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> element_;
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> getElementList() {
+    public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> getElementList() {
       return element_;
     }
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
     @java.lang.Override
-    public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
+    public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
         getElementOrBuilderList() {
       return element_;
     }
@@ -5027,14 +5027,14 @@ public final class ProtoBufSolverDatastructures {
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index) {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index) {
       return element_.get(index);
     }
     /**
      * <code>repeated .solver.PBVariable element = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
         int index) {
       return element_.get(index);
     }
@@ -5079,10 +5079,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector) obj;
 
       if (!getElementList()
           .equals(other.getElementList())) return false;
@@ -5106,44 +5106,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5151,26 +5151,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5183,7 +5183,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5204,21 +5204,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBVariableVector)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVectorOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.newBuilder()
       private Builder() {
 
       }
@@ -5245,17 +5245,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBVariableVector_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -5263,15 +5263,15 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector(this);
         buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartialRepeatedFields(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result) {
+      private void buildPartialRepeatedFields(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result) {
         if (elementBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             element_ = java.util.Collections.unmodifiableList(element_);
@@ -5283,22 +5283,22 @@ public final class ProtoBufSolverDatastructures {
         }
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector result) {
         int from_bitField0_ = bitField0_;
       }
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector.getDefaultInstance()) return this;
         if (elementBuilder_ == null) {
           if (!other.element_.isEmpty()) {
             if (element_.isEmpty()) {
@@ -5352,9 +5352,9 @@ public final class ProtoBufSolverDatastructures {
                 done = true;
                 break;
               case 10: {
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable m =
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable m =
                     input.readMessage(
-                        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.parser(),
+                        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.parser(),
                         extensionRegistry);
                 if (elementBuilder_ == null) {
                   ensureElementIsMutable();
@@ -5381,22 +5381,22 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> element_ =
+      private java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> element_ =
         java.util.Collections.emptyList();
       private void ensureElementIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          element_ = new java.util.ArrayList<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable>(element_);
+          element_ = new java.util.ArrayList<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable>(element_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> elementBuilder_;
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> elementBuilder_;
 
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> getElementList() {
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> getElementList() {
         if (elementBuilder_ == null) {
           return java.util.Collections.unmodifiableList(element_);
         } else {
@@ -5416,7 +5416,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index) {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable getElement(int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);
         } else {
@@ -5427,7 +5427,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5444,7 +5444,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder setElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.set(index, builderForValue.build());
@@ -5457,7 +5457,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public Builder addElement(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
+      public Builder addElement(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5474,7 +5474,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable value) {
         if (elementBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -5491,7 +5491,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder addElement(
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(builderForValue.build());
@@ -5505,7 +5505,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder addElement(
-          int index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
+          int index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder builderForValue) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           element_.add(index, builderForValue.build());
@@ -5519,7 +5519,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
       public Builder addAllElement(
-          java.lang.Iterable<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> values) {
+          java.lang.Iterable<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable> values) {
         if (elementBuilder_ == null) {
           ensureElementIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -5559,14 +5559,14 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder getElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder getElementBuilder(
           int index) {
         return getElementFieldBuilder().getBuilder(index);
       }
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder getElementOrBuilder(
           int index) {
         if (elementBuilder_ == null) {
           return element_.get(index);  } else {
@@ -5576,7 +5576,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public java.util.List<? extends com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
+      public java.util.List<? extends com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
            getElementOrBuilderList() {
         if (elementBuilder_ != null) {
           return elementBuilder_.getMessageOrBuilderList();
@@ -5587,31 +5587,31 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder addElementBuilder() {
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder addElementBuilder() {
         return getElementFieldBuilder().addBuilder(
-            com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance());
+            com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder addElementBuilder(
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder addElementBuilder(
           int index) {
         return getElementFieldBuilder().addBuilder(
-            index, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance());
+            index, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.getDefaultInstance());
       }
       /**
        * <code>repeated .solver.PBVariable element = 1;</code>
        */
-      public java.util.List<com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder> 
+      public java.util.List<com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder> 
            getElementBuilderList() {
         return getElementFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
+          com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder> 
           getElementFieldBuilder() {
         if (elementBuilder_ == null) {
           elementBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder>(
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariable.Builder, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableOrBuilder>(
                   element_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -5625,12 +5625,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBVariableVector)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5666,7 +5666,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBVariableVector getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -5685,11 +5685,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBIntVector heap = 1;</code>
      * @return The heap.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getHeap();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getHeap();
     /**
      * <code>.collections.PBIntVector heap = 1;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder();
 
     /**
      * <code>.collections.PBIntVector indices = 2;</code>
@@ -5700,11 +5700,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBIntVector indices = 2;</code>
      * @return The indices.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getIndices();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getIndices();
     /**
      * <code>.collections.PBIntVector indices = 2;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder();
   }
   /**
    * Protobuf type {@code solver.PBHeap}
@@ -5732,20 +5732,20 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder.class);
     }
 
     private int bitField0_;
     public static final int HEAP_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector heap_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector heap_;
     /**
      * <code>.collections.PBIntVector heap = 1;</code>
      * @return Whether the heap field is set.
@@ -5759,19 +5759,19 @@ public final class ProtoBufSolverDatastructures {
      * @return The heap.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getHeap() {
-      return heap_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getHeap() {
+      return heap_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
     }
     /**
      * <code>.collections.PBIntVector heap = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder() {
-      return heap_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder() {
+      return heap_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
     }
 
     public static final int INDICES_FIELD_NUMBER = 2;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector indices_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector indices_;
     /**
      * <code>.collections.PBIntVector indices = 2;</code>
      * @return Whether the indices field is set.
@@ -5785,15 +5785,15 @@ public final class ProtoBufSolverDatastructures {
      * @return The indices.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getIndices() {
-      return indices_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getIndices() {
+      return indices_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
     }
     /**
      * <code>.collections.PBIntVector indices = 2;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder() {
-      return indices_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder() {
+      return indices_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -5843,10 +5843,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap) obj;
 
       if (hasHeap() != other.hasHeap()) return false;
       if (hasHeap()) {
@@ -5882,44 +5882,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5927,26 +5927,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -5959,7 +5959,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -5980,21 +5980,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBHeap)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeapOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6031,17 +6031,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBHeap_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6049,14 +6049,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -6076,16 +6076,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap.getDefaultInstance()) return this;
         if (other.hasHeap()) {
           mergeHeap(other.getHeap());
         }
@@ -6149,9 +6149,9 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector heap_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector heap_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> heapBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> heapBuilder_;
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        * @return Whether the heap field is set.
@@ -6163,9 +6163,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector heap = 1;</code>
        * @return The heap.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getHeap() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getHeap() {
         if (heapBuilder_ == null) {
-          return heap_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
+          return heap_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
         } else {
           return heapBuilder_.getMessage();
         }
@@ -6173,7 +6173,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        */
-      public Builder setHeap(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setHeap(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (heapBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6190,7 +6190,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector heap = 1;</code>
        */
       public Builder setHeap(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (heapBuilder_ == null) {
           heap_ = builderForValue.build();
         } else {
@@ -6203,11 +6203,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        */
-      public Builder mergeHeap(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeHeap(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (heapBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             heap_ != null &&
-            heap_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            heap_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getHeapBuilder().mergeFrom(value);
           } else {
             heap_ = value;
@@ -6237,7 +6237,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getHeapBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getHeapBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getHeapFieldBuilder().getBuilder();
@@ -6245,23 +6245,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getHeapOrBuilder() {
         if (heapBuilder_ != null) {
           return heapBuilder_.getMessageOrBuilder();
         } else {
           return heap_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : heap_;
         }
       }
       /**
        * <code>.collections.PBIntVector heap = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getHeapFieldBuilder() {
         if (heapBuilder_ == null) {
           heapBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getHeap(),
                   getParentForChildren(),
                   isClean());
@@ -6270,9 +6270,9 @@ public final class ProtoBufSolverDatastructures {
         return heapBuilder_;
       }
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector indices_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector indices_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> indicesBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> indicesBuilder_;
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        * @return Whether the indices field is set.
@@ -6284,9 +6284,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector indices = 2;</code>
        * @return The indices.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getIndices() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getIndices() {
         if (indicesBuilder_ == null) {
-          return indices_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
+          return indices_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
         } else {
           return indicesBuilder_.getMessage();
         }
@@ -6294,7 +6294,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        */
-      public Builder setIndices(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setIndices(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (indicesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -6311,7 +6311,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector indices = 2;</code>
        */
       public Builder setIndices(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (indicesBuilder_ == null) {
           indices_ = builderForValue.build();
         } else {
@@ -6324,11 +6324,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        */
-      public Builder mergeIndices(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeIndices(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (indicesBuilder_ == null) {
           if (((bitField0_ & 0x00000002) != 0) &&
             indices_ != null &&
-            indices_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            indices_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getIndicesBuilder().mergeFrom(value);
           } else {
             indices_ = value;
@@ -6358,7 +6358,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getIndicesBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getIndicesBuilder() {
         bitField0_ |= 0x00000002;
         onChanged();
         return getIndicesFieldBuilder().getBuilder();
@@ -6366,23 +6366,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getIndicesOrBuilder() {
         if (indicesBuilder_ != null) {
           return indicesBuilder_.getMessageOrBuilder();
         } else {
           return indices_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : indices_;
         }
       }
       /**
        * <code>.collections.PBIntVector indices = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getIndicesFieldBuilder() {
         if (indicesBuilder_ == null) {
           indicesBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getIndices(),
                   getParentForChildren(),
                   isClean());
@@ -6395,12 +6395,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBHeap)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6436,7 +6436,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBHeap getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -6455,11 +6455,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBIntVector elems = 1;</code>
      * @return The elems.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getElems();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getElems();
     /**
      * <code>.collections.PBIntVector elems = 1;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder();
 
     /**
      * <code>int32 first = 2;</code>
@@ -6517,20 +6517,20 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder.class);
     }
 
     private int bitField0_;
     public static final int ELEMS_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector elems_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector elems_;
     /**
      * <code>.collections.PBIntVector elems = 1;</code>
      * @return Whether the elems field is set.
@@ -6544,15 +6544,15 @@ public final class ProtoBufSolverDatastructures {
      * @return The elems.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getElems() {
-      return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getElems() {
+      return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
     }
     /**
      * <code>.collections.PBIntVector elems = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder() {
-      return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder() {
+      return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
     }
 
     public static final int FIRST_FIELD_NUMBER = 2;
@@ -6685,10 +6685,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue) obj;
 
       if (hasElems() != other.hasElems()) return false;
       if (hasElems()) {
@@ -6736,44 +6736,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6781,26 +6781,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6813,7 +6813,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6834,21 +6834,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBBoundedIntQueue)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueueOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6884,17 +6884,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedIntQueue_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6902,14 +6902,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -6938,16 +6938,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue.getDefaultInstance()) return this;
         if (other.hasElems()) {
           mergeElems(other.getElems());
         }
@@ -7041,9 +7041,9 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector elems_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector elems_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> elemsBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> elemsBuilder_;
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        * @return Whether the elems field is set.
@@ -7055,9 +7055,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector elems = 1;</code>
        * @return The elems.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getElems() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getElems() {
         if (elemsBuilder_ == null) {
-          return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
+          return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
         } else {
           return elemsBuilder_.getMessage();
         }
@@ -7065,7 +7065,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        */
-      public Builder setElems(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setElems(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (elemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -7082,7 +7082,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector elems = 1;</code>
        */
       public Builder setElems(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (elemsBuilder_ == null) {
           elems_ = builderForValue.build();
         } else {
@@ -7095,11 +7095,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        */
-      public Builder mergeElems(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeElems(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (elemsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             elems_ != null &&
-            elems_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            elems_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getElemsBuilder().mergeFrom(value);
           } else {
             elems_ = value;
@@ -7129,7 +7129,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getElemsBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getElemsBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getElemsFieldBuilder().getBuilder();
@@ -7137,23 +7137,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getElemsOrBuilder() {
         if (elemsBuilder_ != null) {
           return elemsBuilder_.getMessageOrBuilder();
         } else {
           return elems_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : elems_;
         }
       }
       /**
        * <code>.collections.PBIntVector elems = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getElemsFieldBuilder() {
         if (elemsBuilder_ == null) {
           elemsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getElems(),
                   getParentForChildren(),
                   isClean());
@@ -7326,12 +7326,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBBoundedIntQueue)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7367,7 +7367,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedIntQueue getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -7386,11 +7386,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBLongVector elems = 1;</code>
      * @return The elems.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector getElems();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector getElems();
     /**
      * <code>.collections.PBLongVector elems = 1;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder();
 
     /**
      * <code>int32 first = 2;</code>
@@ -7448,20 +7448,20 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder.class);
     }
 
     private int bitField0_;
     public static final int ELEMS_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector elems_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector elems_;
     /**
      * <code>.collections.PBLongVector elems = 1;</code>
      * @return Whether the elems field is set.
@@ -7475,15 +7475,15 @@ public final class ProtoBufSolverDatastructures {
      * @return The elems.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector getElems() {
-      return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector getElems() {
+      return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
     }
     /**
      * <code>.collections.PBLongVector elems = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder() {
-      return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder() {
+      return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
     }
 
     public static final int FIRST_FIELD_NUMBER = 2;
@@ -7616,10 +7616,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue) obj;
 
       if (hasElems() != other.hasElems()) return false;
       if (hasElems()) {
@@ -7667,44 +7667,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7712,26 +7712,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7744,7 +7744,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -7765,21 +7765,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBBoundedLongQueue)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueueOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -7815,17 +7815,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBBoundedLongQueue_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -7833,14 +7833,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -7869,16 +7869,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue.getDefaultInstance()) return this;
         if (other.hasElems()) {
           mergeElems(other.getElems());
         }
@@ -7972,9 +7972,9 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector elems_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector elems_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder> elemsBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder> elemsBuilder_;
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        * @return Whether the elems field is set.
@@ -7986,9 +7986,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBLongVector elems = 1;</code>
        * @return The elems.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector getElems() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector getElems() {
         if (elemsBuilder_ == null) {
-          return elems_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
+          return elems_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
         } else {
           return elemsBuilder_.getMessage();
         }
@@ -7996,7 +7996,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        */
-      public Builder setElems(com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector value) {
+      public Builder setElems(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector value) {
         if (elemsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8013,7 +8013,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBLongVector elems = 1;</code>
        */
       public Builder setElems(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.Builder builderForValue) {
         if (elemsBuilder_ == null) {
           elems_ = builderForValue.build();
         } else {
@@ -8026,11 +8026,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        */
-      public Builder mergeElems(com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector value) {
+      public Builder mergeElems(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector value) {
         if (elemsBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             elems_ != null &&
-            elems_ != com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.getDefaultInstance()) {
+            elems_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.getDefaultInstance()) {
             getElemsBuilder().mergeFrom(value);
           } else {
             elems_ = value;
@@ -8060,7 +8060,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.Builder getElemsBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.Builder getElemsBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getElemsFieldBuilder().getBuilder();
@@ -8068,23 +8068,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder getElemsOrBuilder() {
         if (elemsBuilder_ != null) {
           return elemsBuilder_.getMessageOrBuilder();
         } else {
           return elems_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.getDefaultInstance() : elems_;
         }
       }
       /**
        * <code>.collections.PBLongVector elems = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder> 
           getElemsFieldBuilder() {
         if (elemsBuilder_ == null) {
           elemsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBLongVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVectorOrBuilder>(
                   getElems(),
                   getParentForChildren(),
                   isClean());
@@ -8257,12 +8257,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBBoundedLongQueue)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8298,7 +8298,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBBoundedLongQueue getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8317,11 +8317,11 @@ public final class ProtoBufSolverDatastructures {
      * <code>.collections.PBIntVector clause = 1;</code>
      * @return The clause.
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getClause();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getClause();
     /**
      * <code>.collections.PBIntVector clause = 1;</code>
      */
-    com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder();
 
     /**
      * <code>optional bytes proposition = 2;</code>
@@ -8361,20 +8361,20 @@ public final class ProtoBufSolverDatastructures {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_fieldAccessorTable
+      return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder.class);
+              com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder.class);
     }
 
     private int bitField0_;
     public static final int CLAUSE_FIELD_NUMBER = 1;
-    private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector clause_;
+    private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector clause_;
     /**
      * <code>.collections.PBIntVector clause = 1;</code>
      * @return Whether the clause field is set.
@@ -8388,15 +8388,15 @@ public final class ProtoBufSolverDatastructures {
      * @return The clause.
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getClause() {
-      return clause_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getClause() {
+      return clause_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
     }
     /**
      * <code>.collections.PBIntVector clause = 1;</code>
      */
     @java.lang.Override
-    public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder() {
-      return clause_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
+    public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder() {
+      return clause_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
     }
 
     public static final int PROPOSITION_FIELD_NUMBER = 2;
@@ -8465,10 +8465,10 @@ public final class ProtoBufSolverDatastructures {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation)) {
+      if (!(obj instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation)) {
         return super.equals(obj);
       }
-      com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation other = (com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation) obj;
+      com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation other = (com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation) obj;
 
       if (hasClause() != other.hasClause()) return false;
       if (hasClause()) {
@@ -8504,44 +8504,44 @@ public final class ProtoBufSolverDatastructures {
       return hash;
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(byte[] data)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8549,26 +8549,26 @@ public final class ProtoBufSolverDatastructures {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseDelimitedFrom(java.io.InputStream input)
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseDelimitedFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessage
           .parseWithIOException(PARSER, input);
     }
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -8581,7 +8581,7 @@ public final class ProtoBufSolverDatastructures {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation prototype) {
+    public static Builder newBuilder(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -8602,21 +8602,21 @@ public final class ProtoBufSolverDatastructures {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:solver.PBProofInformation)
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_fieldAccessorTable
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.class, com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder.class);
+                com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.class, com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.Builder.class);
       }
 
-      // Construct using com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.newBuilder()
+      // Construct using com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -8648,17 +8648,17 @@ public final class ProtoBufSolverDatastructures {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.internal_static_solver_PBProofInformation_descriptor;
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstanceForType() {
-        return com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstanceForType() {
+        return com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation build() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result = buildPartial();
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation build() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -8666,14 +8666,14 @@ public final class ProtoBufSolverDatastructures {
       }
 
       @java.lang.Override
-      public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation buildPartial() {
-        com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation(this);
+      public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation buildPartial() {
+        com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result) {
+      private void buildPartial0(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation result) {
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
@@ -8691,16 +8691,16 @@ public final class ProtoBufSolverDatastructures {
 
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation) {
-          return mergeFrom((com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation)other);
+        if (other instanceof com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation) {
+          return mergeFrom((com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation other) {
-        if (other == com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation other) {
+        if (other == com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation.getDefaultInstance()) return this;
         if (other.hasClause()) {
           mergeClause(other.getClause());
         }
@@ -8762,9 +8762,9 @@ public final class ProtoBufSolverDatastructures {
       }
       private int bitField0_;
 
-      private com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector clause_;
+      private com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector clause_;
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> clauseBuilder_;
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> clauseBuilder_;
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        * @return Whether the clause field is set.
@@ -8776,9 +8776,9 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector clause = 1;</code>
        * @return The clause.
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector getClause() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector getClause() {
         if (clauseBuilder_ == null) {
-          return clause_ == null ? com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
+          return clause_ == null ? com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
         } else {
           return clauseBuilder_.getMessage();
         }
@@ -8786,7 +8786,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        */
-      public Builder setClause(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder setClause(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (clauseBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -8803,7 +8803,7 @@ public final class ProtoBufSolverDatastructures {
        * <code>.collections.PBIntVector clause = 1;</code>
        */
       public Builder setClause(
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder builderForValue) {
         if (clauseBuilder_ == null) {
           clause_ = builderForValue.build();
         } else {
@@ -8816,11 +8816,11 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        */
-      public Builder mergeClause(com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector value) {
+      public Builder mergeClause(com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector value) {
         if (clauseBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
             clause_ != null &&
-            clause_ != com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
+            clause_ != com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance()) {
             getClauseBuilder().mergeFrom(value);
           } else {
             clause_ = value;
@@ -8850,7 +8850,7 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder getClauseBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder getClauseBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getClauseFieldBuilder().getBuilder();
@@ -8858,23 +8858,23 @@ public final class ProtoBufSolverDatastructures {
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        */
-      public com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder() {
+      public com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder getClauseOrBuilder() {
         if (clauseBuilder_ != null) {
           return clauseBuilder_.getMessageOrBuilder();
         } else {
           return clause_ == null ?
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.getDefaultInstance() : clause_;
         }
       }
       /**
        * <code>.collections.PBIntVector clause = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder> 
           getClauseFieldBuilder() {
         if (clauseBuilder_ == null) {
           clauseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
+              com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector.Builder, com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorOrBuilder>(
                   getClause(),
                   getParentForChildren(),
                   isClean());
@@ -8927,12 +8927,12 @@ public final class ProtoBufSolverDatastructures {
     }
 
     // @@protoc_insertion_point(class_scope:solver.PBProofInformation)
-    private static final com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation DEFAULT_INSTANCE;
+    private static final com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation();
+      DEFAULT_INSTANCE = new com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation();
     }
 
-    public static com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstance() {
+    public static com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8968,7 +8968,7 @@ public final class ProtoBufSolverDatastructures {
     }
 
     @java.lang.Override
-    public com.booleworks.logicng.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstanceForType() {
+    public com.booleworks.logicng.serialization.solvers.datastructures.ProtoBufSolverDatastructures.PBProofInformation getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -9068,14 +9068,15 @@ public final class ProtoBufSolverDatastructures {
       "\n\022PBProofInformation\022(\n\006clause\030\001 \001(\0132\030.c" +
       "ollections.PBIntVector\022\030\n\013proposition\030\002 " +
       "\001(\014H\000\210\001\001B\016\n\014_proposition*,\n\nPBTristate\022\t" +
-      "\n\005FALSE\020\000\022\010\n\004TRUE\020\001\022\t\n\005UNDEF\020\002BM\n-com.bo" +
-      "oleworks.logicng.solvers.datastructuresB" +
-      "\034ProtoBufSolverDatastructuresb\006proto3"
+      "\n\005FALSE\020\000\022\010\n\004TRUE\020\001\022\t\n\005UNDEF\020\002B[\n;com.bo" +
+      "oleworks.logicng.serialization.solvers.d" +
+      "atastructuresB\034ProtoBufSolverDatastructu" +
+      "resb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.booleworks.logicng.collections.ProtoBufCollections.getDescriptor(),
+          com.booleworks.logicng.serialization.collections.ProtoBufCollections.getDescriptor(),
         });
     internal_static_solver_PBClause_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -9144,7 +9145,7 @@ public final class ProtoBufSolverDatastructures {
         internal_static_solver_PBProofInformation_descriptor,
         new java.lang.String[] { "Clause", "Proposition", });
     descriptor.resolveAllFeaturesImmutable();
-    com.booleworks.logicng.collections.ProtoBufCollections.getDescriptor();
+    com.booleworks.logicng.serialization.collections.ProtoBufCollections.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

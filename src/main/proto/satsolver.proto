@@ -3,7 +3,7 @@ package solver;
 import "collections.proto";
 import "solver_datastructures.proto";
 import "solver_commons.proto";
-option java_package = "com.booleworks.logicng.solvers";
+option java_package = "com.booleworks.logicng.serialization.solvers";
 option java_outer_classname = "ProtoBufSatSolver";
 
 message PBSatSolver {

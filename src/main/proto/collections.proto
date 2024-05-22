@@ -1,6 +1,6 @@
 syntax = "proto3";
 package collections;
-option java_package = "com.booleworks.logicng.collections";
+option java_package = "com.booleworks.logicng.serialization.collections";
 option java_outer_classname = "ProtoBufCollections";
 
 message PBIntVector {

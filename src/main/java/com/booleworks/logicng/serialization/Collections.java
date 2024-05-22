@@ -7,10 +7,10 @@ import com.booleworks.logicng.collections.LNGBooleanVector;
 import com.booleworks.logicng.collections.LNGIntVector;
 import com.booleworks.logicng.collections.LNGLongVector;
 import com.booleworks.logicng.collections.LNGVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBBooleanVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBIntVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBIntVectorVector;
-import com.booleworks.logicng.collections.ProtoBufCollections.PBLongVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBBooleanVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBIntVectorVector;
+import com.booleworks.logicng.serialization.collections.ProtoBufCollections.PBLongVector;
 
 /**
  * Serialization methods for LogicNG collections.
